@@ -1,12 +1,12 @@
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
       <NavigationBar />
-      <Hero />
+      <Home />
       <Footer />
     </>
   );
