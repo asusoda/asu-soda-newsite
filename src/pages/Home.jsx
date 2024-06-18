@@ -1,14 +1,7 @@
-import Hero from "../components/Hero";
+import App from "./App";
 
 function Home() {
-  return (
-    <div className="h-[50vh] grid grid-cols-2">
-      <Hero />
-      <div className="flex justify-center items-center">
-        Insert slideshow here
-      </div>
-    </div>
-  );
+  return <App></App>;
 }
 
 export default Home;

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 import {
   Dialog,
   DialogPanel,
@@ -10,54 +10,75 @@ import {
   PopoverGroup,
   PopoverPanel,
   Transition,
-} from '@headlessui/react'
+} from "@headlessui/react";
 import {
   Bars3Icon,
   PlayIcon,
   XMarkIcon,
   ChatBubbleOvalLeftEllipsisIcon,
   HandRaisedIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, } from '@heroicons/react/20/solid'
-import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
-import Home from '../pages/Home'
-import Info from '../pages/Info'
-import Team from '../pages/Team'
-import Sponsors from '../pages/Sponsors'
-import Login from '../pages/Login'
-
-
+} from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Link,
+} from "react-router-dom";
+import Home from "../pages/Home";
+import Info from "../pages/Info";
+import Team from "../pages/Team";
+import Sponsors from "../pages/Sponsors";
+import Login from "../pages/Login";
 
 const products = [
-  { name: 'Blog', description: 'Read up on the latest from SoDA', href: '#', icon: ChatBubbleOvalLeftEllipsisIcon },
-  { name: 'Discord Bot', description: 'Play with the best features from our Discord bot', href: '#', icon: PlayIcon },
-  { name: 'Participation', description: 'Get rewards for engaging in our community', href: '#', icon: HandRaisedIcon },
-]
+  {
+    name: "Blog",
+    description: "Read up on the latest from SoDA",
+    href: "#",
+    icon: ChatBubbleOvalLeftEllipsisIcon,
+  },
+  {
+    name: "Discord Bot",
+    description: "Play with the best features from our Discord bot",
+    href: "#",
+    icon: PlayIcon,
+  },
+  {
+    name: "Participation",
+    description: "Get rewards for engaging in our community",
+    href: "#",
+    icon: HandRaisedIcon,
+  },
+];
 
-{/* 
+{
+  /* 
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
-*/}
+*/
+}
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function NavigationBar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <Router>
       <header className="bg-white">
-        
         {/* standard NavBar */}
-        <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav
+          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
           <div className="flex lg:flex-1">
-            <Link
-              to='/Home'
-            >
+            <Link to="/Home">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">SoDA</span>
                 <img className="h-8 w-auto" src="/soda.png" alt="" />
@@ -80,7 +101,10 @@ export default function NavigationBar() {
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
                 Resources
-                <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                <ChevronDownIcon
+                  className="h-5 w-5 flex-none text-gray-400"
+                  aria-hidden="true"
+                />
               </PopoverButton>
 
               <Transition
@@ -99,20 +123,28 @@ export default function NavigationBar() {
                         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                          <item.icon className="h-6 w-6 text-gray-600 group-hover:text-blue-600" aria-hidden="true" />
+                          <item.icon
+                            className="h-6 w-6 text-gray-600 group-hover:text-blue-600"
+                            aria-hidden="true"
+                          />
                         </div>
 
                         <div className="flex-auto">
-                          <a href={item.href} className="block font-semibold text-gray-900">
+                          <a
+                            href={item.href}
+                            className="block font-semibold text-gray-900"
+                          >
                             {item.name}
                             <span className="absolute inset-0" />
                           </a>
-                          <p className="mt-1 text-gray-600">{item.description}</p>
+                          <p className="mt-1 text-gray-600">
+                            {item.description}
+                          </p>
                         </div>
                       </div>
                     ))}
                   </div>
-                  { /* 
+                  {/* 
                   <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                     {callsToAction.map((item) => (
                       <a
@@ -129,32 +161,35 @@ export default function NavigationBar() {
                 </PopoverPanel>
               </Transition>
             </Popover>
-            
+
             <li>
-              <Link
-                to='/Info'
-              >
-                <a href="" className="text-sm font-semibold leading-6 text-gray-900">
+              <Link to="/Info">
+                <a
+                  href=""
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
                   Info
                 </a>
               </Link>
             </li>
 
             <li>
-              <Link
-                to='/Team'
-              >
-                <a href="" className="text-sm font-semibold leading-6 text-gray-900">
+              <Link to="/Team">
+                <a
+                  href=""
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
                   Team
                 </a>
               </Link>
             </li>
 
             <li>
-              <Link
-                to='/Sponsors'
-              >
-                <a href="" className="text-sm font-semibold leading-6 text-gray-900">
+              <Link to="/Sponsors">
+                <a
+                  href=""
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
                   Sponsors
                 </a>
               </Link>
@@ -174,30 +209,31 @@ export default function NavigationBar() {
           </PopoverGroup>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <li>
-              <Link
-                to='/Login'
-              >
-               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                  Log in <span aria-hidden="true">&rarr;</span>
+            <li>
+              <Link to="/Login">
+                <a
+                  href="#"
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Contact <span aria-hidden="true">&rarr;</span>
                 </a>
               </Link>
             </li>
           </div>
         </nav>
-        
+
         {/* compressed NavBar */}
-        <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-10" />
           <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">SoDA</span>
-                <img
-                  className="h-8 w-auto"
-                  src="../public/soda.png"
-                  alt=""
-                />
+                <img className="h-8 w-auto" src="../public/soda.png" alt="" />
               </a>
               <button
                 type="button"
@@ -218,7 +254,10 @@ export default function NavigationBar() {
                         <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                           Resources
                           <ChevronDownIcon
-                            className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                            className={classNames(
+                              open ? "rotate-180" : "",
+                              "h-5 w-5 flex-none"
+                            )}
                             aria-hidden="true"
                           />
                         </DisclosureButton>
@@ -265,24 +304,20 @@ export default function NavigationBar() {
                     Log in
                   </a>
                 </div>
-
               </div>
             </div>
           </DialogPanel>
         </Dialog>
       </header>
 
-
       <Routes>
-          <Route path="/" element={<Navigate to ='/Home' />} />
-          <Route path='/Home' element={<Home />}></Route>
-          <Route path='/Info' element={<Info />}></Route>
-          <Route path='/Team' element={<Team />}></Route>
-          <Route path='/Sponsors' element={<Sponsors />}></Route>
-          <Route path='/Login' element={<Login />}></Route>
-          
+        <Route path="/" element={<Navigate to="/Home" />} />
+        <Route path="/Home" element={<Home />}></Route>
+        <Route path="/Info" element={<Info />}></Route>
+        <Route path="/Team" element={<Team />}></Route>
+        <Route path="/Sponsors" element={<Sponsors />}></Route>
+        <Route path="/Login" element={<Login />}></Route>
       </Routes>
-
     </Router>
-  )
+  );
 }

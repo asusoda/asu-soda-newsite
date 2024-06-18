@@ -2,10 +2,7 @@ import PropTypes from "prop-types";
 
 function Button({ name }) {
   return (
-    <button
-      type="button"
-      className="px-3 py-1 bg-purple-dark hover:bg-purple-light rounded-lg"
-    >
+    <button type="button" className="px-2 py-1 bg-soda-red rounded-lg">
       {name}
     </button>
   );
