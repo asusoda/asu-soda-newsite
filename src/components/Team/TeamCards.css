@@ -1,0 +1,165 @@
+@import url('../../styles/fonts.css');
+
+
+:root {
+    --soda-red-900: oklch(55% 0.2 12);
+    --soda-red-775: oklch(55% 0.2 12);
+    --soda-red-675: oklch(55% 0.2 12);
+    --soda-red-550: oklch(55% 0.2 12);
+    --soda-red-450: oklch(55% 0.2 12);
+    --soda-red-325: oklch(55% 0.2 12);
+    --soda-red-225: oklch(55% 0.2 12);
+    --soda-red-100: oklch(55% 0.2 12);
+}
+
+.team {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Title styling */
+
+.team #title {
+	font-family: 'Apfel-Fett';
+	font-size: 2em;
+	text-align: center;
+	padding: 7vw;
+	padding-bottom: 0vw;
+}
+
+.subteam-divider {
+	font-family: 'Apfel-Fett';
+    font-size: 1.5em;
+	text-align: center;
+	margin: 20px 20px 10px 20px; 
+    border-bottom: 1px solid #fff; 
+}
+
+.team #info {
+	background-color: black;
+	color: white;
+}
+
+.team #content {
+    display: flex;
+    font-family: 'Apfel-Regular';
+	font-size: 1.25em;
+	justify-content: center;
+    text-align: center;
+	padding-left: 5em;
+    padding-right: 5em;
+	padding-top: 0px;
+}
+
+/* Card spacing */
+
+.team #cards {
+	max-width: 1000px;
+	margin: 3vh auto 5vh auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.team #email {
+	max-width: 1000px;
+	margin: 3vh auto 5vh auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.team #cards .Card {
+	margin: 5px 10px 5px 10px;
+    display: flex;
+}
+
+.team #email .Modal {
+	margin: 3vh auto 5vh auto;
+}
+
+.mailto {
+	display:block;
+	width:100px;
+	height:20px;
+}
+
+/* Card styling */
+
+.rounded-card {
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: white; 
+    color: black; 
+    font-family: 'Apfel-Regular';
+    
+}
+
+.card-content {
+    padding: 16px; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+
+.card-text {
+    margin-top: 10px;
+    text-align: center;
+    flex: 1; 
+}
+
+.card-header {
+    color: black; 
+    padding-bottom: 8px; 
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.card-meta {
+    color: black; 
+    padding-bottom: 8px; 
+    font-size:0.9em;
+}
+
+.card-email {
+    color: grey; 
+    text-decoration: none; 
+    padding-top: 8px; 
+}
+
+.card-email:hover {
+    color: var(--soda-red-450);
+}
+
+.card-image-wrapper {
+    margin-top: 10px;
+    flex-shrink: 0; 
+}
+
+.card-image{
+    width: 100px; 
+    height: auto;
+    object-fit: cover;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    justify-content: center;
+}
+
+.Card {
+    width: 300px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+
