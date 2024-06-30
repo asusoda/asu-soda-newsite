@@ -1,16 +1,17 @@
 import AllRightsReserved from "../components/AllRightsReserved.jsx";
 import HorizontalLine from "../components/HorizontalLine.jsx";
+import SocialMediaLinks from "./SocialMediaLinks.jsx";
 
 export default function Footer() {
   return (
     <footer>
       <HorizontalLine />
       <section className="footer-container">
-        <section className="max-md:col-span-2 max-md:p-5">
-          <div className="flex flex-col justify-between">
-            <div className="flex gap-3 items-center">
+        <section className="col-span-2 max-md:col-span-2 max-md:p-5">
+          <div className="flex flex-col max-md:flex-row justify-between h-full">
+            <div className="flex gap-3 items-center max-sm:flex-row max-sm:items-center max-sm:hidden">
               <img src="/logo/soda-logo-white.png" className="w-8" />
-              <span className="text-soda-white">Thesoda.io</span>
+              <span className="text-soda-white font-semibold">Thesoda.io</span>
             </div>
             <SocialMediaLinks />
           </div>
@@ -22,7 +23,7 @@ export default function Footer() {
           </a>
           {organization.map((el, i) => (
             <a href={el.source} key={i}>
-              <p className="text-soda-gray text-[14px]">{el.name}</p>
+              <p className="text-soda-gray text-[18px]">{el.name}</p>
             </a>
           ))}
         </section>
@@ -33,7 +34,7 @@ export default function Footer() {
           </a>
           {resources.map((el, i) => (
             <a href={el.source} key={i}>
-              <p className="text-soda-gray text-[14px]">{el.name}</p>
+              <p className="text-soda-gray text-[18px]">{el.name}</p>
             </a>
           ))}
         </section>
@@ -41,10 +42,6 @@ export default function Footer() {
       <AllRightsReserved />
     </footer>
   );
-}
-
-function SocialMediaLinks() {
-  return <></>;
 }
 
 const organization = [
