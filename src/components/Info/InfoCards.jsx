@@ -6,7 +6,9 @@ import "./InfoCards.css";
 class InfoCards extends Component {
   render() {
     return (
+
       <div className="infocards" id="info">
+
         <Divider horizontal id="title">
           Info
         </Divider>

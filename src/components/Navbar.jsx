@@ -7,7 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-black-dark fixed">
+    <header className="navigation">
       {/* Primary Navigation - Hidden on mobile */}
       <section className="w-full justify-between hidden sm:flex py-5 px-10">
         <a href="/" className="flex gap-3 items-center">
@@ -16,6 +16,7 @@ function Navbar() {
             SoDA
           </h1>
         </a>
+
 
         <ul className="flex gap-10 items-center text-soda-white">
           <li>
@@ -37,8 +38,9 @@ function Navbar() {
         <Button name="Join SoDA" />
       </section>
 
+
       {/*Mobile Navigation*/}
-      <section className="w-full sm:hidden flex justify-between py-5 px-5">
+      <nav className="w-full sm:hidden flex justify-between py-5 px-5">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <LiaTimesSolid className="text-4xl" />
@@ -49,7 +51,7 @@ function Navbar() {
         <h1 className="text-purple-dark text-[21px] text-soda-red font-extrabold">
           SoDA
         </h1>
-      </section>
+      </nav>
 
       {/*Mobile Navigation when opened*/}
       {isOpen && (
@@ -82,7 +84,7 @@ function Navbar() {
           </div>
         </section>
       )}
-    </nav>
+    </header>
   );
 }
 

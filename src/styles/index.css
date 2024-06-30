@@ -10,9 +10,11 @@ body {
   @apply bg-soda-black text-soda-white text-[18px] max-md:text-[14px] font-apfel min-h-screen flex flex-col justify-between;
 }
 
+
 .nav-text-animation {
   @apply hover:text-xl transition ease-in-out;
 }
+
 
 /* --------- NAVIGATION SECTION --------- */
 .navigation {
@@ -26,5 +28,19 @@ body {
 /* --------- HOME SECTION --------- */
 
 .home {
-  @apply h-screen;
+  @apply min-h-screen bg-soda-black;
+}
+
+/* --------- FOOTER SECTION --------- */
+footer {
+  @apply w-full;
+}
+
+.footer-container {
+  @apply grid grid-cols-4 max-md:grid-cols-2 gap-4 px-40 py-16 max-md:gap-5 max-md:px-10 max-md:py-5;
+}
+
+/* --------- SOCIAL MEDIA LINKS --------- */
+.social-media-links {
+  @apply flex gap-4 text-3xl bg-soda-white rounded-full p-4 text-soda-black justify-center max-w-80;
 }

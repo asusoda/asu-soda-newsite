@@ -1,7 +1,13 @@
-import App from "./App";
+import InfoCards from "../components/Info/InfoCards";
+import MemberCards from "../components/Team/TeamCards";
 
 function Home() {
-  return <App></App>;
+  return (
+    <section className="home">
+      <MemberCards />
+      <InfoCards />
+    </section>
+  );
 }
 
 export default Home;
