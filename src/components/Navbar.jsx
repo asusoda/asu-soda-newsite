@@ -10,18 +10,31 @@ function Navbar() {
     <nav className="w-full bg-black-dark fixed">
       {/* Primary Navigation - Hidden on mobile */}
       <section className="w-full justify-between hidden sm:flex py-5 px-10">
-        <a href="/">
-          <h1 className="text-purple-dark text-[21px] text-soda-red font-extrabold">
+        <a href="/" className="flex gap-3 items-center">
+          <img src="/logo/soda-logo-red.png" className="w-8"></img>
+          <h1 className="text-purple-dark text-[21px] text-soda-white font-extrabold text-3xl">
             SoDA
           </h1>
         </a>
 
-        <div className="flex gap-10">
-          <h3>Info</h3>
-          <h3>Sponsors</h3>
-          <h3>Team</h3>
-        </div>
-        <Button name="Contact" />
+        <ul className="flex gap-10 items-center text-soda-white">
+          <li>
+            <a href="#info" className="nav-text-animation">
+              Info
+            </a>
+          </li>
+          <li>
+            <a href="#sponsors" className="nav-text-animation">
+              Sponsors
+            </a>
+          </li>
+          <li>
+            <a href="#team" className="nav-text-animation">
+              Team
+            </a>
+          </li>
+        </ul>
+        <Button name="Join SoDA" />
       </section>
 
       {/*Mobile Navigation*/}
