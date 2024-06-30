@@ -1,27 +1,29 @@
-@import url('../../styles/fonts.css');
+@import url("../../styles/fonts.css");
 
 :root {
-    --soda-red-900: oklch(55% 0.2 12);
-    --soda-red-775: oklch(55% 0.2 12);
-    --soda-red-675: oklch(55% 0.2 12);
-    --soda-red-550: oklch(55% 0.2 12);
-    --soda-red-450: oklch(55% 0.2 12);
-    --soda-red-325: oklch(55% 0.2 12);
-    --soda-red-225: oklch(55% 0.2 12);
-    --soda-red-100: oklch(55% 0.2 12);
+  --soda-red-900: oklch(55% 0.2 12);
+  --soda-red-775: oklch(55% 0.2 12);
+  --soda-red-675: oklch(55% 0.2 12);
+  --soda-red-550: oklch(55% 0.2 12);
+  --soda-red-450: oklch(55% 0.2 12);
+  --soda-red-325: oklch(55% 0.2 12);
+  --soda-red-225: oklch(55% 0.2 12);
+  --soda-red-100: oklch(55% 0.2 12);
 }
 
 .infocards {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .infocards #title {
-	font-family: 'Apfel-Fett';
-	font-size: 2em;
-	text-align: center;
-	padding: 7vw;
-	padding-bottom: 0vw;
+  font-family: "Apfel-Fett";
+  font-size: 2em;
+  text-align: center;
+  padding: 7vw;
+  padding-bottom: 0vw;
 }
 
 /*
@@ -41,67 +43,64 @@
 }
 */
 
-
 /*Card styling*/
 
 .rounded-card {
-    border-radius: 15px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
-    background-color: white; 
-    color: black; 
-    font-family: 'Apfel-Regular';
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
+  background-color: white;
+  color: black;
+  font-family: "Apfel-Regular";
 }
 
 .card-content {
-    padding: 16px; 
-  }
-  
+  padding: 16px;
+}
+
 .card-header {
-    color: black; 
-    padding-bottom: 8px; 
-    font-weight: bold;
-    font-size:1.2em;
+  color: black;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .card-description {
-    color: black; 
-    padding-bottom: 8px; 
-    font-size:0.8em;
+  color: black;
+  padding-bottom: 8px;
+  font-size: 0.8em;
 }
 
-
 #cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .Card {
-    width: 300px; 
+  width: 300px;
 }
 
-
 /* Card button */
-.card-button{
-    background-color: var(--soda-red-550); 
-    color: white; 
-    border: none; /* Remove default border */
-    border-radius: 25px; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    cursor: pointer; /* Change cursor to pointer on hover */
-    display: flex; 
-    align-items: center; 
-    transition: background-color 0.6s ease; /* Add transition for smooth background color change */
+.card-button {
+  background-color: var(--soda-red-550);
+  color: white;
+  border: none; /* Remove default border */
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.6s ease; /* Add transition for smooth background color change */
 }
 
 .card-button::after {
-    content: '→'; /* Unicode character for right arrow */
-    margin-left: 10px; 
+  content: "→"; /* Unicode character for right arrow */
+  margin-left: 10px;
 }
 
 .card-button:hover {
-    background-color: darkred; /* Change background color on hover */
+  background-color: darkred; /* Change background color on hover */
 }
