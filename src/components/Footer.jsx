@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <HorizontalLine />
       <section className="footer-container">
-        <section className="col-span-2 max-md:col-span-2 max-md:p-5">
+        <section className="col-span-2 max-md:col-span-2 max-md:p-2">
           <div className="flex flex-col max-md:flex-row justify-between h-full">
             <div className="flex gap-3 items-center max-sm:flex-row max-sm:items-center max-sm:hidden">
               <img src="/logo/soda-logo-white.png" className="w-8" />
@@ -19,7 +19,7 @@ export default function Footer() {
 
         <section className="grid grid-rows-3 gap-2">
           <a href="#">
-            <p className="text-soda-white">Organization</p>
+            <p className="text-soda-white text-[18px]">Organization</p>
           </a>
           {organization.map((el, i) => (
             <a href={el.source} key={i}>
@@ -30,7 +30,7 @@ export default function Footer() {
 
         <section className="grid grid-rows-3 gap-1">
           <a href="#">
-            <p className="text-soda-white">Resources</p>
+            <p className="text-soda-white text-[18px]">Resources</p>
           </a>
           {resources.map((el, i) => (
             <a href={el.source} key={i}>

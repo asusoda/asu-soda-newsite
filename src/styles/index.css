@@ -31,5 +31,5 @@ footer {
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
-  @apply flex gap-2 text-3xl bg-soda-white rounded-full p-4 text-soda-black justify-center max-w-80;
+  @apply flex gap-4 text-3xl bg-soda-white rounded-full p-4 text-soda-black justify-center max-w-80;
 }
