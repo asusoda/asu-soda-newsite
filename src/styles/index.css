@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-soda-black text-soda-white text-[18px] max-md:text-[14px] font-apfel min-h-screen flex flex-col justify-between;
 }
+
+
+.nav-text-animation {
+  @apply hover:text-xl transition ease-in-out;
+}
+
 
 /* --------- NAVIGATION SECTION --------- */
 .navigation {
@@ -16,6 +26,7 @@ body {
 }
 
 /* --------- HOME SECTION --------- */
+
 .home {
   @apply min-h-screen bg-soda-black;
 }
