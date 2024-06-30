@@ -1,19 +1,19 @@
-import PropTypes from "prop-types"; // Import PropTypes
+import PropTypes from "prop-types";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import "./styles/index.css";
+import Home from "./pages/Home";
 
-function App({ children }) {
+function App() {
   return (
     <>
       <Navbar />
-      <main className="home">{children}</main>
+      {/* Edit Home at /pages/Home.jsx */}
+      <Home />
       <Footer />
     </>
   );
 }
 
-// Define prop types for App component
 App.propTypes = {
   children: PropTypes.node.isRequired,
 };
