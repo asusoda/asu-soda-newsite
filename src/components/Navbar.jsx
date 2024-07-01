@@ -12,9 +12,7 @@ function Navbar() {
       <section className="w-full justify-between hidden sm:flex py-5 px-10">
         <a href="/" className="flex gap-3 items-center">
           <img src="/logo/soda-logo-red.png" className="w-8"></img>
-          <h1 className="text-purple-dark text-[21px] text-soda-white font-extrabold text-3xl">
-            SoDA
-          </h1>
+            <img src="/logo/Soda_Logo_Dark_Mode.svg" className="w-20"/>
         </a>
 
 
@@ -49,7 +47,7 @@ function Navbar() {
           )}
         </button>
         <h1 className="text-purple-dark text-[21px] text-soda-red font-extrabold">
-          SoDA
+          <img src="/logo/Soda_Logo_Dark_Mode.svg" className="w-20"/>
         </h1>
       </nav>
 
