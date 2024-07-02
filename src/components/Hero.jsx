@@ -1,81 +1,86 @@
+import AnimatedNumber from "./logic/AnimatedNumber";
+import { Statistic } from "semantic-ui-react";
+
+import teamsData from "../assets/teams.json";
+
+const dollarFormatter = new Intl.NumberFormat("US", {
+  style: "currency",
+  currency: "USD",
+});
+const teams = teamsData.teams;
+const advisors = teamsData.advisors;
+
+const statistics = [
+  {
+    key: "pizza",
+    label: "worth of pizza served",
+    value: 22500,
+    steps: 50,
+    formatter: (x) => dollarFormatter.format(x),
+  },
+  {
+    key: "sponsors",
+    label: "Sponsors",
+    value: 12,
+    steps: 1,
+    formatter: (x) => x,
+  },
+  {
+    key: "teams",
+    label: "Committees",
+    value: Object.keys(teams).length,
+    steps: 1,
+    formatter: (x) => x,
+  },
+  {
+    key: "officers",
+    label: "Officers",
+    value: Object.values(teams).reduce((total, team) => {
+      return total + team.length;
+    }, 0),
+    steps: 1,
+    formatter: (x) => x,
+  },
+  {
+    key: "advisors",
+    label: "Advisors",
+    value: Object.keys(advisors).length,
+    steps: 1,
+    formatter: (x) => x,
+  },
+];
+
 function Hero() {
   return (
-    <div class="hero bg-base-200">
-      <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="text-5xl font-bold">./SoDA</h1>
-          <p class="my-2">The Software Developers Association</p>
-          <p class="mt-4">
-            The premiere software development club for university students at Arizona State University
+    <section className="hero">
+      <div className="hero-container">
+        <div className="md:w-1/2 px-6">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            The Software Developers Association
+          </h1>
+          <p className="mt-4 text-xl">
+            The premiere software development club for Arizona State University
+            students.
           </p>
-          <ul className="menu menu-horizontal bg-base-100 rounded-box mt-6">
-            <li>
-              <a className="tooltip" data-tip="Sun Devil Sync" href="https://asu.campuslabs.com/engage/organization/soda">
-              <img
-                src="/link-white-icon.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Discord" href="https://discord.com/invite/6mpAPKk">
-                <img
-                  src="/discord-white-logo.png"
-                  className="h-6 w-6"
-                  alt="logo"
-                />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Instagram" href="https://www.instagram.com/soda.asu/">
-              <img
-                src="/instagram-white-logo.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="X" href="https://x.com/asu_soda">
-              <img
-                src="/link-white-icon.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Facebook" href="https://www.facebook.com/SoDAASU/">
-              <img
-                src="/link-white-icon.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="LinkedIn" href="https://www.linkedin.com/company/thesoda/">
-              <img
-                src="/linkedin-white-logo.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Github" href="https://github.com/asusoda">
-              <img
-                src="/github-mark-white.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-          </ul>
+          <div className="statistics">
+            {statistics.map(({ key, label, value, steps, formatter }) => (
+              <Statistic key={key} className="">
+                <div className="">
+                  <Statistic.Value>
+                    <AnimatedNumber
+                      number={value}
+                      steps={steps}
+                      formatter={formatter}
+                    />
+                  </Statistic.Value>
+                  <Statistic.Label>{label}</Statistic.Label>
+                </div>
+              </Statistic>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

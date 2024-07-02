@@ -14,16 +14,21 @@ body {
   @apply hover:text-xl transition ease-in-out;
 }
 
-/* --------- BUTTON --------- */
-.btn {
-  @apply px-3 py-1 bg-soda-red rounded-lg;
+.statistics {
+  @apply bg-soda-white text-soda-black flex flex-row gap-5 p-5 justify-center flex-wrap rounded-full;
 }
 
-.btn-text {
-  @apply font-bold;
+/* --------- HERO --------- */
+
+.hero {
+  @apply my-[20vh] mx-[5vw];
 }
 
-/* --------- NAVIGATION SECTION --------- */
+.hero-container {
+  @apply mx-auto flex flex-col md:flex-row items-center justify-between;
+}
+
+/* --------- NAVIGATION  --------- */
 .navigation {
   @apply w-full fixed z-10 bg-soda-black;
 }
@@ -32,13 +37,13 @@ body {
   @apply w-full justify-between hidden sm:flex py-4 px-6;
 }
 
-/* --------- HOME SECTION --------- */
+/* --------- HOME --------- */
 
 .home {
   @apply min-h-screen bg-soda-black;
 }
 
-/* --------- FOOTER SECTION --------- */
+/* --------- FOOTER --------- */
 footer {
   @apply w-full;
 }
@@ -50,4 +55,13 @@ footer {
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
   @apply flex gap-4 text-3xl bg-soda-white rounded-full p-4 text-soda-black justify-center max-w-80;
+}
+
+/* --------- BUTTON --------- */
+.btn {
+  @apply px-3 py-1 bg-soda-red rounded-lg;
+}
+
+.btn-text {
+  @apply font-bold;
 }
