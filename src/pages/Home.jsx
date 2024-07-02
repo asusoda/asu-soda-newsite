@@ -5,9 +5,9 @@ import Hero from "../components/Hero";
 function Home() {
   return (
     <section className="home">
-      {/* <MemberCards />
-      <InfoCards /> */}
       <Hero />
+      <MemberCards />
+      <InfoCards />
     </section>
   );
 }

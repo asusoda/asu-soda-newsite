@@ -16,8 +16,8 @@ body {
 
 /* --------- STATS --------- */
 .statistics {
-  @apply bg-soda-white text-soda-black flex  
-  flex-row gap-5 py-6 px-2 my-5 justify-center flex-wrap rounded-full;
+  @apply bg-soda-white max-md:w-screen text-soda-black flex  
+  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap sm:rounded-full;
 }
 
 .stat-container {
@@ -34,7 +34,7 @@ body {
 /* --------- HERO --------- */
 
 .hero {
-  @apply my-[20vh] mx-[5vw];
+  @apply my-[20vh] mx-[5vw] max-md:my-[14vh];
 }
 
 .hero-container {

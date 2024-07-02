@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 const AnimatedNumber = ({ number, steps, formatter }) => {
   const [animatedNumber, setAnimatedNumber] = useState(0);
 
-  // Placeholder model function. Replace with actual logic.
+  // Adjusted model function for faster animation
   const model = (nextNumber, step) => {
-    // Example logic: delay increases as the number gets closer to the target
-    const baseDelay = 50; // Base delay in milliseconds
+    // Increase the base delay for faster animation
+    const baseDelay = 10; // Lower base delay for faster animation
     const delayFactor = Math.abs(number - nextNumber) / step;
     return baseDelay * delayFactor;
   };
