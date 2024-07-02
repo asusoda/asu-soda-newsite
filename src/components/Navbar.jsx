@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button from "./Button";
 import OpenedMobileNav from "./Mobile/OpenedMobileNav";
 import MobileNav from "./Mobile/MobileNav";
+import RoundedButton from "./Button/RoundedButton";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <Button name="Join SoDA" />
+        <RoundedButton name="Join SoDA" />
       </section>
 
       {/*Mobile Navigation*/}

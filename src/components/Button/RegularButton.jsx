@@ -1,15 +1,15 @@
 import PropTypes from "prop-types";
 
-function Button({ name }) {
+function RegularButton({ name }) {
   return (
-    <button type="button" className="btn">
+    <button type="button" className="regular-btn">
       <span className="btn-text">{name}</span>
     </button>
   );
 }
 
-export default Button;
+export default RegularButton;
 
-Button.propTypes = {
+RegularButton.propTypes = {
   name: PropTypes.string.isRequired,
 };

@@ -19,6 +19,9 @@ export default function OpenedMobileNav({ setIsOpen }) {
         </div>
         <hr className="w-[90%] mx-auto bg-soda-gray"></hr>
         <div className="flex flex-col gap-5 p-5">
+          <a href="#hero" onClick={() => setIsOpen(false)}>
+            <h1 className="text-[20px]">Home</h1>
+          </a>
           <a href="#info" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Info</h1>
           </a>

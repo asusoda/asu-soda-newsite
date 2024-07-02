@@ -14,16 +14,34 @@ body {
   @apply hover:text-xl transition ease-in-out;
 }
 
-/* --------- BUTTON --------- */
-.btn {
-  @apply px-3 py-1 bg-soda-red rounded-lg;
+/* --------- STATS --------- */
+.statistics {
+  @apply bg-soda-white max-md:w-screen text-soda-black flex  
+  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap sm:rounded-full;
 }
 
-.btn-text {
-  @apply font-bold;
+.stat-container {
+  @apply items-center text-center;
+}
+.stat-value {
+  @apply text-4xl font-extrabold;
 }
 
-/* --------- NAVIGATION SECTION --------- */
+.stat-label {
+  @apply text-sm font-bold;
+}
+
+/* --------- HERO --------- */
+
+.hero {
+  @apply my-[20vh] mx-[5vw] max-md:my-[14vh];
+}
+
+.hero-container {
+  @apply mx-auto flex flex-col md:flex-row items-center justify-between;
+}
+
+/* --------- NAVIGATION  --------- */
 .navigation {
   @apply w-full fixed z-10 bg-soda-black;
 }
@@ -32,13 +50,13 @@ body {
   @apply w-full justify-between hidden sm:flex py-4 px-6;
 }
 
-/* --------- HOME SECTION --------- */
+/* --------- HOME --------- */
 
 .home {
   @apply min-h-screen bg-soda-black;
 }
 
-/* --------- FOOTER SECTION --------- */
+/* --------- FOOTER --------- */
 footer {
   @apply w-full;
 }
@@ -50,4 +68,16 @@ footer {
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
   @apply flex gap-4 text-3xl bg-soda-white rounded-full p-4 text-soda-black justify-center max-w-80;
+}
+
+/* --------- BUTTON --------- */
+.rounded-btn {
+  @apply px-3 py-1 bg-soda-red rounded-full;
+}
+
+.regular-btn {
+  @apply px-3 py-1 bg-soda-red rounded-lg;
+}
+.btn-text {
+  @apply font-bold text-soda-white;
 }

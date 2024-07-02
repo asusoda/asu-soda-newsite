@@ -1,81 +1,23 @@
+import Statistics from "./Stats/Statistics";
+import SocialMediaLinks from "./SocialMediaLinks";
+
 function Hero() {
   return (
-    <div class="hero bg-base-200">
-      <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="text-5xl font-bold">./SoDA</h1>
-          <p class="my-2">The Software Developers Association</p>
-          <p class="mt-4">
-            The premiere software development club for university students at Arizona State University
+    <section className="hero">
+      <div className="hero-container">
+        <div className="md:w-1/2 flex flex-col items-center justify-between">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight px-6">
+            The Software Developers Association
+          </h1>
+          <p className="mt-4 text-xl px-6">
+            The premiere software development club for Arizona State University
+            students.
           </p>
-          <ul className="menu menu-horizontal bg-base-100 rounded-box mt-6">
-            <li>
-              <a className="tooltip" data-tip="Sun Devil Sync" href="https://asu.campuslabs.com/engage/organization/soda">
-              <img
-                src="/link-white-icon.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Discord" href="https://discord.com/invite/6mpAPKk">
-                <img
-                  src="/discord-white-logo.png"
-                  className="h-6 w-6"
-                  alt="logo"
-                />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Instagram" href="https://www.instagram.com/soda.asu/">
-              <img
-                src="/instagram-white-logo.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="X" href="https://x.com/asu_soda">
-              <img
-                src="/link-white-icon.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Facebook" href="https://www.facebook.com/SoDAASU/">
-              <img
-                src="/link-white-icon.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="LinkedIn" href="https://www.linkedin.com/company/thesoda/">
-              <img
-                src="/linkedin-white-logo.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-            <li>
-              <a className="tooltip" data-tip="Github" href="https://github.com/asusoda">
-              <img
-                src="/github-mark-white.png"
-                className="h-6 w-6"
-                alt="logo"
-              />
-              </a>
-            </li>
-          </ul>
+          <Statistics />
+          <SocialMediaLinks />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
