@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 function Button({ name }) {
   return (
-    <button type="button" className="px-2 py-1 bg-soda-red rounded-lg">
-      {name}
+    <button type="button" className="btn">
+      <span className="btn-text">{name}</span>
     </button>
   );
 }
