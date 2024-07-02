@@ -14,8 +14,21 @@ body {
   @apply hover:text-xl transition ease-in-out;
 }
 
+/* --------- STATS --------- */
 .statistics {
-  @apply bg-soda-white text-soda-black flex flex-row gap-5 p-5 justify-center flex-wrap rounded-full;
+  @apply bg-soda-white text-soda-black flex  
+  flex-row gap-5 py-6 px-2 my-5 justify-center flex-wrap rounded-full;
+}
+
+.stat-container {
+  @apply items-center text-center;
+}
+.stat-value {
+  @apply text-4xl font-extrabold;
+}
+
+.stat-label {
+  @apply text-sm font-bold;
 }
 
 /* --------- HERO --------- */
@@ -58,10 +71,13 @@ footer {
 }
 
 /* --------- BUTTON --------- */
-.btn {
-  @apply px-3 py-1 bg-soda-red rounded-lg;
+.rounded-btn {
+  @apply px-3 py-1 bg-soda-red rounded-full;
 }
 
+.regular-btn {
+  @apply px-3 py-1 bg-soda-red rounded-lg;
+}
 .btn-text {
-  @apply font-bold;
+  @apply font-bold text-soda-white;
 }
