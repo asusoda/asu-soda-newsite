@@ -2,7 +2,7 @@
 
 ### The Software Developers Association
 
-This is the directory for SoDA's new ReactJS website.
+This is the directory for SoDA's new React/Vite website.
 
 ## How to run website locally
 
@@ -19,12 +19,12 @@ The server will refresh the page automatically when you make changes to the code
 
 ## Making changes
 
-Always make sure you pull before working on the repository. Since the website is a latest NEXT application, uses many dependencies, and is written in ES6, you will have to use many tools to transpile the code.
+Always make sure you pull before working on the repository. Since the website is a latest React application, uses many dependencies, and is written in ES6, you will have to use many tools to transpile the code.
 
 **_The use of Github Desktop is recommended._**
 
-# Helpful Documentations
 
-You can find the ReactJS guide [here](https://react.dev/learn).
-
-We use [TailwindCSS](https://tailwindcss.com/) for styling.
+## Contributors
+<a href="https://github.com/asusoda/asu-soda-newsite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=asusoda/asu-soda-newsite" />
+</a>
