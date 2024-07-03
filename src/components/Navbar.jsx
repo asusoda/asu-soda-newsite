@@ -9,11 +9,12 @@ function Navbar() {
     <header className="navigation">
       {/* Primary Navigation - Hidden on mobile */}
       <section className="nav-container">
-        <a href="/" className="flex gap-3 items-center">
-          <img src="/logo/soda-logo-red.png" className="w-12"></img>
+        <a href="/" className="flex gap-4 items-center">
+          <img src="/logo/soda-logo-red.png" className="w-12" />
+          <span className="text-[26px] font-bold">SoDA</span>
         </a>
 
-        <ul className="flex gap-10 items-center text-soda-white font-bold">
+        <ul className="flex gap-14 items-center text-soda-white font-bold">
           <li>
             <a href="#info" className="nav-text-animation">
               Info

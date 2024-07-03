@@ -31,7 +31,7 @@ function SponsorsMarquee() {
     generalmotors,
   };
   return (
-    <>
+    <section id="sponsors">
       <h1 className="text-white font-bold text-2xl md:text-4xl text-center p-5">
         Our Sponsors
       </h1>
@@ -45,20 +45,18 @@ function SponsorsMarquee() {
               className="w-[10vw] object-contain"
             />
           ))}
+          {sponsors.map((element, index) => (
+            <img
+              key={index}
+              src={logoMap[element.name]}
+              alt={element.name}
+              className="w-[12vw] object-contain"
+            />
+          ))}
         </div>
-
-        {/* <div className="py-12 animate-marquee2 whitespace-nowrap flex flex-row gap-8">
-      {sponsors.map((element, index) => (
-        <img
-          key={index}
-          src={logoMap[element.name]}
-          alt={element.name}
-          className="w-[12vw] object-contain"
-        />
-      ))}
-    </div> */}
+        {/* <div className="animate-marquee2 flex flex-row gap-8"></div> */}
       </section>
-    </>
+    </section>
   );
 }
 
