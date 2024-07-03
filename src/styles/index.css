@@ -47,7 +47,7 @@ body {
 }
 
 .nav-container {
-  @apply w-full justify-between hidden sm:flex py-4 px-6;
+  @apply w-full justify-between hidden sm:flex py-6 px-20;
 }
 
 /* --------- HOME --------- */

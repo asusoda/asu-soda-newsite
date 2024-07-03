@@ -31,7 +31,7 @@ function SponsorsMarquee() {
     generalmotors,
   };
   return (
-    <>
+    <section id="sponsors">
       <h1 className="text-white font-bold text-2xl md:text-4xl text-center p-5">
         Our Sponsors
       </h1>
@@ -58,7 +58,7 @@ function SponsorsMarquee() {
       ))}
     </div> */}
       </section>
-    </>
+    </section>
   );
 }
 
