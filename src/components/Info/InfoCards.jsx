@@ -6,24 +6,22 @@ import "./InfoCards.css";
 class InfoCards extends Component {
   render() {
     return (
-
       <div className="infocards" id="info">
-
         <Divider horizontal id="title">
           Info
         </Divider>
         <br />
 
         <div id="cards">
-          {content.map(({ title, content, button }) => (
-            <Card key={title} className="Card rounded-card">
+          {content.map(({ id, title, content, button }) => (
+            <Card key={id} className="Card rounded-card">
               <Card.Content className="card-content">
                 <Card.Header className="card-header">{title}</Card.Header>
                 <Card.Description className="card-description">
-                  {content}
+                  {content.map((element) => element)}
                 </Card.Description>
                 <br />
-                <Button className="card-button">{button} </Button>
+                <Button className="card-button">{button}</Button>
               </Card.Content>
             </Card>
           ))}

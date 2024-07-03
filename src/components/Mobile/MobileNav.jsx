@@ -20,6 +20,6 @@ export default function MobileNav({ setIsOpen, isOpen }) {
 }
 
 MobileNav.propTypes = {
-  setIsOpen: PropTypes.node.isRequired,
-  isOpen: PropTypes.node.isRequired,
+  setIsOpen: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
 };

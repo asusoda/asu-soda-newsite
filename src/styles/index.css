@@ -34,7 +34,7 @@ body {
 /* --------- HERO --------- */
 
 .hero {
-  @apply my-[20vh] mx-[5vw] max-md:my-[14vh];
+  @apply mx-[5vw] mt-[20vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh] min-h-[80vh];
 }
 
 .hero-container {
