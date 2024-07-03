@@ -1,5 +1,6 @@
 import Statistics from "./Stats/Statistics";
 import SocialMediaLinks from "./SocialMediaLinks";
+import EventsPhotoCarousel from "./EventsPhotoCarousel";
 
 function Hero() {
   return (
@@ -16,9 +17,13 @@ function Hero() {
           <Statistics />
           <SocialMediaLinks />
         </div>
+        <EventsPhotoCarousel />
       </div>
     </section>
   );
 }
 
 export default Hero;
+
+
+
