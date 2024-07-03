@@ -10,7 +10,7 @@ function Navbar() {
       {/* Primary Navigation - Hidden on mobile */}
       <section className="nav-container">
         <a href="/" className="flex gap-4 items-center">
-          <img src="/logo/soda-logo-red.png" className="w-12"/>
+          <img src="/logo/soda-logo-red.png" className="w-12" />
           <span className="text-[26px] font-bold">SoDA</span>
         </a>
 

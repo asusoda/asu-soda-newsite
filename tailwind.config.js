@@ -105,6 +105,10 @@ export default {
       "array-semibold-wide": ["Array-SemiboldWide", "sans-serif"],
       "array-bold": ["Array-Bold", "sans-serif"],
     },
+    backgroundImage: {
+      "glass-gradient":
+        "linear-gradient(to bottom, transparent, rgba(55, 65, 81, 0.3))",
+    },
   },
   plugins: [],
 };

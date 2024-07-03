@@ -196,7 +196,7 @@ body {
 /* --------- HERO --------- */
 
 .hero {
-  @apply mx-[5vw] mt-[12vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh] sm:min-h-[80vh];
+  @apply mx-[5vw] mt-[14vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh] sm:min-h-[80vh];
 }
 
 .hero-container {
@@ -205,11 +205,18 @@ body {
 
 /* --------- NAVIGATION  --------- */
 .navigation {
-  @apply w-full fixed z-10 bg-soda-black;
+  @apply w-full fixed z-10 max-md:bg-soda-black;
+  @apply sm:glassmorphism-effect;
 }
 
+@layer utilities {
+  .glassmorphism-effect {
+    @apply rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm mx-8 my-4 w-[96vw];
+    background-image: var(--tw-gradient-glass-gradient);
+  }
+}
 .nav-container {
-  @apply w-full justify-between hidden sm:flex py-6 px-20;
+  @apply w-full justify-between hidden sm:flex py-4 px-20;
 }
 
 /* --------- HOME --------- */
