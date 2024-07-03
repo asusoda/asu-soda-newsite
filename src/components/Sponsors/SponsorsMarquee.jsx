@@ -45,18 +45,16 @@ function SponsorsMarquee() {
               className="w-[10vw] object-contain"
             />
           ))}
+          {sponsors.map((element, index) => (
+            <img
+              key={index}
+              src={logoMap[element.name]}
+              alt={element.name}
+              className="w-[12vw] object-contain"
+            />
+          ))}
         </div>
-
-        {/* <div className="py-12 animate-marquee2 whitespace-nowrap flex flex-row gap-8">
-      {sponsors.map((element, index) => (
-        <img
-          key={index}
-          src={logoMap[element.name]}
-          alt={element.name}
-          className="w-[12vw] object-contain"
-        />
-      ))}
-    </div> */}
+        {/* <div className="animate-marquee2 flex flex-row gap-8"></div> */}
       </section>
     </section>
   );
