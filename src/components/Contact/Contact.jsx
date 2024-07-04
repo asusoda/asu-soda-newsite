@@ -9,22 +9,13 @@ function Contact() {
       <h1 className="text-white font-bold text-2xl md:text-4xl text-center">
         Let's Get In Touch!
       </h1>
-      <h4 className="text-soda-gray text-sm md:text-lg text-center mb-8">
+      <h4 className="text-soda-gray text-sm md:text-lg text-center mb-8 px-10">
         Excited to join SoDA? Leave your information here and our officers will
         get in touch with you shortly.
       </h4>
-      <section className="w-[70vw] h-[70vh] grid grid-cols-2 gap-10 ">
-        <figure className="">
-          <iframe
-            className="w-full h-full rounded-2xl"
-            loading="lazy"
-            allowFullScreen
-            src="https://www.google.com/maps/embed/v1/place?q=tempe&key=AIzaSyALN2fUL0Wx_CgtyGlXH5hR_s45DZH7rU0"
-          ></iframe>
-        </figure>
-
+      <section className="w-[70vw] h-[70vh] grid grid-cols-2 max-md:grid-cols-1 max-md:gap-2 gap-10 ">
         <section className="m-auto flex flex-cols">
-          <form className="grid grid-rows-4 gap-4 bg-soda-white py-10 px-8 rounded-3xl">
+          <form className="grid grid-rows-4 gap-4 bg-white py-10 px-8 rounded-3xl">
             <h1 className="text-soda-black text-xl font-bold">
               CONTACT FORM <hr className="bg-soda-gray w-full h-0.5" />
             </h1>
@@ -67,6 +58,14 @@ function Contact() {
             </div>
           </form>
         </section>
+        <figure className="">
+          <iframe
+            className="w-full h-full rounded-2xl"
+            loading="lazy"
+            allowFullScreen
+            src="https://www.google.com/maps/embed/v1/place?q=tempe&key=AIzaSyALN2fUL0Wx_CgtyGlXH5hR_s45DZH7rU0"
+          ></iframe>
+        </figure>
       </section>
     </section>
   );
