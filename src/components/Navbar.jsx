@@ -31,7 +31,9 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <RoundedButton name="Join SoDA" />
+        <a href="#join">
+          <RoundedButton name="Join SoDA" />
+        </a>
       </section>
 
       {/*Mobile Navigation*/}
