@@ -2,16 +2,24 @@ import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
+import { FaDiscord } from "react-icons/fa6";
+import { IoLogoFreebsdDevil } from "react-icons/io";
 
 const socialMediaLinks = [
-  { href: "https://www.linkedin.com", icon: <FaLinkedin /> },
-  { href: "https://www.instagram.com", icon: <RiInstagramFill /> },
-  { href: "https://www.facebook.com", icon: <FaFacebookSquare /> },
-  { href: "https://www.github.com", icon: <FaGithub /> },
-  { href: "https://www.twitter.com", icon: <FaSquareXTwitter /> },
-  { href: "https://www.yourwebsite.com", icon: <CgWebsite /> },
+  { href: "https://thesoda.io/", icon: <CgWebsite /> },
+  { href: "https://www.linkedin.com/company/thesoda/", icon: <FaLinkedin /> },
+  { href: "https://www.instagram.com/soda.asu/", icon: <RiInstagramFill /> },
+  {
+    href: "https://discord.gg/the-software-developers-association-762811961238618122",
+    icon: <FaDiscord />,
+  },
+  { href: "https://www.facebook.com/SoDAASU/", icon: <FaFacebookSquare /> },
+  { href: "https://github.com/asusoda", icon: <FaGithub /> },
+  {
+    href: "https://asu.campuslabs.com/engage/organization/soda",
+    icon: <IoLogoFreebsdDevil />,
+  },
 ];
 
 export default function SocialMediaLinks() {
