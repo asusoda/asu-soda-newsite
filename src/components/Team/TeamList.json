@@ -1,6 +1,12 @@
 {
   "advisors": [
     {
+      "name": "Wen Wendt",
+      "role": "Student Organizations Staff Liason",
+      "email": "",
+      "image": "../../../public/logo/soda-logo-blue.png"
+    },
+    {
       "name": "Yoshihiro Kobayashi",
       "role": "Faculty Advisor",
       "email": "ykobaya@asu.edu",
@@ -168,45 +174,57 @@
     ],
     "Marketing": [
       {
-        "name": "Elizabeth Pardhe",
-        "role": "Director, Community Outreach",
-        "email": "epardhe@asu.edu",
+        "name": "Ben Juntilla",
+        "role": "Director, Marketing",
+        "email": "cjuntill@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Aditi Prasath",
-        "role": "Development & Enagement Officer",
-        "email": "aprasath@asu.edu",
+        "name": "Sara Schultz",
+        "role": "Social Media Manager",
+        "email": "sschul19@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Johnnessa Barroquillo",
-        "role": "Development & Enagement Officer",
-        "email": "jbarroqu@asu.edu",
+        "name": "Izma Syed",
+        "role": "Marketing Assistant",
+        "email": "",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Vi Hao Chau",
-        "role": "Development & Enagement Officer",
-        "email": "vchau3@asu.edu",
+        "name": "Divanshu Chauhan",
+        "role": "Ambassador",
+        "email": "divchauhan@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Tyler Tannenbaum",
-        "role": "Development & Enagement Officer",
-        "email": "t.tannenbaum22@gmail.com",
+        "name": "William Bode Hubbard",
+        "role": "Graphic Designer",
+        "email": "wbhubbar@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Zahra Hakimi",
-        "role": "Development & Enagement Officer",
-        "email": "zhakimi1@asu.edu",
+        "name": "Marina Nasralla",
+        "role": "Graphic Designer",
+        "email": "mnasral2@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Harshit Kumar",
-        "role": "Development & Enagement Officer",
-        "email": "hkumar43@asu.edu",
+        "name": "Manav Prajapati",
+        "role": "Photographer",
+        "email": "",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Leon Auster Dsouza",
+        "role": "Photographer",
+        "email": "",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Deej Cabral",
+        "role": "Auxiliary Photographer",
+        "email": "decabral@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       }
     ]
