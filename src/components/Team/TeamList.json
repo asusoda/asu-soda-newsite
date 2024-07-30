@@ -14,7 +14,7 @@
     }
   ],
   "teams": {
-    "leadership": [
+    "Leadership": [
       {
         "name": "Anushka Singh",
         "role": "President",
@@ -40,7 +40,7 @@
         "image": "../../../public/logo/soda-logo-blue.png"
       }
     ],
-    "industry relations": [
+    "Industry Relations": [
       {
         "name": "Nishant Dhongadi",
         "role": "Director, Industry Relations",
@@ -72,55 +72,61 @@
         "image": "../../../public/logo/soda-logo-blue.png"
       }
     ],
-    "technology": [
+    "Technology": [
       {
-        "name": "Ryan Woo",
+        "name": "Tanay Upreti",
         "role": "Director, Technology",
-        "email": "rtwoo@asu.edu",
+        "email": "hackerstark37@gmail.com",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Shubh Khandelwal",
-        "role": "Associate Director, Technology",
-        "email": "skhand15@asu.edu@asu.edu",
+        "name": "Chelsea Lianne Gomez",
+        "role": "Workshop Content Developer",
+        "email": "ctgomez@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Aarya Mathreja",
-        "role": "Technology Officer",
-        "email": "amathrej@asu.edu",
+        "name": "Jackson Ourada",
+        "role": "Workshop Content Developer",
+        "email": "jourada@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Ben Juntilla",
-        "role": "Technology Officer",
-        "email": "cjuntill@asu.edu",
+        "name": "Luan Nguyen",
+        "role": "Project Manager, Internal Tools",
+        "email": "luanthiennguyen2003@gmail.com",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
         "name": "Avery Powers",
-        "role": "Technology Officer",
+        "role": "Software Developer",
         "email": "aapower3@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Tanay Upreti",
-        "role": "Technology Officer",
-        "email": "tupreti@asu.edu",
+        "name": "Aryan Vinod Keluskar",
+        "role": "Software Developer",
+        "email": "akeluska@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Dhanush Vardhan",
-        "role": "Technology Officer",
-        "email": "dkalaise@asu.edu",
+        "name": "Sri Ujjwal Reddy Beereddy",
+        "role": "Special Events Organizer",
+        "email": "sbeeredd@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Darsh Chaurasia",
+        "role": "Special Events Organizer",
+        "email": "darshchaurasia@gmail.com",
         "image": "../../../public/logo/soda-logo-blue.png"
       }
     ],
-    "community outreach": [
+    "Development & Enagement": [
       {
-        "name": "Nandini Singh",
+        "name": "Elizabeth Pardhe",
         "role": "Director, Community Outreach",
-        "email": "nsingh67@asu.edu",
+        "email": "epardhe@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
