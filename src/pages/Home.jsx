@@ -11,7 +11,7 @@ function Home() {
       <SponsorsMarquee />
       <MemberCards />
       <InfoCards />
-      <Contact />
+      {/* <Contact /> */}
     </section>
   );
 }

@@ -14,7 +14,6 @@ import generalmotors from "./logo/generalmotors.png";
 import americanexpress from "./logo/americanexpress.png";
 
 function SponsorsMarquee() {
-  console.log(sponsors);
   const logoMap = {
     amazon,
     statefarm,

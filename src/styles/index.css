@@ -179,7 +179,7 @@ body {
 /* --------- STATS --------- */
 .statistics {
   @apply bg-soda-white max-md:w-screen text-soda-black flex  
-  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap sm:rounded-full z-10;
+  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap sm:rounded-full z-0;
 }
 
 .stat-container {
@@ -196,7 +196,7 @@ body {
 /* --------- HERO --------- */
 
 .hero {
-  @apply mx-[5vw] mt-[14vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh] sm:min-h-[80vh];
+  @apply mx-[5vw] mt-[14vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh];
 }
 
 .hero-container {
@@ -216,7 +216,7 @@ body {
   }
 }
 .nav-container {
-  @apply w-full justify-between hidden sm:flex py-4 px-20;
+  @apply w-full justify-between hidden sm:flex px-20 items-center;
 }
 
 /* --------- HOME --------- */
@@ -236,12 +236,12 @@ footer {
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
-  @apply flex gap-4 text-3xl bg-soda-white rounded-full py-4 px-16 text-soda-black justify-center max-w-80 z-10;
+  @apply flex gap-4 text-3xl bg-soda-white rounded-full py-4 px-16 text-soda-black justify-center max-w-80 z-0;
 }
 
 /* --------- BUTTON --------- */
 .rounded-btn {
-  @apply px-3 py-1 bg-soda-red rounded-full;
+  @apply px-3 py-2 bg-soda-red rounded-full;
 }
 
 .regular-btn {

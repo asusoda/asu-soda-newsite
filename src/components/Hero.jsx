@@ -1,13 +1,13 @@
 import Statistics from "./Stats/Statistics";
 import SocialMediaLinks from "./SocialMediaLinks";
 import EventsPhotoCarousel from "./EventsPhotoCarousel";
-import AnimatedBackGround from "./AnimatedBackGround";
+//import AnimatedBackGround from "./AnimatedBackGround";
 
 function Hero() {
   return (
     <>
-      <section className="hero">
-        <AnimatedBackGround />
+      <main className="hero">
+        {/* <AnimatedBackGround /> */}
         <div className="hero-container z-10">
           <div className="md:w-1/2 flex flex-col items-center justify-between">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight px-6">
@@ -22,7 +22,7 @@ function Hero() {
           </div>
           <EventsPhotoCarousel />
         </div>
-      </section>
+      </main>
     </>
   );
 }

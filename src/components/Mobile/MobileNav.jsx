@@ -4,7 +4,7 @@ import { LiaTimesSolid } from "react-icons/lia";
 
 export default function MobileNav({ setIsOpen, isOpen }) {
   return (
-    <nav className="w-full sm:hidden flex justify-between py-5 px-5">
+    <nav className="w-full sm:hidden flex justify-between py-5 px-5 z-99999">
       <button onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? (
           <LiaTimesSolid className="text-4xl" />
