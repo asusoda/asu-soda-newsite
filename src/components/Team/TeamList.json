@@ -1,146 +1,146 @@
 {
-    "advisors": [
-        {
-            "name": "Yoshihiro Kobayashi",
-            "role": "Faculty Advisor",
-            "email": "ykobaya@asu.edu",
-            "image": "../../../public/logo/soda-logo-blue.png"
-        },
-        {
-            "name": "Neel Madhav",
-            "role": "Student Advisor",
-            "email": "ndogra2@asu.edu",
-            "image": "../../../public/logo/soda-logo-blue.png"
-        }
-    ],
-    "teams": {
-        "leadership": [
-            {
-                "name": "Palak Jain",
-                "role": "President",
-                "email": "pjain89@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Ayush Shejwal",
-                "role": "Vice President, Operations",
-                "email": "ashejwal@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Anushka Singh",
-                "role": "Vice President, Finance",
-                "email": "asing534@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Naman Gandhi",
-                "role": "Treasurer",
-                "email": "ngandh14@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            }
-        ],
-        "industry relations": [
-            {
-                "name": "Nicklaus Lewis",
-                "role": "Director, Industry Relations",
-                "email": "nalewis3@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Nishant Dhongadi",
-                "role": "Assistant Director, Industry Relations",
-                "email": "ndhongad@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Elizabeth Pardhe",
-                "role": "Industry Relations Specialist",
-                "email": "epardhe@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Saharsh Goenka",
-                "role": "Industry Relations Specialist",
-                "email": "sgoenka1@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Apoorv Singh",
-                "role": "Industry Relations Specialist",
-                "email": "asing512@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            }
-        ],
-        "technology": [
-            {
-                "name": "Ryan Woo",
-                "role": "Director, Technology",
-                "email": "rtwoo@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Shubh Khandelwal",
-                "role": "Associate Director, Technology",
-                "email": "skhand15@asu.edu@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Aarya Mathreja",
-                "role": "Technology Officer",
-                "email": "amathrej@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Ben Juntilla",
-                "role": "Technology Officer",
-                "email": "cjuntill@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Avery Powers",
-                "role": "Technology Officer",
-                "email": "aapower3@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Tanay Upreti",
-                "role": "Technology Officer",
-                "email": "tupreti@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Dhanush Vardhan",
-                "role": "Technology Officer",
-                "email": "dkalaise@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            }
-        ],
-        "community outreach": [
-            {
-                "name": "Nandini Singh",
-                "role": "Director, Community Outreach",
-                "email": "nsingh67@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "David Koplik",
-                "role": "Community Outreach Officer",
-                "email": "dkoplik@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Chelsea Lianne Gomez",
-                "role": "Community Outreach Officer",
-                "email": "ctgomez@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            },
-            {
-                "name": "Navya Gangrade",
-                "role": "Community Outreach Officer",
-                "email": "ngangrad@asu.edu",
-                "image": "../../../public/logo/soda-logo-blue.png"
-            }
-        ]
+  "advisors": [
+    {
+      "name": "Yoshihiro Kobayashi",
+      "role": "Faculty Advisor",
+      "email": "ykobaya@asu.edu",
+      "image": "../../../public/logo/soda-logo-blue.png"
+    },
+    {
+      "name": "Neel Madhav",
+      "role": "Student Advisor",
+      "email": "ndogra2@asu.edu",
+      "image": "../../../public/logo/soda-logo-blue.png"
     }
+  ],
+  "teams": {
+    "leadership": [
+      {
+        "name": "Anushka Singh",
+        "role": "President",
+        "email": "asing534@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Ryan Woo",
+        "role": "Vice President, Operations",
+        "email": "rtwoo@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Nicklaus Lewis",
+        "role": "Vice President, Finance",
+        "email": "nicklaus.a.lewis@gmail.com",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Adi Kalyankar",
+        "role": "Treasurer",
+        "email": "ajkalyan@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      }
+    ],
+    "industry relations": [
+      {
+        "name": "Nishant Dhongadi",
+        "role": "Director, Industry Relations",
+        "email": "nishant22bkk@gmail.com",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Prathyush Vasa",
+        "role": "Industry Relations Specialist",
+        "email": "vprathyu@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Elizabeth Pardhe",
+        "role": "Industry Relations Specialist",
+        "email": "epardhe@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Saharsh Goenka",
+        "role": "Industry Relations Specialist",
+        "email": "sgoenka1@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Apoorv Singh",
+        "role": "Industry Relations Specialist",
+        "email": "asing512@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      }
+    ],
+    "technology": [
+      {
+        "name": "Ryan Woo",
+        "role": "Director, Technology",
+        "email": "rtwoo@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Shubh Khandelwal",
+        "role": "Associate Director, Technology",
+        "email": "skhand15@asu.edu@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Aarya Mathreja",
+        "role": "Technology Officer",
+        "email": "amathrej@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Ben Juntilla",
+        "role": "Technology Officer",
+        "email": "cjuntill@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Avery Powers",
+        "role": "Technology Officer",
+        "email": "aapower3@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Tanay Upreti",
+        "role": "Technology Officer",
+        "email": "tupreti@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Dhanush Vardhan",
+        "role": "Technology Officer",
+        "email": "dkalaise@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      }
+    ],
+    "community outreach": [
+      {
+        "name": "Nandini Singh",
+        "role": "Director, Community Outreach",
+        "email": "nsingh67@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "David Koplik",
+        "role": "Community Outreach Officer",
+        "email": "dkoplik@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Chelsea Lianne Gomez",
+        "role": "Community Outreach Officer",
+        "email": "ctgomez@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Navya Gangrade",
+        "role": "Community Outreach Officer",
+        "email": "ngangrad@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      }
+    ]
+  }
 }
