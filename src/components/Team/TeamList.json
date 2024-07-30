@@ -130,21 +130,83 @@
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "David Koplik",
-        "role": "Community Outreach Officer",
-        "email": "dkoplik@asu.edu",
+        "name": "Aditi Prasath",
+        "role": "Development & Enagement Officer",
+        "email": "aprasath@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Chelsea Lianne Gomez",
-        "role": "Community Outreach Officer",
-        "email": "ctgomez@asu.edu",
+        "name": "Johnnessa Barroquillo",
+        "role": "Development & Enagement Officer",
+        "email": "jbarroqu@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       },
       {
-        "name": "Navya Gangrade",
-        "role": "Community Outreach Officer",
-        "email": "ngangrad@asu.edu",
+        "name": "Vi Hao Chau",
+        "role": "Development & Enagement Officer",
+        "email": "vchau3@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Tyler Tannenbaum",
+        "role": "Development & Enagement Officer",
+        "email": "t.tannenbaum22@gmail.com",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Zahra Hakimi",
+        "role": "Development & Enagement Officer",
+        "email": "zhakimi1@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Harshit Kumar",
+        "role": "Development & Enagement Officer",
+        "email": "hkumar43@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      }
+    ],
+    "Marketing": [
+      {
+        "name": "Elizabeth Pardhe",
+        "role": "Director, Community Outreach",
+        "email": "epardhe@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Aditi Prasath",
+        "role": "Development & Enagement Officer",
+        "email": "aprasath@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Johnnessa Barroquillo",
+        "role": "Development & Enagement Officer",
+        "email": "jbarroqu@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Vi Hao Chau",
+        "role": "Development & Enagement Officer",
+        "email": "vchau3@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Tyler Tannenbaum",
+        "role": "Development & Enagement Officer",
+        "email": "t.tannenbaum22@gmail.com",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Zahra Hakimi",
+        "role": "Development & Enagement Officer",
+        "email": "zhakimi1@asu.edu",
+        "image": "../../../public/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Harshit Kumar",
+        "role": "Development & Enagement Officer",
+        "email": "hkumar43@asu.edu",
         "image": "../../../public/logo/soda-logo-blue.png"
       }
     ]
