@@ -1,6 +1,5 @@
 import AllRightsReserved from "../components/AllRightsReserved.jsx";
 import HorizontalLine from "../components/HorizontalLine.jsx";
-import SocialMediaLinks from "./SocialMediaLinks.jsx";
 
 export default function Footer() {
   return (
@@ -13,7 +12,6 @@ export default function Footer() {
               <img src="/logo/soda-logo-white.png" className="w-8" />
               <span className="text-soda-white font-semibold">Thesoda.io</span>
             </div>
-            <SocialMediaLinks />
           </div>
         </section>
 
