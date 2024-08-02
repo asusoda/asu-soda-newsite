@@ -1,8 +1,12 @@
-import PropTypes from "prop-types";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { LiaTimesSolid } from "react-icons/lia";
 
-export default function MobileNav({ setIsOpen, isOpen }) {
+type setIsOpenTypes = {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function MobileNav({ setIsOpen, isOpen }: setIsOpenTypes) {
   return (
     <nav className="w-full sm:hidden flex justify-between py-5 px-5 z-99999">
       <button onClick={() => setIsOpen(!isOpen)}>
@@ -18,8 +22,3 @@ export default function MobileNav({ setIsOpen, isOpen }) {
     </nav>
   );
 }
-
-MobileNav.propTypes = {
-  setIsOpen: PropTypes.func.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-};

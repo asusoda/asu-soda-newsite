@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
 
-function RegularButton({ name }) {
+type RegularButtonTypes = {
+  name: string;
+};
+
+function RegularButton({ name }: RegularButtonTypes) {
   return (
     <button type="button" className="regular-btn">
       <span className="btn-text">{name}</span>
@@ -9,7 +13,3 @@ function RegularButton({ name }) {
 }
 
 export default RegularButton;
-
-RegularButton.propTypes = {
-  name: PropTypes.string.isRequired,
-};

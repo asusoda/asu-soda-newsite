@@ -1,11 +1,33 @@
 import React, { Component } from "react";
 import { Card, Divider, Popup, Image } from "semantic-ui-react";
-
-import contacts from "./TeamList.json";
 import "./TeamCards.css";
 
-class MemberCards extends Component {
-  constructor(props) {
+import contactsData from "./TeamList.json";
+const contacts: Contacts = contactsData as Contacts;
+
+type TeamMember = {
+  name: string;
+  role: string;
+  email: string;
+  image: string;
+};
+
+type Teams = {
+  [team: string]: TeamMember[];
+};
+
+interface Contacts {
+  advisors: TeamMember[];
+  teams: Teams;
+}
+
+// Define the props interface
+interface MemberCardsProps {
+  contacts: Contacts;
+}
+
+class MemberCards extends Component<MemberCardsProps> {
+  constructor(props: MemberCardsProps) {
     super(props);
     this.onGClick = this.onGClick.bind(this);
     this.onIClick = this.onIClick.bind(this);

@@ -1,3 +1,12 @@
+import { ReactNode } from "react";
+
+type ContentItemTypes = {
+  id: number;
+  title: string;
+  content: ReactNode;
+  button: string;
+};
+
 const content = [
   {
     id: 1,

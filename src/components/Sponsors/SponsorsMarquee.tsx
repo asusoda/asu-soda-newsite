@@ -1,9 +1,19 @@
+import sponsors from "./sponsors.json";
+import amazon from "./logo/amazon.png";
+import statefarm from "./logo/statefarm.png";
+import drivetime from "./logo/drivetime.png";
+import deloitte from "./logo/deloitte.png";
+import goldmansachs from "./logo/goldmansachs.png";
+import garmin from "./logo/garmin.png";
+import starbucks from "./logo/starbucks.png";
+import paypal from "./logo/paypal.png";
+import godaddy from "./logo/godaddy.png";
 import axosoft from "./logo/axosoft.png";
 import workiva from "./logo/workiva.png";
 import generalmotors from "./logo/generalmotors.png";
 import americanexpress from "./logo/americanexpress.png";
 
-type SponsorName =
+type SponsorLogo =
   | "amazon"
   | "statefarm"
   | "drivetime"
@@ -18,37 +28,17 @@ type SponsorName =
   | "workiva"
   | "generalmotors";
 
-type Sponsor = {
-  name: SponsorName;
-};
-
-const sponsors: Sponsor[] = [
-  { name: "amazon" },
-  { name: "statefarm" },
-  { name: "drivetime" },
-  { name: "deloitte" },
-  { name: "goldmansachs" },
-  { name: "garmin" },
-  { name: "starbucks" },
-  { name: "paypal" },
-  { name: "godaddy" },
-  { name: "americanexpress" },
-  { name: "axosoft" },
-  { name: "workiva" },
-  { name: "generalmotors" },
-];
-
 function SponsorsMarquee() {
-  const logoMap: Record<SponsorName, string> = {
-    amazon: "./logo/amazon.png",
-    statefarm: "./logo/statefarm.png",
-    drivetime: "./logo/drivetime.png",
-    deloitte: "./logo/deloitte.png",
-    goldmansachs: "./logo/goldmansachs.png",
-    garmin: "./logo/garmin.png",
-    starbucks: "./logo/starbucks.png",
-    paypal: "./logo/paypal.png",
-    godaddy: "./logo/godaddy.png",
+  const logoMap: Record<SponsorLogo, string> = {
+    amazon,
+    statefarm,
+    drivetime,
+    deloitte,
+    goldmansachs,
+    garmin,
+    starbucks,
+    paypal,
+    godaddy,
     americanexpress,
     axosoft,
     workiva,
@@ -65,7 +55,7 @@ function SponsorsMarquee() {
           {sponsors.map((element, index) => (
             <img
               key={index}
-              src={logoMap[element.name]}
+              src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
               className="w-[10vw] object-contain"
             />
@@ -73,7 +63,7 @@ function SponsorsMarquee() {
           {sponsors.map((element, index) => (
             <img
               key={index}
-              src={logoMap[element.name]}
+              src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
               className="w-[12vw] object-contain"
             />
