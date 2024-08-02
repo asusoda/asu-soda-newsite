@@ -4,7 +4,7 @@ import MobileNav from "./Mobile/MobileNav";
 import RoundedButton from "./Button/RoundedButton";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <header className="navigation">
       {/* Primary Navigation - Hidden on mobile */}

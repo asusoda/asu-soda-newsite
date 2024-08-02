@@ -13,8 +13,23 @@ import workiva from "./logo/workiva.png";
 import generalmotors from "./logo/generalmotors.png";
 import americanexpress from "./logo/americanexpress.png";
 
+type SponsorLogo =
+  | "amazon"
+  | "statefarm"
+  | "drivetime"
+  | "deloitte"
+  | "goldmansachs"
+  | "garmin"
+  | "starbucks"
+  | "paypal"
+  | "godaddy"
+  | "americanexpress"
+  | "axosoft"
+  | "workiva"
+  | "generalmotors";
+
 function SponsorsMarquee() {
-  const logoMap = {
+  const logoMap: Record<SponsorLogo, string> = {
     amazon,
     statefarm,
     drivetime,
@@ -29,6 +44,7 @@ function SponsorsMarquee() {
     workiva,
     generalmotors,
   };
+
   return (
     <section id="sponsors">
       <h1 className="text-white font-bold text-2xl md:text-4xl text-center p-5">
@@ -39,7 +55,7 @@ function SponsorsMarquee() {
           {sponsors.map((element, index) => (
             <img
               key={index}
-              src={logoMap[element.name]}
+              src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
               className="w-[10vw] object-contain"
             />
@@ -47,13 +63,12 @@ function SponsorsMarquee() {
           {sponsors.map((element, index) => (
             <img
               key={index}
-              src={logoMap[element.name]}
+              src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
               className="w-[12vw] object-contain"
             />
           ))}
         </div>
-        {/* <div className="animate-marquee2 flex flex-row gap-8"></div> */}
       </section>
     </section>
   );

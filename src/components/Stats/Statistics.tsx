@@ -16,21 +16,21 @@ const statistics = [
     label: "worth of pizza served",
     value: 22500,
     steps: 1000,
-    formatter: (x) => dollarFormatter.format(x),
+    formatter: (x: number) => <>{dollarFormatter.format(x)}</>,
   },
   {
     key: "sponsors",
     label: "Sponsors",
     value: 12,
     steps: 1,
-    formatter: (x) => x,
+    formatter: (x: number) => <>{x}</>,
   },
   {
     key: "teams",
     label: "Committees",
     value: Object.keys(teams).length,
     steps: 1,
-    formatter: (x) => x,
+    formatter: (x: number) => <>{x}</>,
   },
   {
     key: "officers",
@@ -39,14 +39,14 @@ const statistics = [
       return total + team.length;
     }, 0),
     steps: 1,
-    formatter: (x) => x,
+    formatter: (x: number) => <>{x}</>,
   },
   {
     key: "advisors",
     label: "Advisors",
     value: Object.keys(advisors).length,
     steps: 1,
-    formatter: (x) => x,
+    formatter: (x: number) => <>{x}</>,
   },
 ];
 
