@@ -1,12 +1,11 @@
-import placeholder from "../assets/logo-placeholder.png"
-
+import placeholder from "../assets/logo-placeholder.png";
 
 function EventsPhotoCarousel() {
-    return (
-        <div className="max-md:hidden">
-            <img src={placeholder} alt ="place holder" />
-        </div>
-    )
+  return (
+    <div className="max-md:hidden aspect-square">
+      <img src={placeholder} alt="place holder" />
+    </div>
+  );
 }
 
-export default EventsPhotoCarousel
+export default EventsPhotoCarousel;
