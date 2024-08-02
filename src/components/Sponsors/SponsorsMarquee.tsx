@@ -1,34 +1,60 @@
-import sponsors from "./sponsors.json";
-import amazon from "./logo/amazon.png";
-import statefarm from "./logo/statefarm.png";
-import drivetime from "./logo/drivetime.png";
-import deloitte from "./logo/deloitte.png";
-import goldmansachs from "./logo/goldmansachs.png";
-import garmin from "./logo/garmin.png";
-import starbucks from "./logo/starbucks.png";
-import paypal from "./logo/paypal.png";
-import godaddy from "./logo/godaddy.png";
 import axosoft from "./logo/axosoft.png";
 import workiva from "./logo/workiva.png";
 import generalmotors from "./logo/generalmotors.png";
 import americanexpress from "./logo/americanexpress.png";
 
+type SponsorName =
+  | "amazon"
+  | "statefarm"
+  | "drivetime"
+  | "deloitte"
+  | "goldmansachs"
+  | "garmin"
+  | "starbucks"
+  | "paypal"
+  | "godaddy"
+  | "americanexpress"
+  | "axosoft"
+  | "workiva"
+  | "generalmotors";
+
+type Sponsor = {
+  name: SponsorName;
+};
+
+const sponsors: Sponsor[] = [
+  { name: "amazon" },
+  { name: "statefarm" },
+  { name: "drivetime" },
+  { name: "deloitte" },
+  { name: "goldmansachs" },
+  { name: "garmin" },
+  { name: "starbucks" },
+  { name: "paypal" },
+  { name: "godaddy" },
+  { name: "americanexpress" },
+  { name: "axosoft" },
+  { name: "workiva" },
+  { name: "generalmotors" },
+];
+
 function SponsorsMarquee() {
-  const logoMap = {
-    amazon,
-    statefarm,
-    drivetime,
-    deloitte,
-    goldmansachs,
-    garmin,
-    starbucks,
-    paypal,
-    godaddy,
+  const logoMap: Record<SponsorName, string> = {
+    amazon: "./logo/amazon.png",
+    statefarm: "./logo/statefarm.png",
+    drivetime: "./logo/drivetime.png",
+    deloitte: "./logo/deloitte.png",
+    goldmansachs: "./logo/goldmansachs.png",
+    garmin: "./logo/garmin.png",
+    starbucks: "./logo/starbucks.png",
+    paypal: "./logo/paypal.png",
+    godaddy: "./logo/godaddy.png",
     americanexpress,
     axosoft,
     workiva,
     generalmotors,
   };
+
   return (
     <section id="sponsors">
       <h1 className="text-white font-bold text-2xl md:text-4xl text-center p-5">
@@ -53,7 +79,6 @@ function SponsorsMarquee() {
             />
           ))}
         </div>
-        {/* <div className="animate-marquee2 flex flex-row gap-8"></div> */}
       </section>
     </section>
   );

@@ -1,7 +1,10 @@
-import PropTypes from "prop-types";
 import { LiaTimesSolid } from "react-icons/lia";
 
-export default function OpenedMobileNav({ setIsOpen }) {
+type setIsOpenTypes = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
   return (
     <section
       className="fixed inset-0 bg-opacity-50"
@@ -36,7 +39,3 @@ export default function OpenedMobileNav({ setIsOpen }) {
     </section>
   );
 }
-
-OpenedMobileNav.propTypes = {
-  setIsOpen: PropTypes.node.isRequired,
-};

@@ -1,5 +1,5 @@
-import AllRightsReserved from "../components/AllRightsReserved.jsx";
-import HorizontalLine from "../components/HorizontalLine.jsx";
+import AllRightsReserved from "./AllRightsReserved.js";
+import HorizontalLine from "./HorizontalLine.js";
 
 export default function Footer() {
   return (
