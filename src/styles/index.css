@@ -179,7 +179,7 @@ body {
 /* --------- STATS --------- */
 .statistics {
   @apply bg-soda-white max-md:w-screen text-soda-black flex  
-  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap sm:rounded-full z-0;
+  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap md:rounded-[80px] z-0;
 }
 
 .stat-container {
