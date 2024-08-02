@@ -11,7 +11,7 @@ function Navbar() {
       <section className="nav-container">
         <a href="/" className="flex gap-4 items-center">
           <img
-            src="/logo/Soda_Logo_Dark_Mode.svg"
+            src="/logo/Compact_Dark_Mode.svg"
             className="w-20 aspect-square"
           />
         </a>

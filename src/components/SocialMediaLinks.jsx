@@ -31,6 +31,7 @@ export default function SocialMediaLinks() {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
+          className="px-1"
         >
           {link.icon}
         </a>
