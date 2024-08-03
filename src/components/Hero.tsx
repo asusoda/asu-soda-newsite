@@ -7,21 +7,23 @@ function Hero() {
   return (
     <>
       <main className="hero">
-        {/* <AnimatedBackGround /> */}
-        <div className="hero-container z-10">
-          <div className="md:w-1/2 flex flex-col items-center justify-between">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight px-6">
-              The Software Developers Association
+        <section className="hero-container">
+          <summary className="left-hero">
+            <h1 className="hero-large-text">
+              The Software Developers Association (SoDA)
             </h1>
-            <p className="mt-4 text-xl px-6">
-              The premiere software development club for Arizona State
-              University students.
+            <p className="hero-small-text">
+              SoDA is one of the largest communities of students at Arizona
+              State University. We provide opportunities to collaborate on
+              projects outside of the classroom, learn from university and
+              industry professionals, and prepare for a career as a software
+              developer.
             </p>
             <Statistics />
             <SocialMediaLinks />
-          </div>
+          </summary>
           <EventsPhotoCarousel />
-        </div>
+        </section>
       </main>
     </>
   );
