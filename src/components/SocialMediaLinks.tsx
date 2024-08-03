@@ -6,6 +6,8 @@ import { CgWebsite } from "react-icons/cg";
 import { FaDiscord } from "react-icons/fa6";
 import { IoLogoFreebsdDevil } from "react-icons/io";
 
+//Edit any changes to the SoDA URLs here
+//Icons can be found at: https://react-icons.github.io/react-icons/
 const socialMediaLinks = [
   { href: "https://thesoda.io/", icon: <CgWebsite /> },
   { href: "https://www.linkedin.com/company/thesoda/", icon: <FaLinkedin /> },

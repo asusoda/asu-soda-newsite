@@ -59,6 +59,7 @@ body {
 /*
 -- Start BackGround Animation 
 */
+
 .area {
   background: #080909;
   background: -webkit-linear-gradient(to left, #080909, #ca2352);
@@ -203,6 +204,32 @@ body {
   @apply mx-auto flex flex-col md:flex-row items-center justify-between;
 }
 
+.left-hero {
+  @apply md:w-1/2 flex flex-col items-center justify-between;
+}
+
+.hero-large-text {
+  @apply text-4xl md:text-7xl font-bold leading-tight px-6;
+}
+
+.hero-small-text {
+  @apply my-6 text-lg px-6 text-soda-gray;
+}
+
+/* --------- SPONSORS --------- */
+
+.sponsor-header-text {
+  @apply text-white font-bold text-2xl md:text-4xl text-center p-5;
+}
+
+.sponsor-container {
+  @apply flex flex-row overflow-x-hidden bg-white;
+}
+
+.marquee-effect-container {
+  @apply py-8 pl-20 flex flex-row animate-marquee whitespace-nowrap gap-8;
+}
+
 /* --------- NAVIGATION  --------- */
 .navigation {
   @apply w-full fixed z-10 max-md:bg-soda-black;
@@ -236,7 +263,7 @@ footer {
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
-  @apply flex gap-4 text-3xl bg-soda-white rounded-full py-4 px-6 text-soda-black justify-center min-w-40  z-0;
+  @apply flex gap-4 text-3xl bg-soda-white rounded-full py-4 px-4 text-soda-black justify-center z-0;
 }
 
 /* --------- BUTTON --------- */

@@ -1,4 +1,4 @@
-export default function AllRightsReserved() {
+export function AllRightsReserved() {
   return (
     <div className="text-center items-center py-5">
       <p className="text-sm text-soda-gray">

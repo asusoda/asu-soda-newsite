@@ -1,16 +1,18 @@
 import InfoCards from "../components/Info/InfoCards";
 import MemberCards from "../components/Team/TeamCards";
 import Hero from "../components/Hero";
-import SponsorsMarquee from "../components/Sponsors/SponsorsMarquee";
+import SponsorsMarquee from "../components/Sponsors/Sponsors";
+import contactsData from "../components/Team/TeamList.json"; // Adjust the path as necessary
+import { Contacts } from "../components/Team/Contacts";
 
 function Home() {
   return (
-    <section className="home area">
+    <main className="home area">
       <Hero />
       <SponsorsMarquee />
-      <MemberCards />
+      <MemberCards contacts={contactsData as Contacts} />
       <InfoCards />
-    </section>
+    </main>
   );
 }
 

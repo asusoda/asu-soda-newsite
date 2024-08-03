@@ -46,12 +46,10 @@ function SponsorsMarquee() {
   };
 
   return (
-    <section id="sponsors">
-      <h1 className="text-white font-bold text-2xl md:text-4xl text-center p-5">
-        Our Sponsors
-      </h1>
-      <section className="flex flex-row overflow-x-hidden bg-white">
-        <div className="py-8 pl-20 flex flex-row animate-marquee whitespace-nowrap gap-8">
+    <main id="sponsors">
+      <h1 className="sponsor-header-text ">Our Sponsors</h1>
+      <section className="sponsor-container">
+        <div className="marquee-effect-container">
           {sponsors.map((element, index) => (
             <img
               key={index}
@@ -70,7 +68,7 @@ function SponsorsMarquee() {
           ))}
         </div>
       </section>
-    </section>
+    </main>
   );
 }
 
