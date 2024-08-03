@@ -2,6 +2,7 @@ import Statistics from "./Stats/Statistics";
 import SocialMediaLinks from "./SocialMediaLinks";
 import EventsPhotoCarousel from "./EventsPhotoCarousel";
 //import AnimatedBackGround from "./AnimatedBackGround";
+import Typewriter from "typewriter-effect";
 
 function Hero() {
   return (
@@ -10,7 +11,18 @@ function Hero() {
         <section className="hero-container">
           <summary className="left-hero">
             <h1 className="hero-large-text">
-              The Software Developers Association (SoDA)
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString(
+                      " The Software Developers Association at Arizona State University"
+                    )
+                    .changeDelay(5)
+                    .pauseFor(1500)
+                    .changeDelay(5) // Adjust speed for delete effect
+                    .start();
+                }}
+              />
             </h1>
             <p className="hero-small-text">
               SoDA is one of the largest communities of students at Arizona
