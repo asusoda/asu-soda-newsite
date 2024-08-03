@@ -1,7 +1,7 @@
 import InfoCards from "../components/Info/InfoCards";
 import MemberCards from "../components/Team/TeamCards";
 import Hero from "../components/Hero";
-import SponsorsMarquee from "../components/Sponsors/SponsorsMarquee";
+import SponsorsMarquee from "../components/Sponsors/Sponsors";
 import contactsData from "../components/Team/TeamList.json"; // Adjust the path as necessary
 import { Contacts } from "../components/Team/Contacts";
 

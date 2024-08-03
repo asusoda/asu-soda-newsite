@@ -1,5 +1,4 @@
-import AllRightsReserved from "./AllRightsReserved.js";
-import HorizontalLine from "./HorizontalLine.js";
+import HorizontalLine from "./HorizontalLine";
 
 export default function Footer() {
   return (
@@ -67,3 +66,15 @@ const resources = [
     source: "/",
   },
 ];
+
+function AllRightsReserved() {
+  return (
+    <div className="text-center items-center py-5">
+      <p className="text-sm text-soda-gray">
+        © {new Date().getFullYear()} Software Developers Association at ASU.
+        <br />
+        All rights reserved.
+      </p>
+    </div>
+  );
+}
