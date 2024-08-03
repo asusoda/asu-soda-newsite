@@ -17,14 +17,13 @@ function Hero() {
                     .typeString(
                       " The Software Developers Association at Arizona State University"
                     )
-                    .changeDelay(10)
+                    .changeDelay(5)
                     .pauseFor(1500)
-
+                    .changeDelay(5) // Adjust speed for delete effect
                     .start();
                 }}
               />
             </h1>
-
             <p className="hero-small-text">
               SoDA is one of the largest communities of students at Arizona
               State University. We provide opportunities to collaborate on

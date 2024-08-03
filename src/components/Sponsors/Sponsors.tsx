@@ -47,7 +47,7 @@ function SponsorsMarquee() {
 
   return (
     <main id="sponsors">
-      <h1 className="sponsor-header-text ">Our Sponsors</h1>
+      <h1 className="section-header-text">Our Sponsors</h1>
       <section className="sponsor-container">
         <div className="marquee-effect-container">
           {sponsors.map((element, index) => (
