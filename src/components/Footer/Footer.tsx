@@ -1,4 +1,4 @@
-import HorizontalLine from "../HorizontalLine";
+import HorizontalLine from "../ui/HorizontalLine";
 import { LeftFooterGrid } from "./LeftFooterGrid";
 import RightFooterGrid from "./RightFooterGrid";
 import { MiddleFooterGrid } from "./MiddleFooterGrid";
