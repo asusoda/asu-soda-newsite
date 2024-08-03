@@ -63,7 +63,15 @@ function SponsorsMarquee() {
               key={index}
               src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
-              className="w-[12vw] object-contain"
+              className="w-[10vw] object-contain"
+            />
+          ))}
+          {sponsors.map((element, index) => (
+            <img
+              key={index}
+              src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
+              alt={element.name}
+              className="w-[10vw] object-contain"
             />
           ))}
         </div>

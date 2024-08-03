@@ -1,4 +1,4 @@
-import RoundedButton from "../Button/RoundedButton";
+import RoundedButton from "../Button/RiArrowButton";
 
 const navLinks = [
   {

@@ -271,6 +271,10 @@ footer {
   @apply px-3 py-2 bg-soda-red rounded-full;
 }
 
+.right-arrow-btn {
+  @apply flex px-3 py-3  bg-soda-red rounded-full items-center hover:bg-[#c12654] justify-center;
+}
+
 .regular-btn {
   @apply px-3 py-1 bg-soda-red rounded-lg;
 }
