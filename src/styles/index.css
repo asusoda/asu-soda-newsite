@@ -184,7 +184,7 @@ body {
 /* --------- STATS --------- */
 .statistics {
   @apply bg-soda-white max-md:w-screen text-soda-black flex  
-  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap md:rounded-[80px] z-0;
+  flex-row gap-5 py-6 max-lg:px-10 px-8 my-3 justify-center flex-wrap md:rounded-[80px] z-10;
 }
 
 .stat-container {
@@ -235,7 +235,7 @@ body {
 
 /* --------- NAVIGATION  --------- */
 .navigation {
-  @apply w-full fixed z-10 max-md:bg-soda-black;
+  @apply w-full fixed max-md:bg-soda-black z-20;
   @apply sm:glassmorphism-effect;
 }
 
@@ -269,7 +269,7 @@ footer {
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
-  @apply flex gap-4 text-3xl bg-soda-white rounded-full py-4 px-4 text-soda-black justify-center z-0;
+  @apply flex gap-4 text-3xl bg-soda-white rounded-full py-4 px-4 text-soda-black justify-center z-10;
 }
 
 /* --------- BUTTON --------- */

@@ -5,6 +5,8 @@ import SponsorsMarquee from "../components/Sponsors/Sponsors";
 import contactsData from "../components/Team/TeamList.json"; // Adjust the path as necessary
 import { Contacts } from "../components/Team/Contacts";
 import AboutUs from "../components/AboutUs";
+import { ShootingStars } from "../components/ui/shooting-star";
+import { StarsBackground } from "../components/ui/stars-background";
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <SponsorsMarquee />
       <MemberCards contacts={contactsData as Contacts} />
       <InfoCards />
+      <ShootingStars minDelay={1000} maxSpeed={20} />
+      <StarsBackground starDensity={0.00015} />
     </main>
   );
 }
