@@ -24,10 +24,13 @@ const perks = [
 
 export default function AboutUs() {
   return (
-    <main className="flex flex-col  w-[70vw] max-md:w-[95vw] justify-center items-center mx-auto">
+    <main
+      className="flex flex-col  w-[70vw] max-md:w-[95vw] justify-center items-center mx-auto mb-20"
+      id="info"
+    >
       <section className="text-center max-md:text-left">
         <h1 className="section-header-text">About SoDA</h1>
-        <p className="px-24 max-lg:px-4 mx-auto">
+        <p className="hero-small-text px-24 max-lg:px-4 mx-auto">
           The Software Developers Association (SoDA) at Arizona State
           University, is a student run, free organization dedicated to serving
           ASU’s computer science students. SoDA is one of the largest

@@ -7,6 +7,11 @@ const navLinks = [
     cssClass: "nav-text-animation",
   },
   {
+    name: "Events",
+    id_href: "#events",
+    cssClass: "nav-text-animation",
+  },
+  {
     name: "Sponsors",
     id_href: "#sponsors",
     cssClass: "nav-text-animation",

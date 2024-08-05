@@ -23,7 +23,7 @@ const socialMediaLinks = [
   },
   {
     href: "https://discord.gg/the-software-developers-association-762811961238618122",
-    icon: <FaDiscord />,
+    icon: <FaDiscord className="hover:text-soda-red" />,
   },
   {
     href: "https://www.facebook.com/SoDAASU/",

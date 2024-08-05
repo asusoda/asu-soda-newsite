@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,7 +15,7 @@ body {
 }
 
 .nav-text-animation {
-  @apply hover:text-xl transition ease-in-out;
+  @apply hover:text-lg text-base transition ease-in-out;
 }
 
 /*Start Animations*/
@@ -184,14 +188,14 @@ body {
 /* --------- STATS --------- */
 .statistics {
   @apply bg-soda-white max-md:w-screen text-soda-black flex  
-  flex-row gap-5 py-4 px-6 my-3 justify-center flex-wrap md:rounded-[80px] z-10;
+  flex-row gap-4 py-4 px-6 my-2 justify-center flex-wrap md:rounded-[80px] z-10;
 }
 
 .stat-container {
   @apply items-center text-center;
 }
 .stat-value {
-  @apply text-4xl font-extrabold;
+  @apply text-3xl font-extrabold;
 }
 
 .stat-label {
@@ -217,7 +221,7 @@ body {
 }
 
 .hero-small-text {
-  @apply my-6 text-lg px-6 text-soda-gray;
+  @apply my-6 text-sm px-6 text-soda-gray;
 }
 
 /* --------- SPONSORS --------- */
@@ -274,7 +278,7 @@ footer {
 
 /* --------- BUTTON --------- */
 .rounded-btn {
-  @apply px-3 py-2 bg-soda-red rounded-full;
+  @apply px-2 py-1 bg-soda-red rounded-full;
 }
 
 .right-arrow-btn {
@@ -285,5 +289,5 @@ footer {
   @apply px-3 py-1 bg-soda-red rounded-lg;
 }
 .btn-text {
-  @apply font-bold text-soda-white;
+  @apply font-semibold text-soda-white text-[15px];
 }

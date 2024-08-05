@@ -8,7 +8,7 @@ function RiArrowButton({ name }: RoundedButtonTypes) {
   return (
     <button type="button" className="right-arrow-btn">
       <span className="btn-text">{name}</span>
-      <RiArrowRightSLine className="text-3xl text-white" />
+      <RiArrowRightSLine className="text-2xl text-white" />
     </button>
   );
 }

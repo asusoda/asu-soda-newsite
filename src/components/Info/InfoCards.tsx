@@ -6,9 +6,9 @@ import "./InfoCards.css";
 class InfoCards extends Component {
   render() {
     return (
-      <div className="infocards" id="info">
+      <div className="infocards" id="events">
         <Divider horizontal id="title">
-          Info
+          Our Events
         </Divider>
         <br />
 
