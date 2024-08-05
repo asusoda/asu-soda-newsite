@@ -7,11 +7,6 @@ const navLinks = [
     cssClass: "nav-text-animation",
   },
   {
-    name: "Events",
-    id_href: "#events",
-    cssClass: "nav-text-animation",
-  },
-  {
     name: "Sponsors",
     id_href: "#sponsors",
     cssClass: "nav-text-animation",
@@ -21,6 +16,11 @@ const navLinks = [
     id_href: "#team",
     cssClass: "nav-text-animation",
   },
+  {
+    name: "Events",
+    id_href: "#events",
+    cssClass: "nav-text-animation",
+  }
 ];
 
 export default function DesktopNav() {

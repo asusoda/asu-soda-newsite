@@ -28,11 +28,14 @@ export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
           <a href="#info" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Info</h1>
           </a>
-          <a href="/" onClick={() => setIsOpen(false)}>
+          <a href="#sponsors" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Sponsors</h1>
           </a>
           <a href="#team" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Team</h1>
+          </a>
+          <a href="#events" onClick={() => setIsOpen(false)}>
+            <h1 className="text-[20px]">Events</h1>
           </a>
         </div>
       </div>
