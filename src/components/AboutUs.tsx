@@ -40,11 +40,14 @@ export default function AboutUs() {
 
       <section className="grid grid-cols-3 max-lg:grid-cols-1 my-10 max-md:gap-4 gap-14">
         {perks.map((perk) => (
-          <div className="bg-white w-[400px] rounded-2xl flex flex-col">
-            <img src={perk.imgURL} className="w-[100%] h-[50%] rounded-t-xl" />
-            <div className="text-soda-black px-5 py-4 text-left">
+          <div className="bg-white rounded-2xl flex flex-col min-h-[300px]">
+            <img
+              src={perk.imgURL}
+              className="rounded-t-xl object-cover w-full h-48"
+            />
+            <div className="text-soda-black px-5 py-4 text-left flex-1">
               <h4 className="font-semibold text-2xl">{perk.header}</h4>
-              <hr className="border-soda-gray opacity-75 my-2 w-[60%]"></hr>
+              <hr className="border-soda-gray opacity-75 my-2 w-[60%]" />
               <p className="text-[16px] max-md:text-sm">{perk.description}</p>
             </div>
           </div>

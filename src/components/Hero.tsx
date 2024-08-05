@@ -14,9 +14,7 @@ function Hero() {
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString(
-                      " The Software Developers Association at Arizona State University"
-                    )
+                    .typeString("The Software Developers Association")
                     .changeDelay(5)
                     .pauseFor(1500)
                     .changeDelay(5) // Adjust speed for delete effect
