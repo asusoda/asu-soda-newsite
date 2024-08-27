@@ -65,7 +65,8 @@ export default function Statistics() {
           <Statistic.Label className="stat-label">{label}</Statistic.Label>
         </Statistic>
       ))}
-      <RoundedButton name="Learn More" />
+
+      <RoundedButton name="Learn More"></RoundedButton>
     </div>
   );
 }

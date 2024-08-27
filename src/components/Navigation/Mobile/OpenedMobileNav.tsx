@@ -14,13 +14,12 @@ export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
         className="absolute left-0 top-0 h-full w-3/4 bg-soda-red flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between">
-          <img src="/logo/soda-logo-white.png" className="w-10 m-5"></img>
+        <div className="flex justify-end">
           <button onClick={() => setIsOpen(false)}>
             <LiaTimesSolid className="text-4xl m-5" />
           </button>
         </div>
-        <hr className="w-[90%] mx-auto bg-soda-gray"></hr>
+        <hr className="w-full mx-auto bg-soda-gray"></hr>
         <div className="flex flex-col gap-5 p-5">
           <a href="#hero" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Home</h1>
