@@ -1,9 +1,12 @@
 {
+  "homepage": "https://asu-soda.github.io/asu-soda-newsite/",
   "name": "asu-soda-newsite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -15,6 +18,7 @@
     "@tsparticles/react": "^3.0.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
+    "gh-pages": "^6.1.1",
     "i": "^0.3.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
