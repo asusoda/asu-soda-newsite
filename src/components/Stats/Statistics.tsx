@@ -66,7 +66,10 @@ export default function Statistics() {
         </Statistic>
       ))}
 
-      <RoundedButton name="Learn More"></RoundedButton>
+      <RoundedButton
+        name="Learn More"
+        url="https://asu.campuslabs.com/engage/organization/soda"
+      ></RoundedButton>
     </div>
   );
 }
