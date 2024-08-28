@@ -38,7 +38,7 @@ export default function DesktopNav() {
           </li>
         ))}
       </ul>
-      <a href="#join">
+      <a href="https://forms.gle/8XdJKCBX9kXP6ge3A">
         <RoundedButton name="Join SoDA" />
       </a>
     </section>
