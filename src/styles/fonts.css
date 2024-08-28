@@ -17,54 +17,54 @@
 */
 @font-face {
   font-family: "Array-Wide";
-  src: url("../fonts/array/Array-Wide.woff2") format("woff2"),
-    url("../fonts/array/Array-Wide.woff") format("woff"),
-    url("../fonts/array/Array-Wide.ttf") format("truetype");
+  src: url("../../fonts/array/Array-Wide.woff2") format("woff2"),
+    url("../../fonts/array/Array-Wide.woff") format("woff"),
+    url("../../fonts/array/Array-Wide.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Array-Regular";
-  src: url("../fonts/array/Array-Regular.woff2") format("woff2"),
-    url("../fonts/array/Array-Regular.woff") format("woff"),
-    url("../fonts/array/Array-Regular.ttf") format("truetype");
+  src: url("../../fonts/array/Array-Regular.woff2") format("woff2"),
+    url("../../fonts/array/Array-Regular.woff") format("woff"),
+    url("../../fonts/array/Array-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Array-Semibold";
-  src: url("../fonts/array/Array-Semibold.woff2") format("woff2"),
-    url("../fonts/array/Array-Semibold.woff") format("woff"),
-    url("../fonts/array/Array-Semibold.ttf") format("truetype");
+  src: url("../../fonts/array/Array-Semibold.woff2") format("woff2"),
+    url("../../fonts/array/Array-Semibold.woff") format("woff"),
+    url("../../fonts/array/Array-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Array-SemiboldWide";
-  src: url("../fonts/array/Array-SemiboldWide.woff2") format("woff2"),
-    url("../fonts/array/Array-SemiboldWide.woff") format("woff"),
-    url("../fonts/array/Array-SemiboldWide.ttf") format("truetype");
+  src: url("../../fonts/array/Array-SemiboldWide.woff2") format("woff2"),
+    url("../../fonts/array/Array-SemiboldWide.woff") format("woff"),
+    url("../../fonts/array/Array-SemiboldWide.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Array-Bold";
-  src: url("../fonts/Array-Bold.woff2") format("woff2"),
-    url("../fonts/Array-Bold.woff") format("woff"),
-    url("../fonts/Array-Bold.ttf") format("truetype");
+  src: url("../../fonts/Array-Bold.woff2") format("woff2"),
+    url("../../fonts/Array-Bold.woff") format("woff"),
+    url("../../fonts/Array-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Array-BoldWide";
-  src: url("../fonts/array/Array-BoldWide.woff2") format("woff2"),
-    url("../fonts/array/Array-BoldWide.woff") format("woff"),
-    url("../fonts/array/Array-BoldWide.ttf") format("truetype");
+  src: url("../../fonts/array/Array-BoldWide.woff2") format("woff2"),
+    url("../../fonts/array/Array-BoldWide.woff") format("woff"),
+    url("../../fonts/array/Array-BoldWide.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -74,18 +74,18 @@
 
 @font-face {
   font-family: "Apfel-Brukt";
-  src: url("../fonts/apfel/ApfelGrotezk-Brukt.woff2") format("woff2"),
-    url("../fonts/apfel/ApfelGrotezk-Brukt.woff") format("woff");
+  src: url("../../fonts/apfel/ApfelGrotezk-Brukt.woff2") format("woff2"),
+    url("../../fonts/apfel/ApfelGrotezk-Brukt.woff") format("woff");
 }
 
 @font-face {
   font-family: "Apfel-Fett";
-  src: url("../fonts/apfel/ApfelGrotezk-Fett.woff2") format("woff2"),
-    url("../fonts/apfel/ApfelGrotezk-Fett.woff") format("woff");
+  src: url("../../fonts/apfel/ApfelGrotezk-Fett.woff2") format("woff2"),
+    url("../../fonts/apfel/ApfelGrotezk-Fett.woff") format("woff");
 }
 
 @font-face {
   font-family: "Apfel-Regular";
-  src: url("../fonts/apfel/ApfelGrotezk-Regular.woff2") format("woff2"),
-    url("../fonts/apfel/ApfelGrotezk-Regular.woff") format("woff");
+  src: url("../../fonts/apfel/ApfelGrotezk-Regular.woff2") format("woff2"),
+    url("../../fonts/apfel/ApfelGrotezk-Regular.woff") format("woff");
 }
