@@ -4,4 +4,4 @@ PORT=3000
 BUILD_DIR="/root/asu-soda-newsite/dist" 
 
 
-usr/local/bin/serve -s "$BUILD_DIR" -l "$PORT" &
+/usr/local/bin/serve -s "$BUILD_DIR" -l "$PORT" &
