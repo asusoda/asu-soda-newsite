@@ -1,7 +1,5 @@
 #!/bin/bash
-REPO_DIR="/root/asu-soda-newsite"
-PORT=3000  
-BUILD_DIR="/root/asu-soda-newsite/dist" 
 
 
-/usr/local/bin/serve -s "$BUILD_DIR" -l "$PORT" &
+
+/usr/local/bin/serve -s /root/asu-soda-newsite/dist -l 3000
