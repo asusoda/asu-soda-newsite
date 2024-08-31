@@ -7,7 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
+    - name: Print VPS details
+      run: |
+        echo "VPS Host: ${{ secrets.HOST }}"
+        echo "VPS Username: ${{ secrets.USERNAME }}"
+        echo "VPS Port: ${{ secrets.PORT }}"
+
     - name: Executing remote deployment script
       uses: appleboy/ssh-action@master
       with:
@@ -16,4 +21,7 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
+          echo "Deploying to host: ${{ secrets.HOST }}"
+          echo "Using username: ${{ secrets.USERNAME }}"
+          echo "Connecting via port: ${{ secrets.PORT }}"
           sudo /root/asu-soda-newsite/CD.sh
