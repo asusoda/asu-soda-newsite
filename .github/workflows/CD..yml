@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2  # Ensures the code is checked out from the repository
-
     - name: Print VPS details
       env:
         VPS_HOST: ${{ secrets.HOST }}
