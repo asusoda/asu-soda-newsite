@@ -17,7 +17,7 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         script: |
           sudo chmod +x /root/asu-soda-newsite/CD.sh
-          sudo chmod +x /root/asu-soda-new site/deploy.sh
+          sudo chmod +x /root/asu-soda-newsite/deploy.sh
           ls -l /root/asu-soda-newsite/
           pwd
           echo " Executing CD.sh"
