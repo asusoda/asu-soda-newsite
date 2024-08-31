@@ -16,8 +16,10 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
+          chmod +x /root/asu-soda-newsite/CD.sh
           ls -l /root/asu-soda-newsite/
           pwd
+          echo " Executing CD.sh"
           sudo /root/asu-soda-newsite/CD.sh
 
     
