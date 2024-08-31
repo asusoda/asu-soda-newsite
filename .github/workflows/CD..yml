@@ -7,11 +7,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Ensures the code is checked out from the repository
+
     - name: Print VPS details
+      env:
+        VPS_HOST: ${{ secrets.HOST }}
+        VPS_USERNAME: ${{ secrets.USERNAME }}
+        VPS_PORT: ${{ secrets.PORT }}
       run: |
-        echo "VPS Host: ${{ secrets.HOST }}"
-        echo "VPS Username: ${{ secrets.USERNAME }}"
-        echo "VPS Port: ${{ secrets.PORT }}"
+        echo "VPS Host: $VPS_HOST"
+        echo "VPS Username: $VPS_USERNAME"
+        echo "VPS Port: $VPS_PORT"
 
     - name: Executing remote deployment script
       uses: appleboy/ssh-action@master
