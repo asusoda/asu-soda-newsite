@@ -5,28 +5,17 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: CI/CD  # Specify the environment here
-    
+    environment: CI/CD  # Specify the environment if using GitHub Environments
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v1
-
-    - name: Copy repository contents via SCP
-      uses: appleboy/scp-action@master
-      env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
-      with:
-        source: "."
-        target: "/var/www/mywebsite"  # Update target as necessary
-
-    - name: Executing remote command
+    - name: Execute remote deployment script
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
-        script: sudo /root/asu-soda-newsite/CD.sh
+        script: |
+          sudo /root/asu-soda-newsite/CD.sh
+
+    
