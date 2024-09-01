@@ -30,7 +30,6 @@
   font-family: "Apfel-Fett";
   font-size: 2.2em;
   text-align: center;
-
   border-bottom: 1px solid #fff;
   width: 80%;
   margin: auto;
@@ -161,4 +160,74 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .team #cards .Card {
+    height: 250px; /* Reduced height for smaller screens */
+    width: 250px; /* Reduced width for smaller screens */
+  }
+
+  .card-header {
+    font-size: 1.4em; /* Smaller header font size */
+  }
+
+  .card-meta {
+    font-size: 0.9em; /* Smaller meta text size */
+  }
+
+  .card-content {
+    padding: 12px; /* Reduced padding */
+  }
+
+  .team #title {
+    font-size: 1.8em; /* Smaller title font size */
+    padding: 5vw; /* Adjusted padding */
+  }
+
+  .subteam-divider {
+    font-size: 1.8em; /* Smaller subteam divider font size */
+  }
+
+  .card-image-wrapper {
+    margin-top: 8px; /* Reduced top margin */
+  }
+
+  .card-image {
+    width: 80px; /* Smaller image width */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .team #cards .Card {
+    height: 200px; /* Further reduced height for very small screens */
+    width: 200px; /* Further reduced width */
+  }
+
+  .card-header {
+    font-size: 1.2em; /* Even smaller header font size */
+  }
+
+  .card-meta {
+    font-size: 0.8em; /* Smaller meta text size */
+  }
+
+  .card-content {
+    padding: 10px; /* Further reduced padding */
+  }
+
+  .team #title {
+    font-size: 1.6em; /* Smaller title font size */
+    padding: 3vw; /* Further adjusted padding */
+  }
+
+  .subteam-divider {
+    font-size: 1.6em; /* Even smaller subteam divider font size */
+  }
+
+  .card-image {
+    width: 60px; /* Even smaller image width */
+  }
 }

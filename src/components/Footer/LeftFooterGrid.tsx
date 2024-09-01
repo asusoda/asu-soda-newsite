@@ -6,7 +6,7 @@ export function LeftFooterGrid() {
       <div className="flex flex-col max-md:flex-row justify-between h-full">
         <div className="flex gap-4 items-center max-sm:flex-row max-sm:items-center max-sm:hidden">
           <img src="/logo/soda-logo-white.png" className="w-6" />
-          <span className="text-soda-gray">THESODA.IO - Since 2008</span>
+          <span className="text-soda-gray italic">Since 2008</span>
         </div>
       </div>
     </section>
