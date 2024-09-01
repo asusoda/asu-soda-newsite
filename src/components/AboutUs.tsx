@@ -43,7 +43,7 @@ export default function AboutUs() {
 
       <section className="grid grid-cols-3 max-lg:grid-cols-1 my-10 max-md:gap-4 gap-14">
         {perks.map((perk) => (
-          <div className="bg-white rounded-2xl flex flex-col min-h-[300px]">
+          <div className="bg-white rounded-2xl flex flex-col min-h-[300px] max-w-[300px]">
             <img
               src={perk.imgURL}
               className="rounded-t-xl object-cover w-full h-48"
