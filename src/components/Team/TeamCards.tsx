@@ -24,14 +24,14 @@ class MemberCards extends Component<MemberCardsProps> {
 
     return (
       <div className="team" id="team">
-        <Divider horizontal id="title">
+        {/* <Divider horizontal id="title">
           Team
         </Divider>
         <br />
         <div id="content" className="">
           SoDA is here to help you. Please feel free to reach out to any of us,
           we want to help and would be happy to answer any questions you have!
-        </div>
+        </div> */}
 
         {Object.keys(teams).map((team, i) => (
           <React.Fragment key={i}>

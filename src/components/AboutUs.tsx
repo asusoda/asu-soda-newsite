@@ -30,7 +30,7 @@ export default function AboutUs() {
     >
       <section className="text-center max-md:text-left">
         <h1 className="section-header-text">About SoDA</h1>
-        <p className="hero-small-text px-24 max-lg:px-4 mx-auto">
+        <p className="hero-small-text px-24 max-lg:px-4 mx-auto max-md:hidden">
           The Software Developers Association (SoDA) at Arizona State
           University, is a student run, free organization dedicated to serving
           ASU’s computer science students. SoDA is one of the largest
@@ -38,6 +38,13 @@ export default function AboutUs() {
           organization. We provide opportunities to collaborate on projects
           outside of the classroom, learn from university and industry
           professionals, and prepare for a career as a software developer.
+        </p>
+        <p className="hero-small-text px-24 max-lg:px-4 mx-auto sm:hidden">
+          SoDA is one of the largest communities of students on campus, and is
+          the largest engineering organization. We provide opportunities to
+          collaborate on projects outside of the classroom, learn from
+          university and industry professionals, and prepare for a career as a
+          software developer.
         </p>
       </section>
 

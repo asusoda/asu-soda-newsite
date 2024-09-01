@@ -22,7 +22,7 @@ function Hero() {
                 }}
               />
             </h1>
-            <p className="hero-small-text">
+            <p className="hero-small-text max-md:hidden">
               SoDA is one of the largest communities of students at Arizona
               State University. We provide opportunities to collaborate on
               projects outside of the classroom, learn from university and
