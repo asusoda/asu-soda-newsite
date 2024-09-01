@@ -239,8 +239,7 @@ body {
 
 /* --------- NAVIGATION  --------- */
 .navigation {
-  @apply w-full fixed max-md:bg-soda-black z-20;
-  @apply sm:glassmorphism-effect;
+  @apply w-full fixed bg-soda-black z-20 py-2;
 }
 
 @layer utilities {
