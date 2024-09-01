@@ -16,8 +16,8 @@ function Home() {
       <SponsorsMarquee />
       <MemberCards contacts={contactsData as Contacts} />
       <InfoCards />
-      <ShootingStars minDelay={1000} maxSpeed={20} starWidth={20} />
-      <StarsBackground starDensity={0.0003} />
+      {/* <ShootingStars minDelay={1000} maxSpeed={20} starWidth={20} />
+      <StarsBackground starDensity={0.0003} /> */}
     </main>
   );
 }

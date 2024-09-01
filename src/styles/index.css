@@ -205,11 +205,11 @@ body {
 /* --------- HERO --------- */
 
 .hero {
-  @apply mx-[5vw] mt-[14vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh];
+  @apply mx-[3vw] mt-[16vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh];
 }
 
 .hero-container {
-  @apply mx-auto flex flex-col md:flex-row items-center justify-between;
+  @apply mx-auto ml-10 flex flex-col md:flex-row items-center justify-between;
 }
 
 .left-hero {
@@ -239,7 +239,7 @@ body {
 
 /* --------- NAVIGATION  --------- */
 .navigation {
-  @apply w-full fixed bg-soda-black z-20 py-2;
+  @apply w-full fixed bg-soda-black z-20 py-1;
 }
 
 @layer utilities {
