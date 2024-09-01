@@ -205,11 +205,11 @@ body {
 /* --------- HERO --------- */
 
 .hero {
-  @apply mx-[3vw] mt-[16vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh];
+  @apply mx-[3vw] mt-[16vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh] h-full;
 }
 
 .hero-container {
-  @apply mx-auto flex flex-col md:flex-row items-center justify-between;
+  @apply mx-auto sm:ml-16 flex flex-col md:flex-row items-center justify-between;
 }
 
 .left-hero {
@@ -234,12 +234,12 @@ body {
 }
 
 .marquee-effect-container {
-  @apply py-4 pl-20 flex flex-row animate-marquee whitespace-nowrap gap-8;
+  @apply py-6  max-md:px-4 pl-20 flex flex-row animate-marquee whitespace-nowrap gap-8;
 }
 
 /* --------- NAVIGATION  --------- */
 .navigation {
-  @apply w-full fixed bg-soda-black z-20 py-1;
+  @apply w-full fixed bg-soda-black z-20 max-md:py-0 py-1;
 }
 
 @layer utilities {
