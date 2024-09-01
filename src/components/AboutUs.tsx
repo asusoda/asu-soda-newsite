@@ -25,7 +25,7 @@ const perks = [
 export default function AboutUs() {
   return (
     <main
-      className="flex flex-col  w-[70vw] max-md:w-[95vw] justify-center items-center mx-auto mb-20"
+      className="flex flex-col  w-[70vw] max-md:w-[95vw] justify-center items-center mx-auto mb-20 max-md:mb-5"
       id="info"
     >
       <section className="text-center max-md:text-left">
