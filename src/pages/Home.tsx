@@ -7,11 +7,13 @@ import { Contacts } from "../components/Team/Contacts";
 import AboutUs from "../components/AboutUs";
 import { ShootingStars } from "../components/ui/shooting-star";
 import { StarsBackground } from "../components/ui/stars-background";
+import Blog from "../components/Blog";
 
 function Home() {
   return (
     <main className="home area">
       <Hero />
+      <Blog />
       <AboutUs />
       <SponsorsMarquee />
       <MemberCards contacts={contactsData as Contacts} />
