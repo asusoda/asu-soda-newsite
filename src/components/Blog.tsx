@@ -1,5 +1,6 @@
 import React from "react";
+import Markdown from "markdown-to-jsx";
 
 export default function Blog() {
-  return <div>Blog</div>;
+  return <Markdown>Hello</Markdown>;
 }
