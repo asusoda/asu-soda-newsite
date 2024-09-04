@@ -56,7 +56,7 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
 export default function Blog() {
   return (
     <main className="mt-10">
-      <h1 className="section-header-text mb-6">SoDA Developers News</h1>
+      <h1 className="section-header-text mb-6">SoDA Programs</h1>
       <section className="flex max-md:flex-col gap-8 items-center justify-center">
         <IndividualBlog
           imageURL="/events/microsoft.JPG"

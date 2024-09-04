@@ -16,9 +16,9 @@ function Home() {
       <StarsBackground starDensity={0.0009} /> */}
       <Hero />
       <AboutUs />
+      <Blog />
       <SponsorsMarquee />
       <MemberCards contacts={contactsData as Contacts} />
-      <Blog />
       <InfoCards />
     </main>
   );
