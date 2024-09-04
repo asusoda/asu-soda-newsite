@@ -12,14 +12,14 @@ import Blog from "../components/Blog";
 function Home() {
   return (
     <main className="home area">
+      {/* <ShootingStars minDelay={1000} maxSpeed={20} starWidth={40} />
+      <StarsBackground starDensity={0.0009} /> */}
       <Hero />
       <AboutUs />
       <SponsorsMarquee />
       <MemberCards contacts={contactsData as Contacts} />
       <Blog />
       <InfoCards />
-      {/* <ShootingStars minDelay={1000} maxSpeed={20} starWidth={40} />
-      <StarsBackground starDensity={0.0009} /> */}
     </main>
   );
 }
