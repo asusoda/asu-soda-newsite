@@ -70,7 +70,7 @@ export default function Blog() {
           tag={["mentorship", "community development"]}
           title="Points System 📊"
           summary="SoDA introduced points system designed to encourage active participation in our community. By attending meetings, events, and engaging in various activities, members can earn points that contribute to their standing within the organization."
-          link="/points-system"
+          link="/distinguishedMembers"
         />
       </section>
     </main>
