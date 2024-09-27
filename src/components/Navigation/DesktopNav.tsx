@@ -18,7 +18,7 @@ const navLinks = [
   },
   {
     name: "Events",
-    id_href: "#events",
+    id_href: "https://asu.campuslabs.com/engage/organization/soda/events",
     cssClass: "nav-text-animation",
   }
 ];
@@ -32,7 +32,11 @@ export default function DesktopNav() {
       <ul className="flex gap-14 items-center text-soda-white font-bold">
         {navLinks.map((el) => (
           <li>
-            <a href={el.id_href} className={`${el.cssClass}`}>
+            <a
+              href={el.id_href}
+              className={`${el.cssClass}`}
+              target={el.id_href.startsWith("https://") ? "_blank" : "_self"}
+            >
               {el.name}
             </a>
           </li>
