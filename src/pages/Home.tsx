@@ -21,8 +21,6 @@ function Home() {
       <MemberCards contacts={contactsData as Contacts} />
       {/* disabled due to lack of Notion/SDS event sync */}
       {/* <InfoCards />  */}
-      <ShootingStars minDelay={1000} maxSpeed={20} starWidth={20} />
-      <StarsBackground starDensity={0.0003} />
     </main>
   );
 }
