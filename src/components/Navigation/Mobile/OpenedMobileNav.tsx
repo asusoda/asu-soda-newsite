@@ -36,6 +36,9 @@ export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
           <a href="https://asu.campuslabs.com/engage/organization/soda/events" target="_blank" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Events</h1>
           </a>
+          <a href="https://hack.thesoda.io" onClick={() => setIsOpen(false)}>
+            <h1 className="text-[20px]">HackSoDA24</h1>
+          </a>
         </div>
       </div>
     </section>

@@ -20,6 +20,11 @@ const navLinks = [
     name: "Events",
     id_href: "https://asu.campuslabs.com/engage/organization/soda/events",
     cssClass: "nav-text-animation",
+  },
+ {
+    name: "HackSoDA24",
+    id_href: "https://hack.thesoda.io",
+    cssClass: "nav-text-animation",
   }
 ];
 
