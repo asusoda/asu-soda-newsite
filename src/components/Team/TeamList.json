@@ -28,12 +28,6 @@
         "image": "/headshots/ryan.JPG"
       },
       {
-        "name": "Nicklaus Lewis",
-        "role": "Vice President, Finance",
-        "email": "nalewis3@asu.edu",
-        "image": "/logo/soda-logo-blue.png"
-      },
-      {
         "name": "Adi Kalyankar",
         "role": "Treasurer",
         "email": "ajkalyan@asu.edu",
@@ -84,12 +78,6 @@
         "role": "Workshop Content Developer",
         "email": "jourada@asu.edu",
         "image": "/logo/soda-logo-blue.png"
-      },
-      {
-        "name": "Luan Nguyen",
-        "role": "Project Manager, Internal Tools",
-        "email": "ltnguy58@asu.edu",
-        "image": "/headshots/luan.JPG"
       },
       {
         "name": "Avery Powers",
@@ -145,13 +133,7 @@
         "name": "Tyler Tannenbaum",
         "role": "Development & Enagement Officer",
         "email": "tntannen@asu.edu",
-        "image": "/headshots/tyler.jpg"
-      },
-      {
-        "name": "Zahra Hakimi",
-        "role": "Development & Enagement Officer",
-        "email": "zhakimi1@asu.edu",
-        "image": "/logo/soda-logo-blue.png"
+        "image": "/headshots/tyler.JPG"
       },
       {
         "name": "Harshit Kumar",
