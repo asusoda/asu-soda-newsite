@@ -21,7 +21,7 @@ const navLinks = [
     id_href: "https://asu.campuslabs.com/engage/organization/soda/events",
     cssClass: "nav-text-animation",
   },
- {
+  {
     name: "HackSoDA24",
     id_href: "https://hack.thesoda.io",
     cssClass: "nav-text-animation",
@@ -29,6 +29,17 @@ const navLinks = [
 ];
 
 export default function DesktopNav() {
+
+  const handleNavigation = (href) => {
+    if (href.startsWith("#")) {
+      // Redirect to root and append the hash section
+      window.location.href = `/${href}`;
+    } else {
+      // For external links, open them in a new tab
+      window.open(href, "_blank");
+    }
+  };
+
   return (
     <section className="nav-container">
       <a href="/" className="flex gap-4 items-center">
@@ -36,11 +47,13 @@ export default function DesktopNav() {
       </a>
       <ul className="flex gap-14 items-center text-soda-white font-bold">
         {navLinks.map((el) => (
-          <li>
+          <li key={el.name}>
             <a
-              href={el.id_href}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavigation(el.id_href);
+              }}
               className={`${el.cssClass}`}
-              target={el.id_href.startsWith("https://") ? "_blank" : "_self"}
             >
               {el.name}
             </a>

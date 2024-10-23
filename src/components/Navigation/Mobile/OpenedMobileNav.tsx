@@ -5,6 +5,16 @@ type setIsOpenTypes = {
 };
 
 export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
+
+  const handleNavigation = (href) => {
+    if (href.startsWith("#")) {
+      window.location.href = `/${href}`;
+    } else {
+      window.open(href, "_blank");
+    }
+    setIsOpen(false);
+  };
+
   return (
     <section
       className="fixed inset-0 bg-opacity-50"
@@ -21,22 +31,56 @@ export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
         </div>
         <hr className="w-full mx-auto bg-soda-gray"></hr>
         <div className="flex flex-col gap-5 p-5">
-          <a href="#hero" onClick={() => setIsOpen(false)}>
+          <a
+            href="#hero"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavigation("#hero");
+            }}
+          >
             <h1 className="text-[20px]">Home</h1>
           </a>
-          <a href="#info" onClick={() => setIsOpen(false)}>
+          <a
+            href="#info"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavigation("#info");
+            }}
+          >
             <h1 className="text-[20px]">Info</h1>
           </a>
-          <a href="#sponsors" onClick={() => setIsOpen(false)}>
+          <a
+            href="#sponsors"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavigation("#sponsors");
+            }}
+          >
             <h1 className="text-[20px]">Sponsors</h1>
           </a>
-          <a href="#team" onClick={() => setIsOpen(false)}>
+          <a
+            href="#team"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavigation("#team");
+            }}
+          >
             <h1 className="text-[20px]">Team</h1>
           </a>
-          <a href="https://asu.campuslabs.com/engage/organization/soda/events" target="_blank" onClick={() => setIsOpen(false)}>
+          <a
+            href="https://asu.campuslabs.com/engage/organization/soda/events"
+            target="_blank"
+            onClick={() => setIsOpen(false)}
+          >
             <h1 className="text-[20px]">Events</h1>
           </a>
-          <a href="https://hack.thesoda.io" onClick={() => setIsOpen(false)}>
+          <a
+            href="https://hack.thesoda.io"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavigation("https://hack.thesoda.io");
+            }}
+          >
             <h1 className="text-[20px]">HackSoDA24</h1>
           </a>
         </div>
