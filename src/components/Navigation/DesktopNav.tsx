@@ -47,8 +47,8 @@ export default function DesktopNav() {
           </li>
         ))}
       </ul>
-      <a href="https://forms.gle/8XdJKCBX9kXP6ge3A">
-        <RoundedButton name="Join SoDA" url="https://forms.gle/8XdJKCBX9kXP6ge3A"/>
+      <a href="https://asu.campuslabs.com/engage/organization/soda">
+        <RoundedButton name="Join SoDA" url="https://asu.campuslabs.com/engage/organization/soda"/>
       </a>
     </section>
   );
