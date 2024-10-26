@@ -32,7 +32,7 @@ export default function DesktopNav() {
   return (
     <section className="nav-container">
       <a href="/" className="flex gap-4 items-center">
-        <img src="/logo/Compact_Dark_Mode.svg" className="w-20 aspect-square" />
+        <img src="logo/Soda_Logo_Dark_Mode.svg" className="w-28 aspect-square" />
       </a>
       <ul className="flex gap-14 items-center text-soda-white font-bold">
         {navLinks.map((el) => (
