@@ -257,6 +257,7 @@ body {
 
 .home {
   @apply min-h-screen max-w-[2560px] mx-auto;
+  margin-top: 20vh;
   position: relative; /* Make sure the parent container is positioned */
   padding-left: 0; /* Reset padding to avoid extra space on the left */
   padding-right: 0; /* Reset padding to avoid extra space on the right */
