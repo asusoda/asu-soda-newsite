@@ -16,7 +16,7 @@ interface LeaderboardEntry {
 const Leaderboard: React.FC = () => {
   const [leaderboardData, setLeaderboardData] = useState<LeaderboardEntry[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<any | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
   const [searchTerm, setSearchTerm] = useState('');
@@ -31,7 +31,7 @@ const Leaderboard: React.FC = () => {
         const data: LeaderboardEntry[] = await response.json();
         setLeaderboardData(data);
       } catch (error) {
-        setError(error.message);
+        setError((error as Error).message);
       } finally {
         setLoading(false);
       }

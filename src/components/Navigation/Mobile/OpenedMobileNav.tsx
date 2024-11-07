@@ -6,7 +6,11 @@ type setIsOpenTypes = {
 
 export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
 
-  const handleNavigation = (href) => {
+  interface HandleNavigationProps {
+    (href: string): void;
+  }
+
+  const handleNavigation: HandleNavigationProps = (href) => {
     if (href.startsWith("#")) {
       window.location.href = `/${href}`;
     } else {
