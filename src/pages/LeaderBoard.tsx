@@ -64,8 +64,8 @@ const Leaderboard: React.FC = () => {
   if (error) return <div className="flex justify-center items-center h-screen text-lg text-red-500">Error: {error}</div>;
 
   return (
-    <div className="flex flex-col items-center mt-10">
-      <h1 className="text-3xl font-bold mb-6">Leaderboard</h1>
+    <div className="flex flex-col items-center max-w-5xl mx-auto p-6 my-36 shadow-md rounded-lg">
+      <h1 className="text-3xl font-bold mb-6 ">Leaderboard</h1>
 
       {/* Search and Items Per Page Selector */}
       <div className="flex items-center space-x-4 mb-4">
