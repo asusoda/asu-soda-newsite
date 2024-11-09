@@ -40,7 +40,7 @@ Earn points through different activities to unlock rewards. Here’s a breakdown
 
 export default function PointsSystem() {
   return (
-    <div className="max-w-5xl mx-auto p-6 my-20 shadow-md rounded-lg">
+    <div className="max-w-5xl mx-auto p-6 my-32 shadow-md rounded-lg">
       <h1 className="section-header-text">Points System AKA Distinguished Members Program 🎯</h1>
       <ReactMarkdown
         children={markdownContent}

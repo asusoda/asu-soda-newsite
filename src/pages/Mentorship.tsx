@@ -81,7 +81,7 @@ Mentees will work on projects with their mentors, including:
 
 export default function Mentorship() {
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-20  shadow-md rounded-lg">
+    <div className="max-w-5xl mx-auto p-6 mt-32  shadow-md rounded-lg">
       <h1 className="section-header-text">Mentorship Program 🧑‍🏫</h1>
       <ReactMarkdown
         children={markdownContent}
