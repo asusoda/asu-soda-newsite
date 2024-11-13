@@ -84,8 +84,17 @@ export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
               e.preventDefault();
               handleNavigation("https://hack.thesoda.io");
             }}
-          >
+          > 
             <h1 className="text-[20px]">HackSoDA24</h1>
+          </a>
+          <a
+            href="https://thesoda.io/leaderboard"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavigation("https://thesoda.io/leaderboard");
+            }}
+          > 
+            <h1 className="text-[20px]">Leaderboard</h1>
           </a>
         </div>
       </div>

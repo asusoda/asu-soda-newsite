@@ -25,6 +25,11 @@ const navLinks = [
     name: "HackSoDA24",
     id_href: "https://hack.thesoda.io",
     cssClass: "nav-text-animation",
+  },
+  {
+    name: "Leaderboard",
+    id_href: "https://thesoda.io/leaderboard",
+    cssClass: "nav-text-animation",
   }
 ];
 
@@ -60,6 +65,11 @@ export default function DesktopNav() {
     {
       name: "HackSoDA24",
       id_href: "https://hack.thesoda.io",
+      cssClass: "nav-text-animation",
+    },
+    {
+      name: "Leaderboard",
+      id_href: "https://thesoda.io/leaderboard",
       cssClass: "nav-text-animation",
     }
   ];
