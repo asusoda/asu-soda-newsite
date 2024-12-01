@@ -5,6 +5,7 @@ import Mentorship from "./pages/Mentorship";
 import PointsSystem from "./pages/PointsSystem";
 import Footer from "./components/Footer/Footer";
 import Leaderboard from "./pages/LeaderBoard";
+import Positions from "./pages/PositionOpenings";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/mentorship" element={<Mentorship />} />
         <Route path="/distinguishedMembers" element={<PointsSystem />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/positions" element={<Positions />} />
       </Routes>
       <Footer />
     </Router>

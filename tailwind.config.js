@@ -110,5 +110,7 @@ export default {
         "linear-gradient(to bottom, transparent, rgba(55, 65, 81, 0.3))",
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
