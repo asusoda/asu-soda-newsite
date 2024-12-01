@@ -19,10 +19,6 @@ const adminContent = `
 - Manage event logistics and operations
 - Coordinate with team directors to plan and operate events
 - Location scouting and venue reservation
-### Industry/University Relations Specialist
-- Establish new corporate sponsorships and strategic partnerships
-- Maintain relations with existing sponsors and partners
-- Arrange for sponsored and partner events
 `;
 
 const marketingContent = `
@@ -52,6 +48,10 @@ const officerContent = `
 - Facilitate community events and mentorship programs to enhance networking opportunities and professional development
 - Engage socially with current and prospective SoDA members and ASU at large to create a welcoming environment
 to people of all backgrounds
+### Industry/University Relations Specialist
+- Establish new corporate sponsorships and strategic partnerships
+- Maintain relations with existing sponsors and partners
+- Arrange for sponsored and partner events, workshops, and other activities
 `
 
 const techContent = `
