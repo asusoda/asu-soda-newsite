@@ -70,7 +70,7 @@ const techContent = `
 - Web development, database management, and API integrations
 `
 
-const applicationURL = "https://asu.campuslabs.com/engage/organization/soda";
+const applicationURL = "https://forms.gle/7cRWXCLeLCRANtS86";
 
 export default function Positions() {
   return (
