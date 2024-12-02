@@ -74,7 +74,7 @@ const applicationURL = "https://forms.gle/7cRWXCLeLCRANtS86";
 
 export default function Positions() {
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-28 shadow-md rounded-lg">
+    <div className="max-w-5xl mx-auto p-6 my-28 shadow-md rounded-lg">
       <ReactMarkdown
       children={adminContent}
       remarkPlugins={[remarkGfm]}
