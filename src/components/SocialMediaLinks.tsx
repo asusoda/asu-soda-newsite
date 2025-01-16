@@ -1,9 +1,9 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
-import { FaDiscord } from "react-icons/fa6";
+import { FaDiscord, FaX, FaXTwitter } from "react-icons/fa6";
 import { IoLogoFreebsdDevil } from "react-icons/io";
 
 //Edit any changes to the SoDA URLs here
@@ -28,6 +28,10 @@ const socialMediaLinks = [
   {
     href: "https://www.facebook.com/SoDAASU/",
     icon: <FaFacebookSquare className="hover:text-soda-red" />,
+  },
+  {
+    href: "https://x.com/asu_soda",
+    icon: <FaXTwitter className="hover:text-soda-red" />,
   },
   {
     href: "https://github.com/asusoda",
