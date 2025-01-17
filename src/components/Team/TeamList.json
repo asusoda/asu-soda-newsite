@@ -14,24 +14,64 @@
     }
   ],
   "teams": {
-    "Leadership": [
-      {
-        "name": "Anushka Singh",
-        "role": "President",
-        "email": "asing534@asu.edu",
-        "image": "/headshots/anushka.jpg"
-      },
+    "Admin": [
       {
         "name": "Ryan Woo",
-        "role": "Vice President, Operations",
+        "role": "President",
         "email": "rtwoo@asu.edu",
         "image": "/headshots/ryan.JPG"
       },
       {
-        "name": "Adi Kalyankar",
-        "role": "Treasurer",
-        "email": "ajkalyan@asu.edu",
-        "image": "/headshots/adi.JPG"
+        "name": "Elizabeth Pardhe",
+        "role": "Vice President, Emerging Initiatives",
+        "email": "epardhe@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
+      }
+    ],
+    "Admin, Operations": [
+      {
+        "name": "Harshit Kumar",
+        "role": "Vice President, Operations",
+        "email": "hkumar43@asu.edu",
+        "image": "/headshots/harshit.JPG"
+      },
+      {
+        "name": "Johnnessa Barroquillo",
+        "role": "Event Coordinator, Flagship Events",
+        "email": "jbarroqu@asu.edu",
+        "image": "/headshots/johnnessa.JPG"
+      },
+      {
+        "name": "Rayan Syed",
+        "role": "Event Coordinator, General Body Meetings",
+        "email": "rasyed@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Johnny Chau",
+        "role": "Event Coordinator, Emerging Initiatives",
+        "email": "vchau3@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
+      }
+    ],
+    "Admin, Finance": [
+      {
+        "name": "Arleen Kaur Teerthy",
+        "role": "Vice President, Finance",
+        "email": "ateerthy@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Shiv Patel",
+        "role": "Treasurer, Core",
+        "email": "spate310@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Cherry Goyal",
+        "role": "Treasurer, Emerging Initiatives",
+        "email": "cgoyal6@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
       }
     ],
     "Industry Relations": [
@@ -42,24 +82,36 @@
         "image": "/headshots/nishant.jpg"
       },
       {
-        "name": "Aibiike Kubanych kyzy",
+        "name": "Biko Kubanych kyzy",
         "role": "Industry Relations Specialist",
         "email": "akubany1@asu.edu",
+        "image": "/headshots/biko.JPG"
+      },
+      {
+        "name": "Alex Ward Stratman",
+        "role": "Industry Relations Specialist",
+        "email": "awardstr@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       },
       {
-        "name": "Victoria Fan",
+        "name": "Yahia Alqurnawi",
         "role": "Industry Relations Specialist",
-        "email": "vmfan@asu.edu",
+        "email": "yalqurna@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       }
     ],
     "Technology": [
       {
-        "name": "Tanay Upreti",
+        "name": "Ben Juntilla",
         "role": "Director, Technology",
-        "email": "tupreti@asu.edu",
-        "image": "/headshots/tanay.JPG"
+        "email": "benjuntilla@asu.edu",
+        "image": "/headshots/ben.JPG"
+      },
+      {
+        "name": "Sri Ujjwal Reddy Beereddy",
+        "role": "Associate Director, Technology",
+        "email": "sbeeredd@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
       },
       {
         "name": "Chelsea Lianne Gomez",
@@ -68,28 +120,28 @@
         "image": "/headshots/chelsea.JPG"
       },
       {
-        "name": "Jackson Ourada",
+        "name": "Sarthak Aggarwal",
         "role": "Workshop Content Developer",
-        "email": "jourada@asu.edu",
+        "email": "saggar34@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       },
       {
-        "name": "Avery Powers",
-        "role": "Software Developer",
-        "email": "aapower3@asu.edu",
+        "name": "Tanay Upreti",
+        "role": "Internal Tools Developer Sr.",
+        "email": "tupreti@asu.edu",
+        "image": "/headshots/tanay.JPG"
+      },
+      {
+        "name": "Victoria Fan",
+        "role": "Internal Tools Developer",
+        "email": "vmfan@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       },
       {
         "name": "Aryan Keluskar",
-        "role": "Software Developer",
+        "role": "Special Events Organizer",
         "email": "akeluska@asu.edu",
         "image": "/headshots/aryan.png"
-      },
-      {
-        "name": "Sri Ujjwal Reddy Beereddy",
-        "role": "Special Events Organizer",
-        "email": "sbeeredd@asu.edu",
-        "image": "/logo/soda-logo-blue.png"
       },
       {
         "name": "Darsh Chaurasia",
@@ -98,85 +150,61 @@
         "image": "/headshots/darsh.png"
       }
     ],
-    "Development & Enagement": [
+    "Development & Engagement": [
       {
-        "name": "Elizabeth Pardhe",
-        "role": "Director, Community Outreach",
-        "email": "epardhe@asu.edu",
+        "name": "Shreya Bhandarkar",
+        "role": "Director, Development & Engagement",
+        "email": "sbhand24@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       },
       {
-        "name": "Aditi Prasath",
-        "role": "Development & Enagement Officer",
-        "email": "aprasath@asu.edu",
+        "name": "Rachel Yonan",
+        "role": "Community Outreach",
+        "email": "riyonan@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       },
       {
-        "name": "Johnnessa Barroquillo",
-        "role": "Development & Enagement Officer",
-        "email": "jbarroqu@asu.edu",
-        "image": "/headshots/johnnessa.JPG"
-      },
-      {
-        "name": "Vi Hao Chau",
-        "role": "Development & Enagement Officer",
-        "email": "vchau3@asu.edu",
+        "name": "Harini Mahendran",
+        "role": "Community Outreach",
+        "email": "hmahend4@asu.edu",
         "image": "/logo/soda-logo-blue.png"
-      },
-      {
-        "name": "Tyler Tannenbaum",
-        "role": "Development & Enagement Officer",
-        "email": "tntannen@asu.edu",
-        "image": "/headshots/tyler.JPG"
-      },
-      {
-        "name": "Harshit Kumar",
-        "role": "Development & Enagement Officer",
-        "email": "hkumar43@asu.edu",
-        "image": "/headshots/harshit.JPG"
       }
     ],
     "Marketing": [
       {
-        "name": "Ben Juntilla",
+        "name": "Aditi Prasath",
         "role": "Director, Marketing",
-        "email": "cjuntill@asu.edu",
-        "image": "/headshots/ben.JPG"
+        "email": "aprasath@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
       },
       {
         "name": "Sara Schultz",
-        "role": "Social Media Manager",
+        "role": "Associate Director, Marketing",
         "email": "sschul19@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       },
       {
-        "name": "Izma Syed",
-        "role": "Marketing Assistant",
-        "email": "",
-        "image": "/headshots/izma.JPG"
-      },
-      {
-        "name": "Divanshu Chauhan",
-        "role": "Ambassador",
-        "email": "divchauhan@asu.edu",
-        "image": "/logo/soda-logo-blue.png"
-      },
-      {
-        "name": "William Bode Hubbard",
-        "role": "Graphic Designer",
-        "email": "wbhubbar@asu.edu",
+        "name": "Leon Auster Dsouza",
+        "role": "Social Media Manager",
+        "email": "ldsouza2@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       },
       {
         "name": "Marina Nasralla",
         "role": "Graphic Designer",
         "email": "mnasral2@asu.edu",
-        "image": "/headshots/marina.jpg"
+        "image": "/logo/soda-logo-blue.png"
       },
       {
-        "name": "Leon Auster Dsouza",
-        "role": "Marketing Assistant",
-        "email": "",
+        "name": "Sai Rithwik Kukunuri",
+        "role": "Graphic Designer",
+        "email": "skukunu1@asu.edu",
+        "image": "/logo/soda-logo-blue.png"
+      },
+      {
+        "name": "Alex Babayev",
+        "role": "Video Editor",
+        "email": "rbabaye1@asu.edu",
         "image": "/logo/soda-logo-blue.png"
       }
     ]

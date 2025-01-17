@@ -1,6 +1,6 @@
 import AnimatedNumber from "../logic/AnimatedNumber";
 import { Statistic } from "semantic-ui-react";
-import teamsData from "../../assets/teams.json";
+import teamsData from "../../components/Team/TeamList.json";
 import RoundedButton from "../Button/RiArrowButton";
 
 const dollarFormatter = new Intl.NumberFormat("US", {
