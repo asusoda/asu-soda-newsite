@@ -59,14 +59,14 @@ export default function Blog() {
       <h1 className="section-header-text mb-6">SoDA Programs</h1>
       <section className="flex max-md:flex-col gap-8 items-center justify-center">
         <IndividualBlog
-          imageURL="/events/microsoft.JPG"
+          imageURL="/events/microsoft.webp"
           tag={["mentorship", "community development"]}
           title="Mentoring Program 🧑‍🏫"
           summary="SoDA offers a comprehensive mentorship program designed to support those in need. Our program connects experienced mentors with mentees, providing guidance, and support to help them navigate their academic and professional journeys. "
           link="/mentorship"
         />
         <IndividualBlog
-          imageURL="/how-to-start-a-points-system.png"
+          imageURL="/how-to-start-a-points-system.webp"
           tag={["mentorship", "community development"]}
           title="Points System 📊"
           summary="SoDA introduced points system designed to encourage active participation in our community. By attending meetings, events, and engaging in various activities, members can earn points that contribute to their standing within the organization."

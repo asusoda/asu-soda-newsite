@@ -6,19 +6,19 @@ const perks = [
     header: "Unlimited Opportunities & Career Development",
     description:
       "SoDA offers boundless opportunities to advance your career. From technical workshops hosted by industry leaders to career fairs and networking events, you’ll gain invaluable experience and connections to kickstart your journey as a software developer.",
-    imgURL: "/events/amazon-table.png",
+    imgURL: "/events/amazon-table.webp",
   },
   {
     header: "Community and Support",
     description:
       "SoDA provides a supportive network of fellow computer science students, offering collaboration, encouragement, and a sense of belonging through regular meetings and events with free food.",
-    imgURL: "/events/microsoft-resume-review.JPG",
+    imgURL: "/events/microsoft-resume-review.webp",
   },
   {
     header: "Learning and Development",
     description:
       "Enhance your skills through a variety of learning opportunities, including coding workshops, bootcamps, and talks from industry professionals. SoDA is committed to your personal and professional growth, ensuring you stay ahead in the fast-paced tech world.",
-    imgURL: "/events/what-is-soda.jpg",
+    imgURL: "/events/what-is-soda.webp",
   },
 ];
 

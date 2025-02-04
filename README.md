@@ -1,4 +1,4 @@
-![Thesoda.io](/public/thesoda.io.png)
+![Thesoda.io](/public/thesoda.io.webp)
 
 <img src='https://img.shields.io/github/license/asusoda/asu-soda-newsite?style=for-the-badge'>
 
