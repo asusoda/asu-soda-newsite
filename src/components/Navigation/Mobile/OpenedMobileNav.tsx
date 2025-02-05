@@ -5,14 +5,9 @@ type setIsOpenTypes = {
 };
 
 export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
-
-  interface HandleNavigationProps {
-    (href: string): void;
-  }
-
-  const handleNavigation: HandleNavigationProps = (href) => {
+  const handleNavigation = (href: string) => {
     if (href.startsWith("#")) {
-      window.location.href = `/${href}`;
+      window.location.href = `/${href}`; // Internal hash navigation
     } else {
       window.open(href, "_blank");
     }
@@ -35,64 +30,39 @@ export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
         </div>
         <hr className="w-full mx-auto bg-soda-gray"></hr>
         <div className="flex flex-col gap-5 p-5">
-          <a
-            href="#hero"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavigation("#hero");
-            }}
-          >
+          <a href="#hero" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Home</h1>
           </a>
-          <a
-            href="#info"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavigation("#info");
-            }}
-          >
+          <a href="#info" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Info</h1>
           </a>
-          <a
-            href="#sponsors"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavigation("#sponsors");
-            }}
-          >
+          <a href="#sponsors" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Sponsors</h1>
           </a>
-          <a
-            href="#team"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavigation("#team");
-            }}
-          >
+          <a href="#team" onClick={() => setIsOpen(false)}>
             <h1 className="text-[20px]">Team</h1>
           </a>
-          <a
-            href="https://asu.campuslabs.com/engage/organization/soda/events"
-            target="_blank"
+          <a 
+            href="https://asu.campuslabs.com/engage/organization/soda/events" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="View upcoming SoDA events on SunDevilSync"
             onClick={() => setIsOpen(false)}
           >
             <h1 className="text-[20px]">Events</h1>
           </a>
-          <a
+          <a 
             href="https://hack.thesoda.io"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavigation("https://hack.thesoda.io");
-            }}
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
           > 
             <h1 className="text-[20px]">HackSoDA24</h1>
           </a>
-          <a
-            href="https://thesoda.io/leaderboard"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavigation("https://thesoda.io/leaderboard");
-            }}
+          <a 
+            href="/leaderboard"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
           > 
             <h1 className="text-[20px]">Leaderboard</h1>
           </a>
