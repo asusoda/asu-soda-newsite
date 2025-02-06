@@ -1,4 +1,4 @@
-import placeholder from "../assets/logo-placeholder.png";
+import placeholder from "../assets/logo-placeholder.webp";
 
 function EventsPhotoCarousel() {
   return (
