@@ -10,22 +10,19 @@ import Blog from "../components/Blog";
 function Home() {
   return (
     <main className="home area">
-      {/* SEO Metadata */}
+      {/* SEO Metadata & Preloading */}
       <Helmet>
         <title>SoDA</title>
         <meta name="description" content="SoDA is one of the largest communities of students at Arizona State University." />
-        <meta name="keywords" content="software developers association, soda, asu, arizona state university, computer science, recruting, student organistaion" />
+        <meta name="keywords" content="software developers association, soda, asu, arizona state university, computer science, recruiting, student organization" />
+        {/* ✅ Preload LCP Image */}
+        <link rel="preload" as="image" href="../assets/placeholder/logo-placeholder.webp" />
       </Helmet>
-
-      {/* <ShootingStars minDelay={1000} maxSpeed={20} starWidth={40} />
-      <StarsBackground starDensity={0.0009} /> */}
       <Hero />
       <AboutUs />
       <Blog />
       <SponsorsMarquee />
       <MemberCards contacts={contactsData as Contacts} />
-      {/* disabled due to lack of Notion/SDS event sync */}
-      {/* <InfoCards />  */}
     </main>
   );
 }
