@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 interface PointsDetails {
   awarded_by: string;
@@ -92,60 +93,28 @@ const Leaderboard: React.FC = () => {
 
   const handlePrevious = () => setCurrentPage((prev) => Math.max(prev - 1, 1));
   const handleNext = () => setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-  const handleItemsPerPageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setItemsPerPage(Number(e.target.value));
-    setCurrentPage(1);
-  };
-
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-    setCurrentPage(1);
-  };
-
-  const openModal = (entry: LeaderboardEntry) => {
-    setSelectedEntry(entry);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-    setSelectedEntry(null);
-  };
-
-  if (loading) return <div className="flex justify-center items-center h-screen text-lg">Loading...</div>;
-  if (error) return <div className="flex justify-center items-center h-screen text-lg text-red-500">Error: {error}</div>;
 
   return (
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto p-4 sm:p-6 my-8 sm:my-16 md:my-24 lg:my-36 shadow-md rounded-lg">
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Leaderboard - ASU Soda</title>
+        <meta name="description" content="Check out the top performers in ASU Soda's leaderboard and see who's leading the rankings!" />
+        <meta name="keywords" content="leaderboard, asu soda, asu, software developers association, arizona state university, benifits, computer science" />
+      </Helmet>
+
       <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Leaderboard</h1>
 
-      {/* Search and Items Per Page Selector */}
       <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-4 w-full">
         <input
           type="text"
           placeholder="Search by name..."
           value={searchTerm}
-          onChange={handleSearchChange}
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="border border-gray-300 p-2 rounded w-full sm:w-64"
         />
-        <div className="flex items-center w-full sm:w-auto">
-          <label htmlFor="itemsPerPage" className="mr-2 font-medium">Show:</label>
-          <select
-            id="itemsPerPage"
-            value={itemsPerPage}
-            onChange={handleItemsPerPageChange}
-            className="border border-gray-300 p-2 rounded"
-          > 
-            <option value={10}>10</option>
-            <option value={15}>15</option>
-            <option value={20}>20</option>
-            <option value={filteredData.length}>All</option>
-          </select>
-          <span className="ml-2">entries</span>
-        </div>
       </div>
 
-      {/* Leaderboard Table */}
       <div className="w-full overflow-x-auto">
         <table className="table-auto border-collapse border border-gray-300 w-full text-center">
           <thead>
@@ -162,7 +131,7 @@ const Leaderboard: React.FC = () => {
                 <td className="border border-gray-300 py-2 px-4 text-center">{entry.total_points}</td>
                 <td className="border border-gray-300 py-2 px-4 text-center">
                   <button 
-                    onClick={() => openModal(entry)}
+                    onClick={() => { setSelectedEntry(entry); setModalOpen(true); }}
                     className="px-3 py-1 bg-[rgb(202_35_82_/_var(--tw-bg-opacity))] text-white rounded hover:bg-opacity-80"
                   >
                     View Details
@@ -176,21 +145,11 @@ const Leaderboard: React.FC = () => {
 
       {/* Pagination Controls */}
       <div className="flex flex-col sm:flex-row justify-between items-center w-full mt-4 space-y-4 sm:space-y-0">
-        <button
-          onClick={handlePrevious}
-          disabled={currentPage === 1}
-          className="px-4 py-2 rounded disabled:opacity-50 bg-[rgb(202_35_82_/_var(--tw-bg-opacity))] text-white w-full sm:w-auto"
-        >
+        <button onClick={handlePrevious} disabled={currentPage === 1} className="px-4 py-2 rounded disabled:opacity-50 bg-[rgb(202_35_82_/_var(--tw-bg-opacity))] text-white w-full sm:w-auto">
           Previous
         </button>
-        <span className="text-base sm:text-lg">
-          Page {currentPage} of {totalPages}
-        </span>
-        <button
-          onClick={handleNext}
-          disabled={currentPage === totalPages}
-          className="px-4 py-2 rounded disabled:opacity-50 bg-[rgb(202_35_82_/_var(--tw-bg-opacity))] text-white w-full sm:w-auto"
-        >
+        <span className="text-base sm:text-lg">Page {currentPage} of {totalPages}</span>
+        <button onClick={handleNext} disabled={currentPage === totalPages} className="px-4 py-2 rounded disabled:opacity-50 bg-[rgb(202_35_82_/_var(--tw-bg-opacity))] text-white w-full sm:w-auto">
           Next
         </button>
       </div>
@@ -198,7 +157,7 @@ const Leaderboard: React.FC = () => {
       {/* Modal */}
       <Modal 
         isOpen={modalOpen} 
-        onClose={closeModal} 
+        onClose={() => { setModalOpen(false); setSelectedEntry(null); }} 
         data={selectedEntry?.points_details || []} 
         name={selectedEntry?.name || ''}
       />

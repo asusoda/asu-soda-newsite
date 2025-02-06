@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -82,6 +83,13 @@ Mentees will work on projects with their mentors, including:
 export default function Mentorship() {
   return (
     <div className="max-w-5xl mx-auto p-6 my-28 shadow-md rounded-lg">
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Mentorship Program - ASU Soda</title>
+        <meta name="description" content="Learn about the ASU Soda Mentorship Program, designed to connect students with experienced mentors for professional growth." />
+        <meta name="keywords" content="Mentorship Program, ASU Soda, Mentorship, Professional Growth, Student Mentorship, Mentorship Program Details, Computer science, CS Club" />
+      </Helmet>
+
       <ReactMarkdown
         children={markdownContent}
         remarkPlugins={[remarkGfm]}

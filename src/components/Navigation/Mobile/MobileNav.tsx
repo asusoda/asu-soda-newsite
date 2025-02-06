@@ -17,7 +17,7 @@ export default function MobileNav({ setIsOpen, isOpen }: setIsOpenTypes) {
         )}
       </button>
       <h1 className="text-purple-dark text-[21px] text-soda-red font-extrabold">
-        <img src="/logo/Compact_Dark_Mode.svg" className="w-14" />
+        <img src="/logo/Compact_Dark_Mode.svg" className="w-14" alt="SoDA logo" />
       </h1>
     </nav>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import RoundedButton from "../components/Button/RiArrowButton";
@@ -75,49 +76,47 @@ const applicationURL = "https://forms.gle/7cRWXCLeLCRANtS86";
 export default function Positions() {
   return (
     <div className="max-w-5xl mx-auto p-6 my-28 shadow-md rounded-lg">
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Officer Positions - ASU Soda</title>
+        <meta name="description" content="Explore open officer positions at ASU Soda and apply for roles in administration, marketing, technology, and more." />
+        <meta name="keywords" content="Officer Positions, ASU Soda, Officer Roles, Administrative Roles, Marketing Roles, Technology Roles, Officer Applications, Computer science, CS Club" />
+      </Helmet>
+
       <ReactMarkdown
-      children={adminContent}
-      remarkPlugins={[remarkGfm]}
-      className="prose lg:prose-xl prose-invert mb-10"
+        children={adminContent}
+        remarkPlugins={[remarkGfm]}
+        className="prose lg:prose-xl prose-invert mb-10"
       />
       <div className="max-w-3xl">
-        <RoundedButton
-          name="Apply Now"
-          url={applicationURL}
-        ></RoundedButton>
+        <RoundedButton name="Apply Now" url={applicationURL} />
       </div>
+
       <ReactMarkdown
-      children={marketingContent}
-      remarkPlugins={[remarkGfm]}
-      className="prose lg:prose-xl prose-invert my-10"
+        children={marketingContent}
+        remarkPlugins={[remarkGfm]}
+        className="prose lg:prose-xl prose-invert my-10"
       />
       <div className="max-w-3xl">
-        <RoundedButton
-          name="Apply Now"
-          url={applicationURL}
-        ></RoundedButton>
+        <RoundedButton name="Apply Now" url={applicationURL} />
       </div>
+
       <ReactMarkdown
-      children={officerContent}
-      remarkPlugins={[remarkGfm]}
-      className="prose lg:prose-xl prose-invert my-10"
+        children={officerContent}
+        remarkPlugins={[remarkGfm]}
+        className="prose lg:prose-xl prose-invert my-10"
       />
       <div className="max-w-3xl">
-        <RoundedButton
-          name="Apply Now"
-          url={applicationURL}
-        ></RoundedButton>
+        <RoundedButton name="Apply Now" url={applicationURL} />
       </div>
+
       <ReactMarkdown
-      children={techContent}
-      remarkPlugins={[remarkGfm]}
-      className="prose lg:prose-xl prose-invert my-10"
+        children={techContent}
+        remarkPlugins={[remarkGfm]}
+        className="prose lg:prose-xl prose-invert my-10"
       />
       <div className="max-w-3xl">
-        <RoundedButton
-          name="Apply Now"
-          url={applicationURL}
-        ></RoundedButton>
+        <RoundedButton name="Apply Now" url={applicationURL} />
       </div>
     </div>
   );

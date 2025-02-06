@@ -1,7 +1,9 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "../styles/Points.css";
+
 const markdownContent = `# 🎯 Distinguished Members Program
 
 The **Distinguished Members Program** is designed to incentivize active involvement through a structured framework of rewards and recognitions. This program aims to enhance the overall club experience while offering tangible benefits to our members.
@@ -20,7 +22,7 @@ Members can earn points through various activities such as attending meetings, p
 - **Priority Opportunities:** Access to limited-space events and seats on SoDA Team Trip to Sponsor's Office (more details to come as the semester progresses).
 - **Professional Advancement:** Enhanced visibility in our Resume Book and potential recommendation letters.
 - **Exclusive Access:** Voting rights on future workshop topics and direct interactions with industry professionals.
-- **Alumini Banquet:** Invitation to Alumini Banquet at the end of the semester/year. (more details comming out soon)
+- **Alumni Banquet:** Invitation to Alumni Banquet at the end of the semester/year. (more details coming out soon)
 
 ## 🎯 Point System Breakdown
 
@@ -41,10 +43,17 @@ Earn points through different activities to unlock rewards. Here’s a breakdown
 export default function PointsSystem() {
   return (
     <div className="max-w-5xl mx-auto p-6 my-28 shadow-md rounded-lg">
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Distinguished Members Program - ASU Soda</title>
+        <meta name="description" content="Explore ASU Soda's Distinguished Members Program, designed to reward active members with perks, career growth, and exclusive opportunities." />
+        <meta name="keywords" content="Distinguished Members Program, ASU Soda, Points System, Active Participation, Member Rewards, Member Perks, Member Benefits, computer science, CS, software development" />
+      </Helmet>
+
       <ReactMarkdown
         children={markdownContent}
         remarkPlugins={[remarkGfm]}
-        className="prose lg:prose-xl prose-invert custom-table" // Add a custom class here
+        className="prose lg:prose-xl prose-invert custom-table"
       />
     </div>
   );
