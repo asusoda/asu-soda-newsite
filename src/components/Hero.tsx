@@ -11,16 +11,7 @@ function Hero() {
         <section className="hero-container">
           <summary className="left-hero">
             <h1 className="hero-large-text">
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString("The Software Developers Association")
-                    .changeDelay(5)
-                    .pauseFor(1500)
-                    .changeDelay(5) // Adjust speed for delete effect
-                    .start();
-                }}
-              />
+              The Software Developers Association
             </h1>
             <p className="hero-small-text max-md:hidden">
               SoDA is one of the largest communities of students at Arizona
