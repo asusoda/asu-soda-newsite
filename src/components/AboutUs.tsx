@@ -7,18 +7,21 @@ const perks = [
     description:
       "SoDA offers boundless opportunities to advance your career. From technical workshops hosted by industry leaders to career fairs and networking events, you’ll gain invaluable experience and connections to kickstart your journey as a software developer.",
     imgURL: "/events/amazon-table.webp",
+    alt: "Amazon table at a SoDA event",
   },
   {
     header: "Community and Support",
     description:
       "SoDA provides a supportive network of fellow computer science students, offering collaboration, encouragement, and a sense of belonging through regular meetings and events with free food.",
     imgURL: "/events/microsoft-resume-review.webp",
+    alt: "Microsoft resume review at a SoDA event",
   },
   {
     header: "Learning and Development",
     description:
       "Enhance your skills through a variety of learning opportunities, including coding workshops, bootcamps, and talks from industry professionals. SoDA is committed to your personal and professional growth, ensuring you stay ahead in the fast-paced tech world.",
     imgURL: "/events/what-is-soda.webp",
+    alt: "SoDA members at a meeting",
   },
 ];
 
@@ -54,7 +57,7 @@ export default function AboutUs() {
             <img
               src={perk.imgURL}
               className="rounded-t-xl object-cover w-full h-48"
-              alt={perk.header}
+              alt={perk.alt}
             />
             <div className="text-soda-black px-4 py-3 text-left flex-1">
               <h4 className="font-semibold text-xl max-md:text-lg">

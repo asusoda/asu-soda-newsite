@@ -81,7 +81,7 @@ export default function NavigationBar() {
             <Link to="/Home">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">SoDA</span>
-                <img className="h-8 w-auto" src="/soda.png" alt="" />
+                <img className="h-8 w-auto" src="/soda.png" alt="./SoDA Logo" />
               </a>
             </Link>
           </div>
@@ -233,7 +233,7 @@ export default function NavigationBar() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">SoDA</span>
-                <img className="h-8 w-auto" src="../public/soda.webp" alt="" />
+                <img className="h-8 w-auto" src="../public/soda.webp" alt="./SoDA Logo" />
               </a>
               <button
                 type="button"

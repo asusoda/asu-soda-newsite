@@ -8,6 +8,7 @@ interface IndividualBlogProps {
   title: string;
   summary: string;
   link: string;
+  alt: string;
 }
 
 const getRandomColor = () => {
@@ -25,11 +26,12 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
   title,
   summary,
   link,
+  alt,
 }) => {
   return (
     <Link to={link} className="group relative block">
       <div className="bg-soda-white rounded-lg p-6 w-80 h-100 overflow-hidden text-black font-sans transition transform hover:scale-105 hover:shadow-lg">
-        <img src={imageURL} alt={title} className="w-full rounded-lg" />
+        <img src={imageURL} alt={alt} className="w-full rounded-lg" />
         <div className="flex flex-wrap gap-2 mt-2">
           {tag.map((t, index) => (
             <span
@@ -64,13 +66,15 @@ export default function Blog() {
           title="Mentoring Program 🧑‍🏫"
           summary="SoDA offers a comprehensive mentorship program designed to support those in need. Our program connects experienced mentors with mentees, providing guidance, and support to help them navigate their academic and professional journeys. "
           link="/mentorship"
+          alt="Mentoring Program"
         />
         <IndividualBlog
           imageURL="/how-to-start-a-points-system.webp"
           tag={["mentorship", "community development"]}
-          title="Points System 📊"
+          title="Distinguished Membership Program 📊"
           summary="SoDA introduced points system designed to encourage active participation in our community. By attending meetings, events, and engaging in various activities, members can earn points that contribute to their standing within the organization."
           link="/distinguishedMembers"
+          alt="Distinguished Membership Program"
         />
       </section>
     </main>

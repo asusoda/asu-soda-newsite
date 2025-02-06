@@ -47,6 +47,7 @@ class MemberCards extends Component<MemberCardsProps> {
                         className="card-image"
                         src={member.image}
                         size="tiny"
+                        alt={`${member.name} image`}
                       />
                     </div>
 
@@ -93,6 +94,7 @@ class MemberCards extends Component<MemberCardsProps> {
                     className="card-image"
                     src={advisor.image}
                     size="tiny"
+                    alt={`${advisor.name} image`}
                   />
                 </div>
 
