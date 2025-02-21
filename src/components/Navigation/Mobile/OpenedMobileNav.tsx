@@ -52,14 +52,6 @@ export default function OpenedMobileNav({ setIsOpen }: setIsOpenTypes) {
             <h1 className="text-[20px]">Events</h1>
           </a>
           <a 
-            href="https://hack.thesoda.io"
-            target="_blank" 
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-          > 
-            <h1 className="text-[20px]">HackSoDA24</h1>
-          </a>
-          <a 
             href="/leaderboard"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
