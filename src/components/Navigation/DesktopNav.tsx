@@ -22,8 +22,8 @@ const navLinks = [
     cssClass: "nav-text-animation",
   },
   {
-    name: "HackSoDA24",
-    id_href: "https://hack.thesoda.io",
+    name: "SoDA Code Challenge XI",
+    id_href: "https://code.thesoda.io",
     cssClass: "nav-text-animation",
   },
   {
