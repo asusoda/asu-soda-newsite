@@ -11,13 +11,16 @@ interface IndividualBlogProps {
   alt: string;
 }
 
-const getRandomColor = () => {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+const getColorFromString = (str: string) => {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = str.charCodeAt(i) + ((hash << 5) - hash);
   }
-  return color;
+
+  // Generate HSL color with fixed saturation and lightness for better readability
+  const h = Math.abs(hash % 360);
+  // Using lightness of 85% for light backgrounds
+  return `hsl(${h}, 70%, 85%)`;
 };
 
 const IndividualBlog: React.FC<IndividualBlogProps> = ({
@@ -36,8 +39,8 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
           {tag.map((t, index) => (
             <span
               key={index}
-              className="rounded-full px-3 py-1 text-xs text-black"
-              style={{ backgroundColor: getRandomColor() }}
+              className="rounded-full px-3 py-1 text-xs text-gray-800"
+              style={{ backgroundColor: getColorFromString(t) }}
             >
               {t}
             </span>
