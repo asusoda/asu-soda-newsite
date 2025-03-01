@@ -24,6 +24,7 @@ class MemberCards extends Component<MemberCardsProps> {
 
     return (
       <div className="team" id="team">
+        <h1 className="section-header-text">Our Team</h1>
         {/* <Divider horizontal id="title">
           Team
         </Divider>

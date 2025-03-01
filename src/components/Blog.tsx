@@ -61,7 +61,7 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
 export default function Blog() {
   return (
     <main className="mt-10 mb-16">
-      <h1 className="section-header-text mb-6">SoDA Programs</h1>
+      <h1 className="section-header-text mb-6">Our Programs</h1>
       <section className="flex max-md:flex-col gap-8 items-center justify-center">
         <IndividualBlog
           imageURL="/events/microsoft.webp"
