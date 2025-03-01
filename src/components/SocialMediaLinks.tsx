@@ -9,25 +9,29 @@ import { IoLogoFreebsdDevil } from "react-icons/io";
 //Edit any changes to the SoDA URLs here
 //Icons can be found at: https://react-icons.github.io/react-icons/
 const socialMediaLinks = [
+  // {
+  //   href: "https://thesoda.io/",
+  //   icon: <CgWebsite className="hover:text-soda-red" />,
+  // },
   {
-    href: "https://thesoda.io/",
-    icon: <CgWebsite className="hover:text-soda-red" />,
-  },
-  {
-    href: "https://www.linkedin.com/company/thesoda/",
-    icon: <FaLinkedin className="hover:text-soda-red" />,
-  },
-  {
-    href: "https://www.instagram.com/soda.asu/",
-    icon: <RiInstagramFill className="hover:text-soda-red" />,
+    href: "https://asu.campuslabs.com/engage/organization/soda",
+    icon: <IoLogoFreebsdDevil className="hover:text-soda-red" />,
   },
   {
     href: "https://discord.gg/the-software-developers-association-762811961238618122",
     icon: <FaDiscord className="hover:text-soda-red" />,
   },
   {
+    href: "https://www.instagram.com/soda.asu/",
+    icon: <RiInstagramFill className="hover:text-soda-red" />,
+  },
+  {
     href: "https://www.facebook.com/SoDAASU/",
     icon: <FaFacebookSquare className="hover:text-soda-red" />,
+  },
+  {
+    href: "https://www.linkedin.com/company/thesoda/",
+    icon: <FaLinkedin className="hover:text-soda-red" />,
   },
   {
     href: "https://x.com/asu_soda",
@@ -36,10 +40,6 @@ const socialMediaLinks = [
   {
     href: "https://github.com/asusoda",
     icon: <FaGithub className="hover:text-soda-red" />,
-  },
-  {
-    href: "https://asu.campuslabs.com/engage/organization/soda",
-    icon: <IoLogoFreebsdDevil className="hover:text-soda-red" />,
   },
 ];
 
