@@ -148,6 +148,12 @@
         "role": "Special Events Organizer",
         "email": "dchauras@asu.edu",
         "image": "/headshots/darsh.webp"
+      },
+      {
+        "name": "Ash Srivastava",
+        "role": "Internal Tools Developer",
+        "email": "asriv132@asu.edu",
+        "image": "/logo/soda-logo-blue.webp"
       }
     ],
     "Development & Engagement": [
