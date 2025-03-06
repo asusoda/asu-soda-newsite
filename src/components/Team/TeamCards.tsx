@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Card, Divider, Popup, Image } from "semantic-ui-react";
 import { MemberCardsProps, Contacts } from "./Contacts";
 import contactsData from "./TeamList.json";
-import "./TeamCards.css";
 
 const contacts: Contacts = contactsData as Contacts;
 class MemberCards extends Component<MemberCardsProps> {
@@ -24,7 +23,7 @@ class MemberCards extends Component<MemberCardsProps> {
 
     return (
       <div className="team space-y-24 md:pt-[100px]" id="team">
-        <h1 className="section-header-text">Our Team</h1>
+        <h1 className="section-header-text">Team</h1>
         {/* <Divider horizontal id="title">
           Team
         </Divider>

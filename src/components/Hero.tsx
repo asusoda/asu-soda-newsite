@@ -11,7 +11,7 @@ function Hero() {
         <section className="hero-container">
           <summary className="left-hero">
             <h1 className="hero-large-text  md:mb-10">
-              The Software Developers Association
+              The <text className="text-[#CA2352]">Software</text> <text className="text-[#3A64E4]">Developers</text> Association
             </h1>
             <Statistics />
             <SocialMediaLinks />

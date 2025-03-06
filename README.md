@@ -66,6 +66,6 @@ If you want to say thank you and/or support active development of `thesoda.io`:
 
 `Thesoda.io` is licensed under MIT License. All development is currently maintain by [Luan Nguyen](https://github.com/LuaanNguyen).
 
-# 🥤 Message from our Team
+# 🥤 Message from Team
 
 Reminder that _you are great, you are enough, and your presence is valued._ If you are struggling with your mental health, please reach out to someone you love and consult a professional. [There are many resources for you to get help in a time of need.](https://www.nimh.nih.gov/health/find-help)

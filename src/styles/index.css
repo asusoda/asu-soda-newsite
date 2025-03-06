@@ -79,7 +79,7 @@ body {
 }
 
 .area {
-  background: #080909;
+  /* background: #080909; */
   background: -webkit-linear-gradient(to left, #080909, #ca2352);
 }
 
@@ -269,7 +269,7 @@ body {
 /* --------- HOME --------- */
 
 .home {
-  @apply min-h-screen max-w-[2560px] mx-auto pt-20 justify-center items-center;
+  @apply min-h-screen max-w-[2560px] mx-auto  justify-center items-center;
   position: relative; /* Make sure the parent container is positioned */
   padding-left: 0; /* Reset padding to avoid extra space on the left */
   padding-right: 0; /* Reset padding to avoid extra space on the right */

@@ -42,10 +42,10 @@ export default function AboutUs() {
         </p>
       </section>
 
-      <h1 className="section-header-text mt-10">Our Mission</h1>
+      <h1 className="section-header-text mt-10">Mission</h1>
       <section className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {perks.map((perk) => (
-          <div className="bg-gray-800  p-4 border-gray-600 rounded-2xl justify-center flex flex-col min-h-[300px] max-w-[300px] w-full">
+          <div className="bg-gray-900  p-4 border-gray-600 rounded-2xl justify-center flex flex-col min-h-[300px] max-w-[300px] w-full">
             <img
               src={perk.imgURL}
               className="rounded-t-xl object-cover w-full h-48"

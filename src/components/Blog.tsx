@@ -33,7 +33,7 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
 }) => {
   return (
     <Link to={link} className="group relative block">
-      <div className="bg-gray-800 border-gray-600  rounded-lg p-6 max-w-md h-full overflow-hidden text-white font-sans transition transform hover:scale-105 hover:shadow-lg">
+      <div className="bg-gray-900 border-gray-600  rounded-lg p-6 max-w-md h-full overflow-hidden text-white font-sans transition transform hover:scale-105 hover:shadow-lg">
         <img src={imageURL} alt={alt} className="w-full rounded-lg" />
         <div className="flex flex-wrap gap-2 mt-2">
           {tag.map((t, index) => (
@@ -61,8 +61,8 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
 export default function Blog() {
   return (
     <main className="mt-10 md:mb-16">
-      <h1 className="section-header-text mb-6">Our Programs</h1>
-      <section className="flex p-8 max-md:flex-col grow gap-8  justify-center">
+      <h1 className="section-header-text mb-6">Programs</h1>
+      <section className="flex p-4 max-md:flex-col grow gap-8  justify-center">
         <IndividualBlog
           imageURL="/events/microsoft.webp"
           tag={["mentorship", "community development"]}

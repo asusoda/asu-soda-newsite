@@ -34,7 +34,7 @@ const organization = [
 
 export default function RightFooterGrid() {
   return (
-    <div className="flex flex-row space-x-12 -mt-6 justify-center">
+    <div className="flex flex-row space-x-12 -mt-6 justify-between md:justify-center">
       <section className="flex flex-col py-2 space-y-3">
       <h5 className="text-soda-white   text-md ">Organization</h5>
       {organization.map((el, i) => (
