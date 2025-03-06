@@ -197,7 +197,7 @@ body {
 */
 
 .section-header-text {
-  @apply text-white font-bold text-xl md:text-4xl text-center pb-4;
+  @apply text-white font-bold text-xl md:text-5xl text-center pb-4;
 }
 
 /* --------- STATS --------- */
@@ -220,11 +220,11 @@ body {
 /* --------- HERO --------- */
 
 .hero {
-  @apply mx-[3vw] mt-[16vh] mb-[8vh] max-md:mt-[14vh] max-md:mb-[4vh] h-full;
+  @apply mx-[3vw]  min-h-screen  justify-center items-center flex flex-col;
 }
 
 .hero-container {
-  @apply mx-auto sm:ml-16 flex flex-col md:flex-row items-center justify-between;
+  @apply mx-auto sm:ml-16 flex flex-col md:flex-row justify-center items-center ;
 }
 
 .left-hero {
@@ -242,7 +242,7 @@ body {
 /* --------- SPONSORS --------- */
 
 .sponsor-container {
-  @apply flex flex-row mt-4 overflow-x-hidden bg-white;
+  @apply flex flex-row mt-4 overflow-x-hidden bg-gray-300;
   width: 100vw; /* Full viewport width */
   margin-left: calc(-50vw + 50%); /* Extend beyond left edge */
   margin-right: calc(-50vw + 50%); /* Extend beyond right edge */
@@ -270,8 +270,7 @@ body {
 /* --------- HOME --------- */
 
 .home {
-  @apply min-h-screen max-w-[2560px] mx-auto;
-  margin-top: 20vh;
+  @apply min-h-screen max-w-[2560px] mx-auto pt-20 justify-center items-center;
   position: relative; /* Make sure the parent container is positioned */
   padding-left: 0; /* Reset padding to avoid extra space on the left */
   padding-right: 0; /* Reset padding to avoid extra space on the right */
@@ -279,7 +278,7 @@ body {
 
 /* --------- FOOTER --------- */
 footer {
-  @apply w-full;
+  @apply w-full pt-12;
 }
 
 .footer-container {

@@ -28,7 +28,7 @@ const perks = [
 export default function AboutUs() {
   return (
     <main
-      className="flex pt-[100px] flex-col w-[70vw] max-md:w-[90vw] justify-center items-center mx-auto mb-20 max-md:mb-10"
+      className="flex pt-[100px] flex-col w-[70vw] min-h-screen max-md:w-[90vw] justify-center items-center mx-auto mb-20 max-md:mb-10"
       id="info"
     >
       <section className="text-center max-md:text-left">
@@ -43,19 +43,19 @@ export default function AboutUs() {
       </section>
 
       <h1 className="section-header-text mt-10">Our Mission</h1>
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {perks.map((perk) => (
-          <div className="bg-white rounded-2xl justify-center flex flex-col min-h-[300px] max-w-[300px] w-full">
+          <div className="bg-gray-800  p-4 border-gray-600 rounded-2xl justify-center flex flex-col min-h-[300px] max-w-[300px] w-full">
             <img
               src={perk.imgURL}
               className="rounded-t-xl object-cover w-full h-48"
               alt={perk.alt}
             />
-            <div className="text-soda-black px-4 py-3 text-left flex-1">
+            <div className="text-white px-4 py-3 space-y-3 text-left flex-1">
               <h4 className="font-semibold text-xl max-md:text-lg">
                 {perk.header}
               </h4>
-              <hr className="border-soda-gray opacity-75 my-2 w-[60%]" />
+              {/* <hr className="border-soda-gray opacity-75 my-2 w-[60%]" /> */}
               <p className="text-[14px] max-md:text-sm">{perk.description}</p>
             </div>
           </div>

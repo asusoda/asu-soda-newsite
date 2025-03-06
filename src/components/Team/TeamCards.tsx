@@ -53,10 +53,10 @@ class MemberCards extends Component<MemberCardsProps> {
                     </div>
 
                     <div className="card-text">
-                      <Card.Header className="card-header">
+                      <Card.Header className="card-header whitespace-pre-line font-semibold text-xl">
                         {member.name}
                       </Card.Header>
-                      <Card.Meta className="card-meta">
+                      <Card.Meta className="">
                         {member.role}
                         <br />
                         <Popup

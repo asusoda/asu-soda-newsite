@@ -1,5 +1,6 @@
 import { Image } from "semantic-ui-react";
 import RoundedButton from "../Button/RiArrowButton";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
@@ -37,9 +38,9 @@ const navLinks = [
 export default function DesktopNav() {
   return (
     <section className="nav-container ">
-      <a href="/" className="flex gap-4 items-center">
+      <Link to="/" className="flex gap-4 items-center">
         <Image src="logo/Soda_Logo_Dark_Mode.svg" className="w-28 " alt="SoDA Logo" />
-      </a>
+      </Link>
       <ul className="flex gap-14 items-center text-soda-white font-bold">
         {navLinks.map((el) => (
           <li key={el.name}>
