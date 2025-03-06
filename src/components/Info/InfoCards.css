@@ -14,7 +14,7 @@
 .infocards {
   display: flex;
   flex-direction: column;
-  margin-top: 5vh;
+  margin-top: 5vh; 
   margin-bottom: 5vh;
   z-index: 10;
 }
@@ -26,22 +26,6 @@
   padding-bottom: 0vw;
 }
 
-/*
-#cards {
-	max-width: 1000px;
-	margin: 3vh auto 5vh auto;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-#cards .Card {
-	padding-top: 3px;
-	margin: 5px 10px 5px 10px;
-	justify-content: center;
-}
-*/
 
 /*Card styling*/
 
@@ -58,10 +42,8 @@
 }
 
 .card-header {
-  color: black;
   padding-bottom: 8px;
   font-weight: bold;
-  font-size: 1.2em;
 }
 
 .card-description {
@@ -74,6 +56,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  
   justify-content: center;
 }
 

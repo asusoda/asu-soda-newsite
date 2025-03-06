@@ -1,9 +1,10 @@
+import { Image } from "semantic-ui-react";
 import placeholder from "../assets/logo-placeholder.webp";
 
 function EventsPhotoCarousel() {
   return (
-    <div className="max-md:hidden mx-auto">
-      <img src={placeholder} width={400} alt="place holder" />
+    <div className="md:mt-0 mt-12 mx-auto">
+      <Image src={placeholder} width={400} className=" w-[40vw] md:w-[25vw]" alt="place holder" />
     </div>
   );
 }

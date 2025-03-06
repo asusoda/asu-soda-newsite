@@ -9,7 +9,7 @@ import Blog from "../components/Blog";
 
 function Home() {
   return (
-    <main className="home area">
+    <main className="home  fade-in area">
       {/* SEO Metadata & Preloading */}
       <Helmet>
         <title>SoDA</title>

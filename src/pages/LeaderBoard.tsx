@@ -24,7 +24,7 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void; data: PointsDetail
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
-              <tr className="bg-gray-800">
+              <tr className="bg-gray-900">
                 <th className="p-2 text-left">Event</th>
                 <th className="p-2 text-left">Points</th>
                 <th className="p-2 text-left">Awarded By</th>

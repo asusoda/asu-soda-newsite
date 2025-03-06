@@ -17,7 +17,7 @@
       },
       {
         "name": "Elizabeth Pardhe",
-        "role": "Vice President, Emerging Initiatives",
+        "role": "Vice President,\nEmerging Initiatives",
         "email": "epardhe@asu.edu",
         "image": "/headshots/elizabeth.webp"
       }
@@ -25,25 +25,25 @@
     "Admin, Operations": [
       {
         "name": "Harshit Kumar",
-        "role": "Vice President, Operations",
+        "role": "Vice President,\nOperations",
         "email": "hkumar43@asu.edu",
         "image": "/headshots/harshit.webp"
       },
       {
         "name": "Johnnessa Barroquillo",
-        "role": "Event Coordinator, Flagship Events",
+        "role": "Event Coordinator,\nFlagship Events",
         "email": "jbarroqu@asu.edu",
         "image": "/headshots/johnnessa.webp"
       },
       {
         "name": "Rayan Syed",
-        "role": "Event Coordinator, General Body Meetings",
+        "role": "Event Coordinator,\nGeneral Body Meetings",
         "email": "rasyed@asu.edu",
         "image": "/logo/soda-logo-blue.webp"
       },
       {
         "name": "Johnny Chau",
-        "role": "Event Coordinator, Emerging Initiatives",
+        "role": "Event Coordinator,\nEmerging Initiatives",
         "email": "vchau3@asu.edu",
         "image": "/headshots/johnny.webp"
       }
@@ -51,19 +51,19 @@
     "Admin, Finance": [
       {
         "name": "Arleen Kaur Teerthy",
-        "role": "Vice President, Finance",
+        "role": "Vice President,\nFinance",
         "email": "ateerthy@asu.edu",
         "image": "/headshots/arleen.webp"
       },
       {
         "name": "Shiv Patel",
-        "role": "Treasurer, Core",
+        "role": "Treasurer,\nCore",
         "email": "spate310@asu.edu",
         "image": "/headshots/shiv.webp"
       },
       {
         "name": "Cherry Goyal",
-        "role": "Treasurer, Emerging Initiatives",
+        "role": "Treasurer,\nEmerging Initiatives",
         "email": "cgoyal6@asu.edu",
         "image": "/headshots/cherry.webp"
       }
@@ -71,7 +71,7 @@
     "Industry Relations": [
       {
         "name": "Nishant Dhongadi",
-        "role": "Director, Industry Relations",
+        "role": "Director,\nIndustry Relations",
         "email": "ndhongad@asu.edu",
         "image": "/headshots/nishant.webp"
       },
@@ -97,13 +97,13 @@
     "Technology": [
       {
         "name": "Ben Juntilla",
-        "role": "Director, Technology",
+        "role": "Director,\nTechnology",
         "email": "benjuntilla@asu.edu",
         "image": "/headshots/ben.webp"
       },
       {
         "name": "Sri Ujjwal Reddy Beereddy",
-        "role": "Associate Director, Technology",
+        "role": "Associate Director,\nTechnology",
         "email": "sbeeredd@asu.edu",
         "image": "/headshots/sri.webp"
       },
@@ -153,7 +153,7 @@
     "Development & Engagement": [
       {
         "name": "Shreya Bhandarkar",
-        "role": "Director, Development & Engagement",
+        "role": "Director,\nDevelopment & Engagement",
         "email": "sbhand24@asu.edu",
         "image": "/headshots/shreya.webp"
       },
@@ -173,13 +173,13 @@
     "Marketing": [
       {
         "name": "Aditi Prasath",
-        "role": "Director, Marketing",
+        "role": "Director,\nMarketing",
         "email": "aprasath@asu.edu",
         "image": "/headshots/aditi.webp"
       },
       {
         "name": "Sara Schultz",
-        "role": "Associate Director, Marketing",
+        "role": "Associate Director,\nMarketing",
         "email": "sschul19@asu.edu",
         "image": "/headshots/sara.webp"
       },
