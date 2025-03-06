@@ -101,7 +101,7 @@ function NavbarSection() {
       <NavbarContent justify="end">
        
         <NavbarItem>
-          <Button as={Link} className="text-white bg-soda-red" href="#" variant="flat">
+          <Button as={Link} className="text-white bg-soda-red" href="https://asu.campuslabs.com/engage/organization/soda" variant="flat">
             SIGN UP
           </Button>
         </NavbarItem>
