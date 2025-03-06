@@ -14,12 +14,6 @@
         "role": "President",
         "email": "rtwoo@asu.edu",
         "image": "/headshots/ryan.webp"
-      },
-      {
-        "name": "Elizabeth Pardhe",
-        "role": "Vice President,\nEmerging Initiatives",
-        "email": "epardhe@asu.edu",
-        "image": "/headshots/elizabeth.webp"
       }
     ],
     "Admin, Operations": [
@@ -40,12 +34,6 @@
         "role": "Event Coordinator,\nGeneral Body Meetings",
         "email": "rasyed@asu.edu",
         "image": "/logo/soda-logo-blue.webp"
-      },
-      {
-        "name": "Johnny Chau",
-        "role": "Event Coordinator,\nEmerging Initiatives",
-        "email": "vchau3@asu.edu",
-        "image": "/headshots/johnny.webp"
       }
     ],
     "Admin, Finance": [
@@ -68,6 +56,20 @@
         "image": "/headshots/cherry.webp"
       }
     ],
+    "Admin, Emerging Initiatives": [
+      {
+        "name": "Elizabeth Pardhe",
+        "role": "Vice President,\nEmerging Initiatives",
+        "email": "epardhe@asu.edu",
+        "image": "/headshots/elizabeth.webp"
+      },
+      {
+        "name": "Hao Chau",
+        "role": "Event Coordinator,\nEmerging Initiatives",
+        "email": "vchau3@asu.edu",
+        "image": "/headshots/johnny.webp"
+      }
+    ], 
     "Industry Relations": [
       {
         "name": "Nishant Dhongadi",
