@@ -96,14 +96,7 @@ export default {
       },
     },
     fontFamily: {
-      apfel: ["Apfel", "sans-serif"],
-      "apfel-brukt": ["Apfel-Brukt", "sans-serif"],
-      "apfel-fett": ["Apfel-Fett", "sans-serif"],
-      "apfel-regular": ["Apfel-Regular", "sans-serif"],
-      "array-regular": ["Array-Regular", "sans-serif"],
-      "array-semibold": ["Array-Semibold", "sans-serif"],
-      "array-semibold-wide": ["Array-SemiboldWide", "sans-serif"],
-      "array-bold": ["Array-Bold", "sans-serif"],
+      space: ["Space Grotesk", "sans-serif"],
     },
     backgroundImage: {
       "glass-gradient":

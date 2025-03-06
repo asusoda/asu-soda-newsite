@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @apply bg-soda-black text-soda-white text-[18px] max-md:text-[14px] font-apfel min-h-screen flex flex-col justify-between;
+  @apply bg-soda-black text-soda-white text-[18px] max-md:text-[14px] font-space min-h-screen flex flex-col justify-between;
 }
 
 .nav-text-animation {
