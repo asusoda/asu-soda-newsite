@@ -28,7 +28,6 @@
   font-family: "Apfel-Fett";
   font-size: 2.2em;
   text-align: center;
-  border-bottom: 1px solid #fff;
   width: 80%;
   margin: auto;
 }
@@ -53,9 +52,10 @@
   max-width: 1000px;
   margin: 3vh auto 5vh auto;
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
-  justify-items: center;
+  justify-content: center;
 }
 
 .team #email {

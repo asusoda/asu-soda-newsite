@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="navigation" style={{ marginTop: 0 }}>
+    <nav className="navigation fade-in" style={{ marginTop: 0 }}>
       {/* Primary Navigation - Hidden on mobile */}
       <DesktopNav />
       {/*Mobile Navigation*/}

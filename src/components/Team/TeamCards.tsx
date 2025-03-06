@@ -23,7 +23,7 @@ class MemberCards extends Component<MemberCardsProps> {
     const advisors = contacts.advisors;
 
     return (
-      <div className="team" id="team">
+      <div className="team pt-[100px]" id="team">
         <h1 className="section-header-text">Our Team</h1>
         {/* <Divider horizontal id="title">
           Team

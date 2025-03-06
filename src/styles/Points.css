@@ -76,9 +76,6 @@ body {
     text-decoration: none;
   }
   
-  a:hover {
-    text-decoration: underline;
-  }
   
   /* Code Blocks */
   code {

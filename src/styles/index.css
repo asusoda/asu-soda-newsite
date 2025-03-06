@@ -16,7 +16,7 @@ body {
 }
 
 .nav-text-animation {
-  @apply hover:text-lg text-base transition ease-in-out;
+  @apply text-base hover:text-gray-300 transition ease-in-out;
 }
 
 /*Start Animations*/
@@ -29,6 +29,16 @@ body {
     top: 0;
     opacity: 1;
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
 }
 @keyframes animatetop {
   from {
@@ -64,6 +74,10 @@ body {
 /*
 -- Start BackGround Animation 
 */
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
 
 .area {
   background: #080909;
@@ -188,20 +202,20 @@ body {
 
 /* --------- STATS --------- */
 .statistics {
-  @apply bg-soda-white max-md:w-screen text-soda-black flex  
+  @apply text-white max-md:w-screen  flex  
   flex-row gap-4 py-4 px-6 my-2 justify-center flex-wrap md:rounded-[80px] z-10;
 }
 
 .stat-container {
-  @apply items-center text-center;
+  @apply items-center text-gray-400 text-center;
 }
 .stat-value {
-  @apply text-3xl font-extrabold;
+  @apply text-3xl text-gray-400 font-extrabold;
 }
 
 .stat-label {
-  @apply text-sm font-bold;
-}
+  @apply text-sm text-gray-400 font-bold;
+} 
 
 /* --------- HERO --------- */
 
@@ -214,7 +228,7 @@ body {
 }
 
 .left-hero {
-  @apply md:w-1/2 flex flex-col items-center justify-between;
+  @apply md:w-1/2 flex flex-col items-start justify-between;
 }
 
 .hero-large-text {
@@ -228,7 +242,7 @@ body {
 /* --------- SPONSORS --------- */
 
 .sponsor-container {
-  @apply flex flex-row overflow-x-hidden bg-white;
+  @apply flex flex-row mt-4 overflow-x-hidden bg-white;
   width: 100vw; /* Full viewport width */
   margin-left: calc(-50vw + 50%); /* Extend beyond left edge */
   margin-right: calc(-50vw + 50%); /* Extend beyond right edge */
@@ -240,7 +254,7 @@ body {
 
 /* --------- NAVIGATION  --------- */
 .navigation {
-  @apply w-full fixed bg-soda-black z-20 max-md:py-0 py-1;
+  @apply w-full fixed bg-black bg-opacity-85 backdrop-blur-md z-20 max-md:py-0 py-1;
 }
 
 @layer utilities {
@@ -250,7 +264,7 @@ body {
   }
 }
 .nav-container {
-  @apply w-full justify-between hidden sm:flex px-20 items-center;
+  @apply w-full py-3 justify-between hidden sm:flex px-20 items-center;
 }
 
 /* --------- HOME --------- */
@@ -274,7 +288,7 @@ footer {
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
-  @apply flex gap-4 text-3xl bg-soda-white rounded-full py-4 px-4 text-soda-black justify-center z-10;
+  @apply flex gap-4 text-3xl  rounded-full py-4 px-4 text-white justify-center z-10;
 }
 
 /* --------- BUTTON --------- */
@@ -283,7 +297,7 @@ footer {
 }
 
 .right-arrow-btn {
-  @apply flex px-3 py-3  bg-soda-red rounded-full items-center hover:bg-[#c12654] justify-center;
+  @apply flex px-6 py-3  bg-soda-red rounded-3xl items-center hover:bg-[#c12654] justify-center;
 }
 
 .regular-btn {

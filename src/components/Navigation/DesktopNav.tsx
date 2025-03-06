@@ -1,3 +1,4 @@
+import { Image } from "semantic-ui-react";
 import RoundedButton from "../Button/RiArrowButton";
 
 const navLinks = [
@@ -35,9 +36,9 @@ const navLinks = [
 
 export default function DesktopNav() {
   return (
-    <section className="nav-container">
+    <section className="nav-container ">
       <a href="/" className="flex gap-4 items-center">
-        <img src="logo/Soda_Logo_Dark_Mode.svg" className="w-28 aspect-square" alt="SoDA Logo" />
+        <Image src="logo/Soda_Logo_Dark_Mode.svg" className="w-28 " alt="SoDA Logo" />
       </a>
       <ul className="flex gap-14 items-center text-soda-white font-bold">
         {navLinks.map((el) => (
@@ -61,7 +62,7 @@ export default function DesktopNav() {
         href="https://asu.campuslabs.com/engage/organization/soda" 
         aria-label="Join SoDA on SunDevilSync to stay updated on events and meetings"
       >
-        <RoundedButton name="Join SoDA" url="https://asu.campuslabs.com/engage/organization/soda"/>
+        <RoundedButton name="SIGN UP" url="https://asu.campuslabs.com/engage/organization/soda"/>
       </a>
     </section>
   );

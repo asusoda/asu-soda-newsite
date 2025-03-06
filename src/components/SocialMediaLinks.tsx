@@ -15,31 +15,31 @@ const socialMediaLinks = [
   // },
   {
     href: "https://asu.campuslabs.com/engage/organization/soda",
-    icon: <IoLogoFreebsdDevil className="hover:text-soda-red" />,
+    icon: <IoLogoFreebsdDevil className="hover:text-gray-300" />,
   },
   {
     href: "https://discord.gg/the-software-developers-association-762811961238618122",
-    icon: <FaDiscord className="hover:text-soda-red" />,
+    icon: <FaDiscord className="hover:text-gray-300" />,
   },
   {
     href: "https://www.instagram.com/soda.asu/",
-    icon: <RiInstagramFill className="hover:text-soda-red" />,
+    icon: <RiInstagramFill className="hover:text-gray-300" />,
   },
   {
     href: "https://www.facebook.com/SoDAASU/",
-    icon: <FaFacebookSquare className="hover:text-soda-red" />,
+    icon: <FaFacebookSquare className="hover:text-gray-300" />,
   },
   {
     href: "https://www.linkedin.com/company/thesoda/",
-    icon: <FaLinkedin className="hover:text-soda-red" />,
+    icon: <FaLinkedin className="hover:text-gray-300" />,
   },
   {
     href: "https://x.com/asu_soda",
-    icon: <FaXTwitter className="hover:text-soda-red" />,
+    icon: <FaXTwitter className="hover:text-gray-300" />,
   },
   {
     href: "https://github.com/asusoda",
-    icon: <FaGithub className="hover:text-soda-red" />,
+    icon: <FaGithub className="hover:text-gray-300" />,
   },
 ];
 
@@ -52,7 +52,7 @@ export default function SocialMediaLinks() {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className=""
+          className="text-gray-400"
         >
           {link.icon}
         </a>
