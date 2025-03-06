@@ -4,13 +4,7 @@
       "name": "Yoshihiro Kobayashi",
       "role": "Faculty Advisor",
       "email": "ykobaya@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
-    },
-    {
-      "name": "Neel Madhav",
-      "role": "Student Advisor",
-      "email": "ndogra2@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/kobayashi.webp"
     }
   ],
   "teams": {
@@ -25,7 +19,7 @@
         "name": "Elizabeth Pardhe",
         "role": "Vice President, Emerging Initiatives",
         "email": "epardhe@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/elizabeth.webp"
       }
     ],
     "Admin, Operations": [
@@ -51,7 +45,7 @@
         "name": "Johnny Chau",
         "role": "Event Coordinator, Emerging Initiatives",
         "email": "vchau3@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/johnny.webp"
       }
     ],
     "Admin, Finance": [
@@ -59,19 +53,19 @@
         "name": "Arleen Kaur Teerthy",
         "role": "Vice President, Finance",
         "email": "ateerthy@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/arleen.webp"
       },
       {
         "name": "Shiv Patel",
         "role": "Treasurer, Core",
         "email": "spate310@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/shiv.webp"
       },
       {
         "name": "Cherry Goyal",
         "role": "Treasurer, Emerging Initiatives",
         "email": "cgoyal6@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/cherry.webp"
       }
     ],
     "Industry Relations": [
@@ -91,13 +85,13 @@
         "name": "Alex Ward Stratman",
         "role": "Industry Relations Specialist",
         "email": "awardstr@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/alex.webp"
       },
       {
         "name": "Yahia Alqurnawi",
         "role": "Industry Relations Specialist",
         "email": "yalqurna@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/yahia.webp"
       }
     ],
     "Technology": [
@@ -111,7 +105,7 @@
         "name": "Sri Ujjwal Reddy Beereddy",
         "role": "Associate Director, Technology",
         "email": "sbeeredd@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/sri.webp"
       },
       {
         "name": "Chelsea Lianne Gomez",
@@ -123,7 +117,7 @@
         "name": "Sarthak Aggarwal",
         "role": "Workshop Content Developer",
         "email": "saggar34@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/sarthak.webp"
       },
       {
         "name": "Tanay Upreti",
@@ -135,13 +129,13 @@
         "name": "Victoria Fan",
         "role": "Internal Tools Developer",
         "email": "vmfan@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/victoria.webp"
       },
       {
         "name": "Aryan Keluskar",
         "role": "Special Events Organizer",
         "email": "akeluska@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/aryan.webp"
       },
       {
         "name": "Darsh Chaurasia",
@@ -153,7 +147,7 @@
         "name": "Ash Srivastava",
         "role": "Internal Tools Developer",
         "email": "asriv132@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/ash.webp"
       }
     ],
     "Development & Engagement": [
@@ -161,19 +155,19 @@
         "name": "Shreya Bhandarkar",
         "role": "Director, Development & Engagement",
         "email": "sbhand24@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/shreya.webp"
       },
       {
         "name": "Rachel Yonan",
         "role": "Community Outreach",
         "email": "riyonan@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/rachel.webp"
       },
       {
         "name": "Harini Mahendran",
         "role": "Community Outreach",
         "email": "hmahend4@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/harini.webp"
       }
     ],
     "Marketing": [
@@ -181,37 +175,37 @@
         "name": "Aditi Prasath",
         "role": "Director, Marketing",
         "email": "aprasath@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/aditi.webp"
       },
       {
         "name": "Sara Schultz",
         "role": "Associate Director, Marketing",
         "email": "sschul19@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/sara.webp"
       },
       {
         "name": "Leon Auster Dsouza",
         "role": "Social Media Manager",
         "email": "ldsouza2@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/leon.webp"
       },
       {
         "name": "Marina Nasralla",
         "role": "Graphic Designer",
         "email": "mnasral2@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/marina.webp"
       },
       {
         "name": "Sai Rithwik Kukunuri",
         "role": "Graphic Designer",
         "email": "skukunu1@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/sai.webp"
       },
       {
         "name": "Alex Babayev",
         "role": "Video Editor",
         "email": "rbabaye1@asu.edu",
-        "image": "/logo/soda-logo-blue.webp"
+        "image": "/headshots/alex.webp"
       }
     ]
   }
