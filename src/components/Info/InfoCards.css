@@ -20,7 +20,6 @@
 }
 
 .infocards #title {
-  font-family: "Apfel-Fett";
   font-size: 2em;
   text-align: center;
   padding: 7vw;
@@ -36,7 +35,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
   background-color: white;
   color: black;
-  font-family: "Apfel-Regular";
 }
 
 .card-content {
