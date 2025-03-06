@@ -223,7 +223,7 @@ body {
 }
 
 .hero-container {
-  @apply mx-auto sm:ml-16  flex-wrap flex  md:flex-row flex-col-reverse md:justify-center md:items-center;
+  @apply max-w-7xl sm:ml-16  flex-wrap flex  md:flex-row flex-col-reverse md:justify-center md:items-center;
 }
 
 .left-hero {
