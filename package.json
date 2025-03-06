@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/space-grotesk": "^5.2.5",
     "@headlessui/react": "^2.0.4",
     "@heroicons/react": "^2.1.3",
     "@tailwindcss/typography": "^0.5.15",
