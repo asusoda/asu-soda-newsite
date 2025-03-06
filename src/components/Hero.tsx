@@ -10,7 +10,7 @@ function Hero() {
       <main className="hero  ">
         <section className="hero-container">
           <summary className="left-hero">
-            <h1 className="hero-large-text  mb-10">
+            <h1 className="hero-large-text  md:mb-10">
               The Software Developers Association
             </h1>
             <Statistics />

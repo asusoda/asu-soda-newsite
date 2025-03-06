@@ -23,7 +23,7 @@ class MemberCards extends Component<MemberCardsProps> {
     const advisors = contacts.advisors;
 
     return (
-      <div className="team pt-[100px]" id="team">
+      <div className="team space-y-24 md:pt-[100px]" id="team">
         <h1 className="section-header-text">Our Team</h1>
         {/* <Divider horizontal id="title">
           Team
@@ -36,27 +36,25 @@ class MemberCards extends Component<MemberCardsProps> {
 
         {Object.keys(teams).map((team, i) => (
           <React.Fragment key={i}>
-            <Divider horizontal className="subteam-divider">
+            <div className="flex flex-col text-center text-4xl md:text-5xl font-semibold">
               {team}
-            </Divider>
-            <div id="cards">
+            </div>
+            <div className="flex flex-col px-3 md:flex-wrap md:flex-row grow items-center md:items-start gap-y-24 md:gap-x-24 w-full  justify-center">
               {teams[team].map((member, j) => (
-                <Card key={j} className="Card rounded-card">
-                  <Card.Content className="card-content">
-                    <div className="card-image-wrapper">
+                <div key={j} className="flex w-full md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-8  items-center justify-center">
+                    <div className="">
                       <Image
-                        className="card-image"
+                        className=" w-[30vw] md:w-[15vw] rounded-full"
                         src={member.image}
-                        size="tiny"
                         alt={`${member.name} image`}
                       />
                     </div>
 
                     <div className="card-text">
-                      <Card.Header className="card-header whitespace-pre-line font-semibold text-xl">
+                      <div className="card-header whitespace-pre-line font-semibold text-xl">
                         {member.name}
-                      </Card.Header>
-                      <Card.Meta className="">
+                      </div>
+                      <div className="">
                         {member.role}
                         <br />
                         <Popup
@@ -74,47 +72,55 @@ class MemberCards extends Component<MemberCardsProps> {
                           //header='Open Mail Client'
                           //content={member.email}
                         />
-                      </Card.Meta>
-                    </div>
-                  </Card.Content>
-                </Card>
+                      </div>
+                  </div>
+                </div>
               ))}
             </div>
           </React.Fragment>
         ))}
 
-        <Divider horizontal className="subteam-divider">
-          Advisors
-        </Divider>
-        <div id="cards">
-          {advisors.map((advisor, j) => (
-            <Card key={j} className="Card rounded-card">
-              <Card.Content className="card-content">
-                <div className="card-image-wrapper">
-                  <Image
-                    className="card-image"
-                    src={advisor.image}
-                    size="tiny"
-                    alt={`${advisor.name} image`}
+<div className="flex flex-col text-center text-4xl md:text-5xl font-semibold">
+              Advisors
+            </div>
+            <div className="flex flex-col px-3 flex-wrap md:flex-row grow items-start gap-x-24 w-full  justify-center">
+              {advisors.map((advisor, j) => (
+              <div key={j} className="flex w-full md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-8  items-center justify-center">
+              <div className="">
+                <Image
+                  className=" w-[30vw] md:w-[15vw] rounded-full"
+                  src={advisor.image}
+                  alt={`${advisor.name} image`}
+                />
+              </div>
+
+              <div className="card-text">
+                <div className="card-header whitespace-pre-line font-semibold text-xl">
+                  {advisor.name}
+                </div>
+                <div className="">
+                  {advisor.role}
+                  <br />
+                  <Popup
+                    key={advisor.name}
+                    position="bottom center"
+                    inverted
+                    trigger={
+                      <a
+                        href={"mailto:" + advisor.email}
+                        className="card-email"
+                      >
+                        {advisor.email}
+                      </a>
+                    }
+                    //header='Open Mail Client'
+                    //content={member.email}
                   />
                 </div>
-
-                <div className="card-text">
-                  <Card.Header className="card-header">
-                    {advisor.name}
-                  </Card.Header>
-                  <Card.Meta className="card-meta">
-                    {advisor.role}
-                    <br />
-                    <a href={"mailto:" + advisor.email} className="card-email">
-                      {advisor.email}
-                    </a>
-                  </Card.Meta>
-                </div>
-              </Card.Content>
-            </Card>
-          ))}
-        </div>
+            </div>
+          </div>
+              ))}
+            </div>
       </div>
     );
   }

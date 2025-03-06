@@ -60,9 +60,9 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
 
 export default function Blog() {
   return (
-    <main className="mt-10 mb-16">
+    <main className="mt-10 md:mb-16">
       <h1 className="section-header-text mb-6">Our Programs</h1>
-      <section className="flex max-md:flex-col grow gap-8  justify-center">
+      <section className="flex p-8 max-md:flex-col grow gap-8  justify-center">
         <IndividualBlog
           imageURL="/events/microsoft.webp"
           tag={["mentorship", "community development"]}

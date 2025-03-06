@@ -55,7 +55,7 @@ function SponsorsMarquee() {
               key={index}
               src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
-              className="w-[10vw] max-md:w-[18vw] object-contain"
+              className="w-[10vw] max-md:w-[38vw] object-contain"
             />
           ))}
           {sponsors.map((element, index) => (
@@ -63,7 +63,7 @@ function SponsorsMarquee() {
               key={index}
               src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
-              className="w-[10vw] max-md:w-[18vw]  object-contain"
+              className="w-[10vw] max-md:w-[38vw]  object-contain"
             />
           ))}
           {sponsors.map((element, index) => (
@@ -71,7 +71,7 @@ function SponsorsMarquee() {
               key={index}
               src={logoMap[element.name as SponsorLogo]} // Casting element.name to SponsorLogo
               alt={element.name}
-              className="w-[10vw] max-md:w-[18vw] object-contain"
+              className="w-[10vw] max-md:w-[38vw] object-contain"
             />
           ))}
         </div>

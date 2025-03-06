@@ -1,6 +1,6 @@
 export function AllRightsReserved() {
   return (
-    <div className="text-center items-center py-5">
+    <div className=" py-5">
       <p className="text-sm text-soda-gray">
         © {new Date().getFullYear()} Software Developers Association at ASU.
         <br />

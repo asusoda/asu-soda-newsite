@@ -38,7 +38,6 @@ body {
   100% {
     opacity: 1;
   }
-  
 }
 @keyframes animatetop {
   from {
@@ -197,34 +196,34 @@ body {
 */
 
 .section-header-text {
-  @apply text-white font-bold text-xl md:text-5xl text-center pb-4;
+  @apply text-white font-bold text-3xl md:text-5xl text-center pb-4;
 }
 
 /* --------- STATS --------- */
 .statistics {
-  @apply text-white max-md:w-screen  flex  
-  flex-row gap-4 py-4 px-6 my-2 justify-center flex-wrap md:rounded-[80px] z-10;
+  @apply text-white flex  
+  flex-row gap-4 p-2 md:py-4 md:px-6 my-2 md:justify-center flex-wrap md:rounded-[80px] z-10;
 }
 
 .stat-container {
-  @apply items-center text-gray-400 text-center;
+  @apply flex flex-col flex-wrap text-gray-400 text-center;
 }
 .stat-value {
-  @apply text-3xl text-gray-400 font-extrabold;
+  @apply md:text-3xl text-xl text-gray-400 font-extrabold;
 }
 
 .stat-label {
   @apply text-sm text-gray-400 font-bold;
-} 
+}
 
 /* --------- HERO --------- */
 
 .hero {
-  @apply mx-[3vw]  min-h-screen  justify-center items-center flex flex-col;
+  @apply min-h-screen  md:justify-center items-center flex flex-col;
 }
 
 .hero-container {
-  @apply mx-auto sm:ml-16 flex flex-col md:flex-row justify-center items-center ;
+  @apply mx-auto sm:ml-16  flex-wrap flex  md:flex-row flex-col-reverse md:justify-center md:items-center;
 }
 
 .left-hero {
@@ -232,11 +231,11 @@ body {
 }
 
 .hero-large-text {
-  @apply text-4xl md:text-7xl font-bold leading-tight px-6 max-md:py-4;
+  @apply text-[12vw] md:text-7xl font-bold leading-tight px-6 max-md:py-4;
 }
 
 .hero-small-text {
-  @apply my-2 text-base  max-md:text-sm px-6 text-soda-gray;
+  @apply my-2 text-base md:text-center text-center  max-md:text-sm px-6 text-soda-gray;
 }
 
 /* --------- SPONSORS --------- */
@@ -277,17 +276,12 @@ body {
 }
 
 /* --------- FOOTER --------- */
-footer {
-  @apply w-full pt-12;
-}
 
-.footer-container {
-  @apply grid grid-cols-4 max-md:grid-cols-2 px-60 py-16 max-md:px-10 max-md:py-5;
-}
+
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
-  @apply flex gap-4 text-3xl  rounded-full py-4 px-4 text-white justify-center z-10;
+  @apply flex gap-4 text-3xl w-full flex-wrap rounded-full py-4 px-4 text-white md:justify-start justify-center z-10;
 }
 
 /* --------- BUTTON --------- */
