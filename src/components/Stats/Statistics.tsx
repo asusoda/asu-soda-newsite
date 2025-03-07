@@ -7,8 +7,8 @@ const dollarFormatter = new Intl.NumberFormat("US", {
   style: "currency",
   currency: "USD",
 });
-const teams = teamsData.teams;
-const advisors = teamsData.advisors;
+const teams = Object.fromEntries(Object.entries(teamsData).slice(0, -1));  // Assuming advisors is last entry
+const advisors = teamsData["Advisors"];
 
 const statistics = [
   {
@@ -27,7 +27,7 @@ const statistics = [
   },
   {
     key: "teams",
-    label: "Committees",
+    label: "Teams",
     value: Object.keys(teams).length,
     steps: 1,
     formatter: (x: number) => <>{x}</>,
@@ -44,7 +44,7 @@ const statistics = [
   {
     key: "advisors",
     label: "Advisors",
-    value: Object.keys(advisors).length,
+    value: advisors.length,
     steps: 1,
     formatter: (x: number) => <>{x}</>,
   },
@@ -65,11 +65,6 @@ export default function Statistics() {
           <Statistic.Label className="stat-label">{label}</Statistic.Label>
         </Statistic>
       ))}
-
-      {/* <RoundedButton
-        name="Learn More"
-        url="https://asu.campuslabs.com/engage/organization/soda"
-      ></RoundedButton> */}
     </div>
   );
 }
