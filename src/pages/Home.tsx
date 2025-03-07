@@ -15,8 +15,6 @@ function Home() {
         <title>SoDA</title>
         <meta name="description" content="SoDA is one of the largest communities of students at Arizona State University." />
         <meta name="keywords" content="software developers association, soda, asu, arizona state university, computer science, recruiting, student organization" />
-        {/* ✅ Preload LCP Image */}
-        <link rel="preload" as="image" href="../assets/placeholder/logo-placeholder.webp" />
       </Helmet>
       <Hero />
       <AboutUs />
