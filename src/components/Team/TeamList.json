@@ -16,6 +16,20 @@
         "image": "/headshots/ryan.webp"
       }
     ],
+    "Admin, Emerging Initiatives": [
+      {
+        "name": "Elizabeth Pardhe",
+        "role": "Vice President,\nEmerging Initiatives",
+        "email": "epardhe@asu.edu",
+        "image": "/headshots/elizabeth.webp"
+      },
+      {
+        "name": "Hao Chau",
+        "role": "Event Coordinator,\nEmerging Initiatives",
+        "email": "vchau3@asu.edu",
+        "image": "/headshots/johnny.webp"
+      }
+    ],
     "Admin, Operations": [
       {
         "name": "Harshit Kumar",
@@ -56,20 +70,6 @@
         "image": "/headshots/cherry.webp"
       }
     ],
-    "Admin, Emerging Initiatives": [
-      {
-        "name": "Elizabeth Pardhe",
-        "role": "Vice President,\nEmerging Initiatives",
-        "email": "epardhe@asu.edu",
-        "image": "/headshots/elizabeth.webp"
-      },
-      {
-        "name": "Hao Chau",
-        "role": "Event Coordinator,\nEmerging Initiatives",
-        "email": "vchau3@asu.edu",
-        "image": "/headshots/johnny.webp"
-      }
-    ], 
     "Industry Relations": [
       {
         "name": "Nishant Dhongadi",
