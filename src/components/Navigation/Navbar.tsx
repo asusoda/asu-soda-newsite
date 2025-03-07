@@ -38,11 +38,6 @@ function NavbarSection() {
       
     },
     {
-      name: "SoDA Code Challenge XI",
-      id_href: "https://code.thesoda.io",
-      
-    },
-    {
       name: "Leaderboard",
       id_href: "/leaderboard", // Updated to open in the same tab
       
