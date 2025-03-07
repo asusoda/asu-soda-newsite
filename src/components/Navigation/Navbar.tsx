@@ -86,7 +86,7 @@ function NavbarSection() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((el) => (
-          <NavbarItem>
+          <NavbarItem key={el.name}>
             <Link href={el.id_href}  className="text-white">
               {el.name}
             </Link>
