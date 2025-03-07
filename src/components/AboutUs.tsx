@@ -28,11 +28,11 @@ const perks = [
 export default function AboutUs() {
   return (
     <main
-      className="flex md:pt-[100px] flex-col max-w-7xl min-h-screen max-md:w-[90vw] justify-center items-center mx-auto mb-20 max-md:mb-10"
+      className="flex md:pt-[100px] flex-col min-h-screen justify-center items-center"
       id="info"
     >
-      <section className="text-center max-md:text-left">
-        <h1 className="section-header-text">About SoDA</h1>
+      <h1 className="section-header-text">About SoDA</h1>
+      <section className="text-center items-center">
         <p className="hero-small-text px-24 max-w-[100ch] max-lg:px-6 mx-auto">
           The Software Developers Association (SoDA) at Arizona State
           University is a student-run, free organization dedicated to
@@ -42,7 +42,7 @@ export default function AboutUs() {
         </p>
       </section>
 
-      <h1 className="section-header-text mt-10">Mission</h1>
+      <h1 className="section-header-text">Mission</h1>
       <section className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {perks.map((perk) => (
           <div key={perk.header} className="bg-neutral-900  p-4 border-gray-600 rounded-2xl justify-center flex flex-col min-h-[300px] max-w-[300px] w-full">

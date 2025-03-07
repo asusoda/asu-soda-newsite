@@ -196,7 +196,7 @@ body {
 */
 
 .section-header-text {
-  @apply text-white font-bold text-3xl md:text-5xl text-center pb-4;
+  @apply text-white font-bold text-3xl md:text-5xl text-center mt-20 p-4 mb-0 w-max rounded-xl;
 }
 
 /* --------- STATS --------- */

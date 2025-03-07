@@ -46,7 +46,7 @@ function SponsorsMarquee() {
   };
 
   return (
-    <main id="sponsors" className="mb-20 pt-[100px]">
+    <main id="sponsors" className="flex flex-col items-center">
       <h1 className="section-header-text">Sponsors</h1>
       <section className="sponsor-container">
         <div className="marquee-effect-container">

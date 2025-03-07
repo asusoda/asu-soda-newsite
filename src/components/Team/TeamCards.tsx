@@ -9,7 +9,7 @@ function MemberCards() {
     <div key={j} className="flex w-full md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-8 items-center justify-center">
       <div className="">
         <Image
-          className="w-[30vw] md:w-[15vw] rounded-full"
+          className="w-[50vw] md:w-[15vw] rounded-full"
           src={member.image}
           alt={`${member.name} image`}
         />
@@ -41,14 +41,14 @@ function MemberCards() {
   )
 
   return (
-    <div className="team space-y-24 md:pt-[100px]" id="team">
+    <div className="team flex flex-col items-center" id="team">
       <h1 className="section-header-text">Team</h1>
       {Object.keys(teams).map((team: string, i) => (
         <React.Fragment key={i}>
-          <div className="flex flex-col text-center text-4xl md:text-5xl font-semibold">
+          <div className="flex flex-col my-12 text-center text-2xl md:text-4xl font-semibold">
             {team}
           </div>
-          <div className="flex flex-col px-[10vw] md:flex-wrap md:flex-row grow items-center md:items-start gap-y-24 md:gap-x-24 w-full justify-center">
+          <div className="flex flex-col px-[10vw] md:flex-wrap md:flex-row grow items-center md:items-start gap-y-24 md:gap-x-24 w-full justify-center mb-12">
             {(teams[team]).map((member: TeamMember, j: number) => renderMemberCard(member, j))}
           </div>
         </React.Fragment>
