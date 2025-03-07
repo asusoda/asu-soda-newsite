@@ -202,7 +202,7 @@ body {
 /* --------- STATS --------- */
 .statistics {
   @apply text-white flex  
-  flex-row gap-4 p-2 md:py-4 md:px-6 my-2 md:justify-center flex-wrap md:rounded-[80px] z-10;
+  flex-row gap-4 p-2 md:py-4 md:px-6 my-2 md:justify-start justify-center flex-wrap md:rounded-[80px] z-10;
 }
 
 .stat-container {
