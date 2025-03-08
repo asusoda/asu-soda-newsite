@@ -23,7 +23,7 @@ export default function Stars({ className = "" }: { className?: string }) {
   const starChars = [".", "+", "*", "✦", "✧", "★"]
 
   // Maximum number of stars in equilibrium
-  const maxStars = 1000
+  const maxStars = 250
 
   // *** ADJUSTABLE PARAMETERS ***
   const spawnInterval = 5      // Time in ms between spawn attempts (lower = more frequent spawns)
