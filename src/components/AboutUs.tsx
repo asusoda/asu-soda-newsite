@@ -27,8 +27,10 @@ const perks = [
 
 export default function AboutUs() {
   return (
+    <>
+    <div className="flex flex-row w-full soda-bars z-50 h-2"></div>
     <main
-      className="flex md:pt-[100px] flex-col min-h-screen justify-center items-center"
+      className="flex  flex-col min-h-screen justify-center items-center"
       id="info"
     >
       <h1 className="section-header-text">About SoDA</h1>
@@ -62,5 +64,7 @@ export default function AboutUs() {
         ))}
       </section>
     </main>
+  
+    </>
   );
 }

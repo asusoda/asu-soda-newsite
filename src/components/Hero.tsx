@@ -3,6 +3,7 @@ import SocialMediaLinks from "./SocialMediaLinks";
 import EventsPhotoCarousel from "./EventsPhotoCarousel";
 //import AnimatedBackGround from "./AnimatedBackGround";
 import Typewriter from "typewriter-effect";
+import { Button } from "@heroui/react";
 
 function Hero() {
   return (
@@ -15,6 +16,7 @@ function Hero() {
             </h1>
             <Statistics />
             <SocialMediaLinks />
+            <div className=" text-gray-400 w-11/12 md:w-full ml-5 md:text-start text-center">asu@thesoda.io</div>
           </summary>
           <EventsPhotoCarousel />
         </section>

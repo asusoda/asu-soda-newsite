@@ -57,6 +57,7 @@ export default function SocialMediaLinks() {
           {link.icon}
         </a>
       ))}
+      
     </section>
   );
 }
