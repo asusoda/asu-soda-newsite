@@ -221,28 +221,6 @@ body {
   @apply text-sm text-gray-400 font-bold;
 }
 
-/* --------- HERO --------- */
-
-.hero {
-  @apply min-h-screen  md:justify-center items-center flex flex-col;
-}
-
-.hero-container {
-  @apply max-w-7xl sm:ml-16  flex-wrap flex  md:flex-row flex-col-reverse md:justify-center md:items-center;
-}
-
-.left-hero {
-  @apply md:w-1/2 flex flex-col items-start justify-between;
-}
-
-.hero-large-text {
-  @apply text-[12vw] md:text-7xl font-bold leading-tight px-6 max-md:py-4;
-}
-
-.hero-small-text {
-  @apply my-2 text-base md:text-center text-center  max-md:text-sm px-6 text-soda-gray;
-}
-
 /* --------- SPONSORS --------- */
 
 .sponsor-container {
