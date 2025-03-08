@@ -19,17 +19,17 @@ function NavbarSection() {
   const menuItems = [
     {
       name: "Info",
-      id_href: "#info",
+      id_href: "/#info",
       
     },
     {
       name: "Sponsors",
-      id_href: "#sponsors",
+      id_href: "/#sponsors",
       
     },
     {
       name: "Team",
-      id_href: "#team",
+      id_href: "/#team",
       
     },
     {
