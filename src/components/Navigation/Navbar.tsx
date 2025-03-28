@@ -1,17 +1,12 @@
 import { useState } from "react";
 import React from "react";
+import { Button } from "@/components/ui/button";
 import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-  Link,
-  Button,
-  Image,
-} from "@heroui/react";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 function NavbarSection() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -64,57 +59,50 @@ function NavbarSection() {
 
   // </nav>
   return (
-    <Navbar
-      className="bg-black bg-opacity-85 backdrop-blur-md z-20 dark"
-      onMenuOpenChange={setIsMenuOpen}
-    >
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-        <NavbarBrand>
-          <Link href="/" className="flex gap-4 items-center">
-            <Image
-              src="logo/Soda_Logo_Dark_Mode.svg"
-              className="w-28 "
-              alt="SoDA Logo"
-            />
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
+    <nav className="bg-black bg-opacity-85 backdrop-blur-md z-20 dark flex items-center justify-between p-4">
+      <div className="flex items-center gap-4">
+        <DropdownMenu onOpenChange={setIsMenuOpen}>
+          <DropdownMenuTrigger asChild className="sm:hidden">
+            <Button variant="ghost" size="icon">
+              {isMenuOpen ? "✕" : "☰"}
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="dark bg-black">
+            {menuItems.map((item) => (
+              <DropdownMenuItem key={item.name} asChild>
+                <a href={item.id_href} className="text-white w-full">
+                  {item.name}
+                </a>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <a href="/" className="flex gap-4 items-center">
+          <img
+            src="/logo/Soda_Logo_Dark_Mode.svg"
+            className="w-28"
+            alt="SoDA Logo"
+          />
+        </a>
+      </div>
+
+      <div className="hidden sm:flex gap-4">
         {menuItems.map((el) => (
-          <NavbarItem key={el.name}>
-            <Link href={el.id_href}  className="text-white">
-              {el.name}
-            </Link>
-          </NavbarItem>
+          <a key={el.name} href={el.id_href} className="text-white">
+            {el.name}
+          </a>
         ))}
-      </NavbarContent>
-      <NavbarContent justify="end">
-       
-        <NavbarItem>
-          <Button as={Link} className="text-white bg-soda-red" href="https://asu.campuslabs.com/engage/organization/soda">
+      </div>
+
+      <div>
+        <Button asChild className="text-white bg-soda-red">
+          <a href="https://asu.campuslabs.com/engage/organization/soda">
             SIGN UP
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarMenu className="dark">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="text-white w-full"
-              href={item.id_href}
-              size="lg"
-            >
-              {item.name}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
-    </Navbar>
+          </a>
+        </Button>
+      </div>
+    </nav>
   );
 }
 
