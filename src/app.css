@@ -89,18 +89,18 @@
   --bg-glass-gradient: linear-gradient(to bottom, transparent, rgba(55, 65, 81, 0.3));
 
   /* Animations */
-  --animate-marquee: marquee 25s linear infinite;
-  --animate-marquee2: marquee2 25s linear infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee2: marquee2 30s linear infinite;
 
   /* Define keyframes for the animations */
   @keyframes marquee {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 
   @keyframes marquee2 {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(0%); }
+    0% { transform: translateX(50%); }
+    100% { transform: translateX(0); }
   }
 }
 
@@ -366,6 +366,9 @@ body {
 
 .marquee-effect-container {
   @apply py-6  max-md:px-4 pl-20 flex flex-row animate-marquee whitespace-nowrap gap-8;
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 /* --------- NAVIGATION  --------- */

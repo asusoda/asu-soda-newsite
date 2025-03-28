@@ -25,6 +25,8 @@
     "@tsparticles/react": "^3.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-react": "^8.5.2",
     "framer-motion": "^11.18.2",
     "gh-pages": "^6.1.1",
     "i": "^0.3.7",
