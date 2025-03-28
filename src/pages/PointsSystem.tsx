@@ -1,8 +1,6 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import "../styles/Points.css";
 
 const markdownContent = `# 🎯 Distinguished Members Program
 

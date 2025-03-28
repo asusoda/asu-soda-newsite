@@ -1,6 +1,106 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Basic colors */
+  --color-soda-red: #CA2352;
+  --color-soda-blue: #3A64E4;
+  --color-soda-gray: #B5BABA;
+  --color-soda-white: #E7E7E5;
+  --color-soda-black: #080909;
+
+  /* Soda Blue Scale */
+  --color-soda-blue-900: oklch(55% 0.2 266);
+  --color-soda-blue-775: oklch(55% 0.2 266);
+  --color-soda-blue-675: oklch(55% 0.2 266);
+  --color-soda-blue-550: oklch(55% 0.2 266);
+  --color-soda-blue-450: oklch(55% 0.2 266);
+  --color-soda-blue-325: oklch(55% 0.2 266);
+  --color-soda-blue-225: oklch(55% 0.2 266);
+  --color-soda-blue-100: oklch(55% 0.2 266);
+
+  /* Soda Red Scale */
+  --color-soda-red-900: oklch(55% 0.2 12);
+  --color-soda-red-775: oklch(55% 0.2 12);
+  --color-soda-red-675: oklch(55% 0.2 12);
+  --color-soda-red-550: oklch(55% 0.2 12);
+  --color-soda-red-450: oklch(55% 0.2 12);
+  --color-soda-red-325: oklch(55% 0.2 12);
+  --color-soda-red-225: oklch(55% 0.2 12);
+  --color-soda-red-100: oklch(55% 0.2 12);
+
+  /* Surface Scale */
+  --color-surface-900: oklch(13.85% 0.0019 196.94);
+  --color-surface-775: oklch(21.5% 0.001 196.94);
+  --color-surface-675: oklch(33% 0.003 196.94);
+  --color-surface-550: oklch(44.5% 0.004 196.94);
+  --color-surface-450: oklch(55.5% 0.006 196.94);
+  --color-surface-325: oklch(67% 0.005 196.94);
+  --color-surface-225: oklch(78.5% 0.006 196.94);
+  --color-surface-100: oklch(90% 0.006 196.94);
+
+  /* Success Scale */
+  --color-success-900: oklch(82.56% 0.1805 124.75);
+  --color-success-775: oklch(82.56% 0.1805 124.75);
+  --color-success-675: oklch(82.56% 0.1805 124.75);
+  --color-success-550: oklch(82.56% 0.1805 124.75);
+  --color-success-450: oklch(82.56% 0.1805 124.75);
+  --color-success-325: oklch(82.56% 0.1805 124.75);
+  --color-success-225: oklch(82.56% 0.1805 124.75);
+  --color-success-100: oklch(82.56% 0.1805 124.75);
+
+  /* Caution Scale */
+  --color-caution-900: oklch(78.5% 0.148 90.52);
+  --color-caution-775: oklch(78.5% 0.148 90.52);
+  --color-caution-675: oklch(78.5% 0.148 90.52);
+  --color-caution-550: oklch(78.5% 0.148 90.52);
+  --color-caution-450: oklch(78.5% 0.148 90.52);
+  --color-caution-325: oklch(78.5% 0.148 90.52);
+  --color-caution-225: oklch(78.5% 0.148 90.52);
+  --color-caution-100: oklch(78.5% 0.148 90.52);
+
+  /* Danger Scale */
+  --color-danger-900: oklch(62.74% 0.2425 16.82);
+  --color-danger-775: oklch(62.74% 0.2425 16.82);
+  --color-danger-675: oklch(62.74% 0.2425 16.82);
+  --color-danger-550: oklch(62.74% 0.2425 16.82);
+  --color-danger-450: oklch(62.74% 0.2425 16.82);
+  --color-danger-325: oklch(62.74% 0.2425 16.82);
+  --color-danger-225: oklch(62.74% 0.2425 16.82);
+  --color-danger-100: oklch(62.74% 0.2425 16.82);
+
+  /* Info Scale */
+  --color-info-900: oklch(63.28% 0.1249 231.85);
+  --color-info-775: oklch(63.28% 0.1249 231.85);
+  --color-info-675: oklch(63.28% 0.1249 231.85);
+  --color-info-550: oklch(63.28% 0.1249 231.85);
+  --color-info-450: oklch(63.28% 0.1249 231.85);
+  --color-info-325: oklch(63.28% 0.1249 231.85);
+  --color-info-225: oklch(63.28% 0.1249 231.85);
+  --color-info-100: oklch(63.28% 0.1249 231.85);
+
+  /* Font Family */
+  --font-space: "Space Grotesk", "sans-serif";
+
+  /* Background Images */
+  --bg-glass-gradient: linear-gradient(to bottom, transparent, rgba(55, 65, 81, 0.3));
+
+  /* Animations */
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee2: marquee2 25s linear infinite;
+
+  /* Define keyframes for the animations */
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  @keyframes marquee2 {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
+  }
+}
+
 
 :root {
   color-scheme: dark;
@@ -236,7 +336,7 @@ body {
 
 /* --------- NAVIGATION  --------- */
 .navigation {
-  @apply w-full fixed bg-black bg-opacity-85 backdrop-blur-md z-20 max-md:py-0 py-1;
+  @apply w-full fixed bg-black opacity-85 backdrop-blur-md z-20 max-md:py-0 py-1;
 }
 
 @layer utilities {
