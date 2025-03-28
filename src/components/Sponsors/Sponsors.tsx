@@ -76,7 +76,7 @@ function SponsorsMarquee() {
                   <img
                     src={logoMap[element.name as SponsorLogo]}
                     alt={element.name}
-                    className="w-full h-auto max-h-20 object-contain"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               </CarouselItem>
