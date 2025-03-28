@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Card, Divider, Popup, Image } from "semantic-ui-react";
+import React from "react";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { TeamMember, Teams } from "./Contacts";
 import _teams from "./TeamList.json";
 
@@ -8,7 +8,7 @@ function MemberCards() {
   const renderMemberCard = (member: TeamMember, j: number) => (
     <div key={j} className="flex w-full md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-8 items-center justify-center">
       <div className="">
-        <Image
+        <img
           className="w-[50vw] md:w-[15vw] rounded-full"
           src={member.image}
           alt={`${member.name} image`}
@@ -22,19 +22,19 @@ function MemberCards() {
         <div className="">
           {member.role}
           <br />
-          <Popup
-            key={member.name}
-            position="bottom center"
-            inverted
-            trigger={
+          <Popover>
+            <PopoverTrigger asChild>
               <a
                 href={"mailto:" + member.email}
                 className="card-email"
               >
                 {member.email}
               </a>
-            }
-          />
+            </PopoverTrigger>
+            <PopoverContent className="w-auto p-2 bg-gray-800 text-white">
+              {member.email}
+            </PopoverContent>
+          </Popover>
         </div>
       </div>
     </div>

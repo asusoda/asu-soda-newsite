@@ -1,7 +1,5 @@
 import AnimatedNumber from "../logic/AnimatedNumber";
-import { Statistic } from "semantic-ui-react";
 import teamsData from "../../components/Team/TeamList.json";
-import RoundedButton from "../Button/RiArrowButton";
 
 const dollarFormatter = new Intl.NumberFormat("US", {
   style: "currency",
@@ -54,16 +52,16 @@ export default function Statistics() {
   return (
     <div className="statistics">
       {statistics.map(({ key, label, value, steps, formatter }) => (
-        <Statistic key={key} className="stat-container">
-          <Statistic.Value className="stat-value">
+        <div key={key} className="stat-container">
+          <div className="stat-value">
             <AnimatedNumber
               number={value}
               steps={steps}
               formatter={formatter}
             />
-          </Statistic.Value>
-          <Statistic.Label className="stat-label">{label}</Statistic.Label>
-        </Statistic>
+          </div>
+          <div className="stat-label">{label}</div>
+        </div>
       ))}
     </div>
   );

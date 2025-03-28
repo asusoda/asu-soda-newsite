@@ -37,7 +37,7 @@ Here's a brief high-level overview of the tech stack the `thesoda.io` uses:
 - For build tool, [Vite](https://vitejs.dev/guide/) provides a fast development experience for web projects. When you use Vite with React, you get a development setup that is both fast and modern. Vite is configured to handle React’s specific needs efficiently, allowing you to focus more on development and less on configuration.
 - [TypeScript](https://www.typescriptlang.org/) TypeScript is a superset of JavaScript that adds static typing to the language. It helps the project catch errors early in the development process and provides better tooling and code quality.
 - The app is styled using [TailwindCSS](https://tailwindcss.com/) Tailwind CSS is a utility-first CSS framework designed to make it easy to build custom, responsive designs without writing custom CSS.
-- Additionally, the use of external UI libraries such as [SemanticUI](https://semantic-ui.com/) and [AceternityUI](https://ui.aceternity.com/) enhances the experiences of our website. These might be subject to change later due to performance and SEO.
+- We also use shadcn for components
 
 # 🏠 Contributing
 

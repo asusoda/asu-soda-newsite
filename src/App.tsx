@@ -8,12 +8,10 @@ import PointsSystem from "./pages/PointsSystem";
 import Footer from "./components/Footer/Footer";
 import Leaderboard from "./pages/LeaderBoard";
 import Positions from "./pages/PositionOpenings";
-import {HeroUIProvider} from "@heroui/react";
+
 function App() {
   return (
-    <HeroUIProvider>
     <HelmetProvider>
-
       <Router>
         <NavbarSection />
         <Routes>
@@ -26,7 +24,6 @@ function App() {
         <Footer />
       </Router>
     </HelmetProvider>
-    </HeroUIProvider>
   );
 }
 

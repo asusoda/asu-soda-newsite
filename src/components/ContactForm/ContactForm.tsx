@@ -1,5 +1,4 @@
 import React, { Component, ChangeEvent, FormEvent } from 'react';
-import { Card, Button, Divider } from "semantic-ui-react";
 import "./ContactForm.css";
 
 // Define the form state type
@@ -41,9 +40,9 @@ class ContactForm extends Component<{}, ContactFormState> {
   render() {
     return (
       <div className="contact-form">
-        <Divider horizontal id="title">
+        <div className="divider" id="title">
           Contact Us
-        </Divider>
+        </div>
        
         <form onSubmit={this.handleSubmit} className="form-content">
           <div className="card-content">
@@ -85,8 +84,8 @@ class ContactForm extends Component<{}, ContactFormState> {
                 />
               </div>
 
-              <div className= "button-content">
-                <Button className="button">Send </Button>
+              <div className="button-content">
+                <button className="button">Send </button>
               </div>
           </div>
         </form>
