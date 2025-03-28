@@ -8,11 +8,13 @@ import PointsSystem from "./pages/PointsSystem";
 import Footer from "./components/Footer/Footer";
 import Leaderboard from "./pages/LeaderBoard";
 import Positions from "./pages/PositionOpenings";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <NavbarSection />
         <Routes>
           <Route path="/" element={<Home />} />
