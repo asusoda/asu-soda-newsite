@@ -51,7 +51,7 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
         <Markdown className="text-gray-200 mt-2 text-sm overflow-hidden text-ellipsis h-16">
           {summary}
         </Markdown>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/40 to-purple-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-500/40 to-zinc-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center" />
       </div>
     </Link>
   );
