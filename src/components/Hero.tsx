@@ -16,7 +16,7 @@ function Hero() {
           <Statistics />
           <SocialMediaLinks />
           <div className="text-gray-400 w-11/12 md:w-full ml-5 md:text-start text-center">
-            asu@thesoda.io
+            <a href="mailto:asu@thesoda.io">asu@thesoda.io</a>
           </div>
         </summary>
         <EventsPhotoCarousel />
