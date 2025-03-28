@@ -99,8 +99,8 @@ const Leaderboard: React.FC = () => {
   return (
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto p-4 sm:p-6 my-8 sm:my-16 md:my-24 lg:my-36 shadow-md rounded-lg bg-neutral-900 text-white">
       <Helmet>
-        <title>Leaderboard - ASU Soda</title>
-        <meta name="description" content="Check out the top performers in ASU Soda's leaderboard and see who's leading the rankings!" />
+        <title>Leaderboard</title>
+        <meta name="description" content="Check out the top performers in SoDA's leaderboard and see who's leading the rankings!" />
         <meta name="keywords" content="leaderboard, asu soda, asu, software developers association, arizona state university, benifits, computer science" />
       </Helmet>
 

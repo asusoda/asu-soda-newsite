@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 const markdownContent = `
-# Mentorship Program Details
+# Mentorship Program
 
 ## Overview
 
@@ -85,7 +85,7 @@ export default function Mentorship() {
     <div className="max-w-5xl mx-auto p-6 my-28 shadow-md rounded-lg">
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Mentorship Program - ASU Soda</title>
+        <title>Mentorship Program</title>
         <meta name="description" content="Learn about the ASU Soda Mentorship Program, designed to connect students with experienced mentors for professional growth." />
         <meta name="keywords" content="Mentorship Program, ASU Soda, Mentorship, Professional Growth, Student Mentorship, Mentorship Program Details, Computer science, CS Club" />
       </Helmet>

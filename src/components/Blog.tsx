@@ -65,18 +65,18 @@ export default function Blog() {
         <IndividualBlog
           imageURL="/events/microsoft.webp"
           tag={["mentorship", "community development"]}
-          title="Exclusive Mentoring Program"
+          title="Mentorship Program"
           summary="SoDA offers a comprehensive mentorship program designed to support those in need. Our program connects experienced mentors with mentees, providing guidance, and support to help them navigate their academic and professional journeys. "
           link="/mentorship"
-          alt="Mentoring Program"
+          alt="Mentorship Program"
         />
         <IndividualBlog
           imageURL="/how-to-start-a-points-system.webp"
           tag={["mentorship", "community development"]}
-          title="Distinguished Membership Program "
+          title="Distinguished Members Program"
           summary="SoDA introduced points system designed to encourage active participation in our community. By attending meetings, events, and engaging in various activities, members can earn points that contribute to their standing within the organization."
           link="/distinguishedMembers"
-          alt="Distinguished Membership Program"
+          alt="Distinguished Members Program"
         />
       </section>
     </main>
