@@ -7,6 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Link } from "react-router-dom";
 
 function NavbarSection() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -28,36 +29,29 @@ function NavbarSection() {
       
     },
     {
-      name: "Events",
-      id_href: "https://asu.campuslabs.com/engage/organization/soda/events",
-      
-    },
-    {
       name: "Leaderboard",
-      id_href: "/leaderboard", // Updated to open in the same tab
+      id_href: "/leaderboard",
       
     },
   ];
 
-  // <nav className="navigation fade-in" style={{ marginTop: 0 }}>
-  {
-    /* Primary Navigation - Hidden on mobile */
-  }
-  /* <DesktopNav /> */
-  {
-    /*Mobile Navigation*/
-  }
-  {
-    /* <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} /> */
-  }
-  {
-    /*Mobile Navigation when opened*/
-  }
-  {
-    /* {isOpen && <OpenedMobileNav setIsOpen={setIsOpen} />} */
-  }
+  const renderNavLink = (item: { name: string; id_href: string }) => {
+    // Use Link for internal routes without hash
+    if (item.id_href.startsWith('/') && !item.id_href.includes('#')) {
+      return (
+        <Link key={item.name} to={item.id_href} className="text-white">
+          {item.name}
+        </Link>
+      );
+    }
+    // Use anchor tags for hash links and external links
+    return (
+      <a key={item.name} href={item.id_href} className="text-white">
+        {item.name}
+      </a>
+    );
+  };
 
-  // </nav>
   return (
     <nav className="bg-black bg-opacity-85 backdrop-blur-md z-20 dark flex items-center justify-between p-4">
       <div className="flex items-center gap-4">
@@ -70,29 +64,23 @@ function NavbarSection() {
           <DropdownMenuContent className="dark bg-black">
             {menuItems.map((item) => (
               <DropdownMenuItem key={item.name} asChild>
-                <a href={item.id_href} className="text-white w-full">
-                  {item.name}
-                </a>
+                {renderNavLink(item)}
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
 
-        <a href="/" className="flex gap-4 items-center">
+        <Link to="/" className="flex gap-4 items-center">
           <img
             src="/logo/Soda_Logo_Dark_Mode.svg"
             className="w-28"
             alt="SoDA Logo"
           />
-        </a>
+        </Link>
       </div>
 
       <div className="hidden sm:flex gap-4">
-        {menuItems.map((el) => (
-          <a key={el.name} href={el.id_href} className="text-white">
-            {el.name}
-          </a>
-        ))}
+        {menuItems.map(renderNavLink)}
       </div>
 
       <div>
