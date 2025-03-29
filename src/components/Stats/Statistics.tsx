@@ -12,8 +12,9 @@ const statistics = [
   {
     key: "pizza",
     label: "worth of pizza served",
-    value: 22500,
-    steps: 1000,
+    // value: 22500,  // last updated 2020-01-16 (https://github.com/asusoda/asu-soda-oldsite/commit/0813ac24a21dcc190ecfc44b0829825c27d85718)
+    value: 57500, // last known value + semesters since * estimated = 22500 + 10 * 3500 = 57500  // last updated 2025-03-29
+    steps: 3000,
     formatter: (x: number) => <>{dollarFormatter.format(x)}</>,
   },
   {
@@ -36,7 +37,7 @@ const statistics = [
     value: Object.values(teams).reduce((total, team) => {
       return total + team.length;
     }, 0),
-    steps: 1,
+    steps: 2,
     formatter: (x: number) => <>{x}</>,
   },
   {
