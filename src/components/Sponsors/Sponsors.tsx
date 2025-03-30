@@ -71,12 +71,12 @@ function SponsorsMarquee() {
         >
           <CarouselContent className="ml-0">
             {sponsors.map((element, index) => (
-              <CarouselItem key={index} className="px-8 basis-1/3 md:basis-1/4 lg:basis-1/5">
-                <div className="flex items-center justify-center h-full min-h-[120px] py-10">
+              <CarouselItem key={index} className="px-2 basis-1/3 md:basis-1/4 lg:basis-1/5">
+                <div className="flex items-center justify-center h-full min-h-[120px] py-4 md:py-10">
                   <img
                     src={logoMap[element.name as SponsorLogo]}
                     alt={element.name}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-auto object-contain max-h-[80px]"
                   />
                 </div>
               </CarouselItem>
