@@ -6,16 +6,16 @@ import _teams from "./TeamList.json";
 function MemberCards() {
   const teams: Teams = _teams;
   const renderMemberCard = (member: TeamMember, j: number) => (
-    <div key={j} className="flex w-full md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-8 items-center justify-center">
-      <div className="">
+    <div key={j} className="flex w-[40vw] md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-4 items-center justify-center">
+      <div className="w-[40vw] md:w-[12vw] aspect-square">
         <img
-          className="w-[50vw] md:w-[15vw] rounded-full"
+          className="w-full h-full object-cover rounded-full"
           src={member.image}
           alt={`${member.name} image`}
         />
       </div>
 
-      <div className="card-text">
+      <div className="card-text min-h-34">
         <div className="card-header whitespace-pre-line font-semibold text-xl">
           {member.name}
         </div>
@@ -48,7 +48,7 @@ function MemberCards() {
           <div className="flex flex-col my-12 text-center text-2xl md:text-4xl font-semibold">
             {team}
           </div>
-          <div className="flex flex-col px-[10vw] md:flex-wrap md:flex-row grow items-center md:items-start gap-y-24 md:gap-x-24 w-full justify-center mb-12">
+          <div className="flex flex-row flex-wrap px-[5vw] md:flex-row grow items-center md:items-start gap-8 md:gap-x-24 w-full justify-center mb-12">
             {(teams[team]).map((member: TeamMember, j: number) => renderMemberCard(member, j))}
           </div>
         </React.Fragment>
