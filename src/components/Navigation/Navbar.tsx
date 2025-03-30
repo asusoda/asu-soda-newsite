@@ -1,4 +1,3 @@
-import { useState } from "react";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,7 +9,6 @@ import {
 import { Link } from "react-router-dom";
 
 function NavbarSection() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
     {
@@ -36,17 +34,31 @@ function NavbarSection() {
   ];
 
   const renderNavLink = (item: { name: string; id_href: string }) => {
+    const handleClick = () => {
+      setIsMenuOpen(false);
+    };
+
     // Use Link for internal routes without hash
     if (item.id_href.startsWith('/') && !item.id_href.includes('#')) {
       return (
-        <Link key={item.name} to={item.id_href} className="text-white">
+        <Link
+          key={item.name}
+          to={item.id_href}
+          className="text-white w-full"
+          onClick={handleClick}
+        >
           {item.name}
         </Link>
       );
     }
     // Use anchor tags for hash links and external links
     return (
-      <a key={item.name} href={item.id_href} className="text-white">
+      <a
+        key={item.name}
+        href={item.id_href}
+        className="text-white w-full"
+        onClick={handleClick}
+      >
         {item.name}
       </a>
     );
@@ -55,20 +67,28 @@ function NavbarSection() {
   return (
     <nav className="bg-black bg-opacity-85 backdrop-blur-md z-20 dark flex items-center justify-between p-4">
       <div className="flex items-center gap-4">
-        <DropdownMenu onOpenChange={setIsMenuOpen}>
-          <DropdownMenuTrigger asChild className="sm:hidden">
-            <Button variant="ghost" size="icon">
-              {isMenuOpen ? "✕" : "☰"}
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="dark bg-black">
-            {menuItems.map((item) => (
-              <DropdownMenuItem key={item.name} asChild>
-                {renderNavLink(item)}
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <div className="sm:hidden relative">
+          <DropdownMenu onOpenChange={setIsMenuOpen}>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="icon" className="z-50">
+                {isMenuOpen ? "✕" : "☰"}
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className="dark bg-black w-56 min-w-[200px] z-50 absolute left-0 top-10 border border-gray-700"
+              align="start"
+              sideOffset={0}
+              forceMount={true}
+              avoidCollisions={false}
+            >
+              {menuItems.map((item) => (
+                <DropdownMenuItem key={item.name} asChild>
+                  {renderNavLink(item)}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
 
         <Link to="/" className="flex gap-4 items-center">
           <img
