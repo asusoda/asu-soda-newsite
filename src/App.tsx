@@ -1,4 +1,5 @@
 import "@fontsource/space-grotesk";
+import "@fontsource/space-grotesk/700.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async"; // Import HelmetProvider
 import NavbarSection from "./components/Navigation/Navbar";
