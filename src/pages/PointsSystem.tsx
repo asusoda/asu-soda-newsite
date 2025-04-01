@@ -48,11 +48,12 @@ export default function PointsSystem() {
         <meta name="keywords" content="Distinguished Members Program, ASU Soda, Points System, Active Participation, Member Rewards, Member Perks, Member Benefits, computer science, CS, software development" />
       </Helmet>
 
-      <ReactMarkdown
-        children={markdownContent}
-        remarkPlugins={[remarkGfm]}
-        className="prose lg:prose-xl prose-invert custom-table"
-      />
-    </div>
+      <div className="prose lg:prose-xl prose-invert custom-table">
+        <ReactMarkdown
+          children={markdownContent}
+          remarkPlugins={[remarkGfm]}
+        />
+      </div>
+    </div> // Add the missing closing tag for the main container div
   );
 }

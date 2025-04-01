@@ -90,11 +90,12 @@ export default function Mentorship() {
         <meta name="keywords" content="Mentorship Program, ASU Soda, Mentorship, Professional Growth, Student Mentorship, Mentorship Program Details, Computer science, CS Club" />
       </Helmet>
 
-      <ReactMarkdown
-        children={markdownContent}
-        remarkPlugins={[remarkGfm]}
-        className="prose lg:prose-xl prose-invert"
-      />
-    </div>
+      <div className="prose lg:prose-xl prose-invert">
+        <ReactMarkdown
+          children={markdownContent}
+          remarkPlugins={[remarkGfm]}
+        />
+      </div>
+    </div> // Add the missing closing tag for the main container div
   );
 }
