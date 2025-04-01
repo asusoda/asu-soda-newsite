@@ -119,7 +119,7 @@ const Leaderboard: React.FC = () => {
       </div>
 
       {/* Description of the leaderboard */}
-      <p className="text-zinc-300 my-4 text-center px-2">
+      <p className="text-zinc-300 text-center px-2 mb-4"> {/* Removed my-4, added mb-4 for spacing below */}
         This leaderboard tracks points earned through the{' '}
         <Link to="/distinguishedMembers" className="text-soda-blue hover:underline">
           Distinguished Members Program
