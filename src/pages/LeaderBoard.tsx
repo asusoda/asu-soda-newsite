@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom'; // Import Link
 import { Button } from "@/components/ui/button"; // Keep Button import for potential future use or consistency
 
 interface PointsDetails {
@@ -119,7 +120,11 @@ const Leaderboard: React.FC = () => {
 
       {/* Description of the leaderboard */}
       <p className="text-zinc-300 my-4 text-center px-2">
-        This leaderboard tracks points earned through the Distinguished Members Program, recognizing active participation in SoDA meetings, workshops, and community engagement.
+        This leaderboard tracks points earned through the{' '}
+        <Link to="/distinguishedMembers" className="text-soda-blue hover:underline">
+          Distinguished Members Program
+        </Link>
+        , recognizing active participation in SoDA meetings, workshops, and community engagement.
       </p>
 
       <div className="w-full overflow-x-auto">
