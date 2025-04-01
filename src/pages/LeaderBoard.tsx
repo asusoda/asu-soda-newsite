@@ -131,8 +131,8 @@ const Leaderboard: React.FC = () => {
         <table className="table-auto border-collapse border border-zinc-700 w-full text-center">
           <thead>
             <tr className="bg-zinc-800">
-              <th className="border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Name</th>
-              <th className="border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Points Earned</th>
+              <th className="w-1/2 border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Name</th>
+              <th className="w-1/2 border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Points Earned</th>
             </tr>
           </thead>
           <tbody>
