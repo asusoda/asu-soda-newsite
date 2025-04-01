@@ -52,12 +52,14 @@ function NavbarSection() {
       );
     }
     // Use anchor tags for hash links and external links
+    const isExternal = item.id_href.startsWith('http');
     return (
       <a
         key={item.name}
         href={item.id_href}
         className="text-white w-full"
         onClick={handleClick}
+        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       >
         {item.name}
       </a>
@@ -105,7 +107,11 @@ function NavbarSection() {
 
       <div>
         <Button asChild className="text-white bg-soda-red">
-          <a href="https://asu.campuslabs.com/engage/organization/soda">
+          <a
+            href="https://asu.campuslabs.com/engage/organization/soda"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             SIGN UP
           </a>
         </Button>
