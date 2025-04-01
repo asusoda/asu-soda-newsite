@@ -65,7 +65,7 @@ function NavbarSection() {
   };
 
   return (
-    <nav className="bg-black bg-opacity-85 backdrop-blur-md z-20 dark flex items-center justify-between p-4">
+    <nav className="sticky top-0 bg-black bg-opacity-85 backdrop-blur-md z-20 dark flex items-center justify-between p-4">
       <div className="flex items-center gap-4">
         <div className="sm:hidden relative">
           <DropdownMenu onOpenChange={setIsMenuOpen}>
