@@ -20,7 +20,7 @@ export default function RightFooterGrid() {
     <section className="flex flex-col py-2 space-y-3">
         <h5 className="text-soda-white text-md">Resources</h5>
         {resources.map((el, i) => (
-          <a href={el.source} key={i}>
+          <a href={el.source} key={i} target="_blank" rel="noopener noreferrer">
             <p className="text-soda-gray text-[16px] hover:text-soda-white">
               {el.name}
             </p>
