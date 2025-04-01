@@ -117,6 +117,11 @@ const Leaderboard: React.FC = () => {
         <p className="text-zinc-500 mt-2 sm:mt-0">Click any row for point details</p>
       </div>
 
+      {/* Description of the leaderboard */}
+      <p className="text-zinc-300 my-4 text-center px-2">
+        This leaderboard tracks points earned through the Distinguished Members Program, recognizing active participation in SoDA meetings, workshops, and community engagement.
+      </p>
+
       <div className="w-full overflow-x-auto">
         <table className="table-auto border-collapse border border-zinc-700 w-full text-center">
           <thead>
