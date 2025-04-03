@@ -44,7 +44,7 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
       <img src={imageURL} alt={alt} className="w-full h-48 object-cover rounded-t-lg mb-4" /> {/* Added mb-4 for spacing */}
       {/* Tag rendering commented out */}
       <h2 className="text-2xl font-bold my-3">{title}</h2>
-      <Markdown className="text-gray-200 mt-2 text-sm overflow-hidden text-ellipsis h-16 flex-grow">
+      <Markdown className="text-gray-200 mt-2 text-sm flex-grow">
         {summary}
       </Markdown>
       {hasLink && (
