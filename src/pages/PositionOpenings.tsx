@@ -1,12 +1,41 @@
 import { Helmet } from "react-helmet-async";
+import { useState, useEffect } from "react";
 import RoundedButton from "../components/Button/RiArrowButton";
 import Slider from 'react-infinite-logo-slider'
-import { FaMeta, FaApple, FaAmazon, FaDropbox, FaSalesforce } from "react-icons/fa6";
+import { FaMeta, FaApple, FaAmazon, FaDropbox, FaSalesforce, FaMicrosoft } from "react-icons/fa6";
 import { AiOutlineOpenAI } from "react-icons/ai";
-import { SiGarmin } from "react-icons/si";
+import { SiIntuit, SiGarmin, SiGodaddy, SiIntel, SiGoldmansachs } from "react-icons/si";
 import { IconContext } from "react-icons";
 
 export default function Positions() {
+  const [sliderWidth, setSliderWidth] = useState("150px");
+  const [sliderDuration, setSliderDuration] = useState(15);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)"); // Corresponds to md breakpoint
+
+    const handleResize = () => {
+      if (mediaQuery.matches) {
+        // Mobile
+        setSliderWidth("125px");
+        setSliderDuration(10);
+      } else {
+        // Desktop
+        setSliderWidth("150px");
+        setSliderDuration(15);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add listener for screen size changes
+    mediaQuery.addEventListener("change", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []); // Empty dependency array ensures this runs only on mount and unmount
+
   return (
     <div className="max-w-5xl mx-auto p-6 md:mt-14 shadow-md rounded-lg prose lg:prose-xl prose-invert">
     {/* Helmet for SEO */}
@@ -24,12 +53,12 @@ export default function Positions() {
     <p>
       Our officers get jobs at companies like
     </p>
-
+    {/* todo: add cap one, state farm, lockheed */ }
     <p>
       <IconContext.Provider value={{size: "4rem", style: {verticalAlign: "middle"}}}>
       <Slider
-        width="150px"
-        duration={15}
+        width={sliderWidth}
+        duration={sliderDuration}
         blurBorders={true}
         blurBorderColor="#080909"
       >
@@ -43,6 +72,9 @@ export default function Positions() {
           <FaAmazon />
         </Slider.Slide>
         <Slider.Slide>
+          <FaMicrosoft />
+        </Slider.Slide>
+        <Slider.Slide>
           <FaDropbox />
         </Slider.Slide>
         <Slider.Slide>
@@ -52,7 +84,19 @@ export default function Positions() {
           <AiOutlineOpenAI />
         </Slider.Slide>
         <Slider.Slide>
+          <SiGoldmansachs />
+        </Slider.Slide>
+        <Slider.Slide>
+          <SiIntuit size="5rem" />
+        </Slider.Slide>
+        <Slider.Slide>
+          <SiIntel />
+        </Slider.Slide>
+        <Slider.Slide>
           <SiGarmin size="5rem" />
+        </Slider.Slide>
+        <Slider.Slide>
+          <SiGodaddy />
         </Slider.Slide>
         <Slider.Slide>
         </Slider.Slide>
