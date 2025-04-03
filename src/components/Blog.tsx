@@ -71,7 +71,7 @@ export default function Blog() {
           alt="Mentorship Program"
         />
         <IndividualBlog
-          imageURL="/how-to-start-a-points-system.webp"
+          imageURL="/winner-winner-chicken-dinner.webp"
           tag={["mentorship", "community development"]}
           title="Distinguished Members Program"
           summary="SoDA introduced points system designed to encourage active participation in our community. By attending meetings, events, and engaging in various activities, members can earn points that contribute to their standing within the organization."
