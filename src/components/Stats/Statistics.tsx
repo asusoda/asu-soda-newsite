@@ -39,14 +39,7 @@ const statistics = [
     }, 0),
     steps: 2,
     formatter: (x: number) => <>{x}</>,
-  },
-  {
-    key: "advisors",
-    label: "Advisors",
-    value: advisors.length,
-    steps: 1,
-    formatter: (x: number) => <>{x}</>,
-  },
+  }
 ];
 
 export default function Statistics() {
