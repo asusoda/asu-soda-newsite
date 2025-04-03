@@ -1,6 +1,7 @@
 import React from "react";
 import Markdown from "markdown-to-jsx";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react"; // Import the icon
 
 interface IndividualBlogProps {
   imageURL: string;
@@ -31,29 +32,49 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
   link,
   alt,
 }) => {
-  return (
-    <Link to={link} className="group relative block">
-      <div className="bg-neutral-900 border-gray-600 rounded-lg p-6 max-w-md h-full overflow-hidden text-white transition transform hover:scale-105 hover:shadow-lg">
-        <img src={imageURL} alt={alt} className="w-full h-48 object-cover rounded-t-lg" />
-        {/* <div className="flex flex-wrap gap-2 mt-2">
-          {tag.map((t, index) => (
-            <span
-              key={index}
-              className="rounded-full px-3 py-1 text-xs text-gray-800"
-              style={{ backgroundColor: getColorFromString(t) }}
-            >
-              {t}
-            </span>
-          ))}
+  const hasLink = link && link.trim() !== "";
+
+  // Base classes for the card content
+  const cardBaseClasses = "bg-neutral-900 border-gray-600 rounded-lg p-6 max-w-md h-full overflow-hidden text-white relative flex flex-col";
+  // Classes added only when there is a link for hover effects triggered by the parent Link's group class
+  const cardLinkClasses = hasLink ? "transition transform group-hover:scale-105 group-hover:shadow-lg" : "";
+
+  const cardContent = (
+    <div className={`${cardBaseClasses} ${cardLinkClasses}`}>
+      <img src={imageURL} alt={alt} className="w-full h-48 object-cover rounded-t-lg mb-4" /> {/* Added mb-4 for spacing */}
+      {/* Tag rendering commented out */}
+      <h2 className="text-2xl font-bold my-3">{title}</h2>
+      <Markdown className="text-gray-200 mt-2 text-sm overflow-hidden text-ellipsis h-16 flex-grow">
+        {summary}
+      </Markdown>
+      {hasLink && (
+        <div className="mt-auto pt-4 flex items-center text-blue-400 group-hover:text-blue-300 self-start"> {/* Pushed to bottom, aligned left */}
+          <span>Learn more</span>
+          <ArrowRight className="ml-1 h-4 w-4" />
         </div>
-        */}
-        <h2 className="text-2xl font-bold my-3">{title}</h2>
-        <Markdown className="text-gray-200 mt-2 text-sm overflow-hidden text-ellipsis h-16">
-          {summary}
-        </Markdown>
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-500/40 to-zinc-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center" />
-      </div>
-    </Link>
+      )}
+      {/* Add the gradient overlay back, conditionally shown on hover when there's a link */}
+      {hasLink && (
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-500/40 to-zinc-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center" /> // Added rounded-lg to match parent and kept flex centering just in case content is ever added here
+      )}
+    </div>
+  );
+
+  // Use React.Fragment shorthand <> </> which doesn't render an extra DOM node
+  // Wrap with Link only if hasLink is true, applying the 'group' class there
+  // Ensure the wrapper (Link or div) takes full height for consistent grid layout
+  return (
+    <>
+      {hasLink ? (
+        <Link to={link} className="group block h-full"> {/* Add group class here */}
+          {cardContent}
+        </Link>
+      ) : (
+        <div className="block h-full"> {/* No group class needed here */}
+          {cardContent}
+        </div>
+      )}
+    </>
   );
 };
 
@@ -67,7 +88,7 @@ export default function Blog() {
           tag={["community", "learning", "networking"]}
           title="Weekly General Body Meetings"
           summary="Join SoDA every week for our General Body Meetings on Tuesdays! We host workshops, tech talks, networking events, and more. It's a great way to learn, connect with fellow students, and get involved in the largest engineering organization at ASU. Free pizza included ;)"
-          link="/"
+          link=""
           alt="Weekly General Body Meetings"
         />
         <IndividualBlog
