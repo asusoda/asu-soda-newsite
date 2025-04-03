@@ -18,7 +18,7 @@ const timelineItems: TimelineElement[] = [
   {
     id: 1,
     date: '??? to 2005',
-    title: 'Windows User Group (WIG) Era',
+    title: 'Windows Interest Group (WIG) Era',
     description: 'Earliest known activity in 2003. Provided presentations and hands-on activities. Supported by Microsoft.',
     url: 'https://scai.engineering.asu.edu/wp-content/uploads/sites/31/2020/05/ASU_CSE_AnnualReport2004.pdf',
     icon: <Users className="h-4 w-4" />,
