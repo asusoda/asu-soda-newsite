@@ -22,7 +22,7 @@ function App() {
           <Route path="/mentorship" element={<Mentorship />} />
           <Route path="/distinguishedMembers" element={<PointsSystem />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/positions" element={<Positions />} />
+          <Route path="/apply" element={<Positions />} />
         </Routes>
         <Footer />
       </Router>

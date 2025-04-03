@@ -20,6 +20,10 @@ function NavbarSection() {
     { name: "Leaderboard", id_href: "/leaderboard" },
   ];
 
+  const handleLogoClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   const renderNavLink = (item: { name: string; id_href: string }) => {
     const handleClick = () => {
       setIsMenuOpen(false);
@@ -65,7 +69,7 @@ function NavbarSection() {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <Link to="/" className="flex gap-4 items-center">
+          <Link to="/" className="flex gap-4 items-center" onClick={handleLogoClick}>
             <img src="/logo/Soda_Logo_Dark_Mode.svg" className="w-28" alt="SoDA Logo" />
           </Link>
         </div>
@@ -81,10 +85,10 @@ function NavbarSection() {
         </div>
       </div>
       {/* Conditionally render banner based on path */}
-      {location.pathname !== '/positions' && (
+      {location.pathname !== '/apply' && (
         <div className="bg-gray-900/75 text-white text-center p-2 w-full">
           Officer positions are now open!{' '}
-          <Link to="/positions" className="font-bold underline hover:text-soda-red">
+          <Link to="/apply" className="font-bold underline hover:text-soda-red">
             Apply now.
           </Link>
         </div>
