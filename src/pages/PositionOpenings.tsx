@@ -98,8 +98,6 @@ export default function Positions() {
         <Slider.Slide>
           <SiGodaddy />
         </Slider.Slide>
-        <Slider.Slide>
-        </Slider.Slide>
       </Slider>
     </IconContext.Provider>
     </p>
