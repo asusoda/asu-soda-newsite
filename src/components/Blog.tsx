@@ -34,7 +34,7 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
   return (
     <Link to={link} className="group relative block">
       <div className="bg-neutral-900 border-gray-600 rounded-lg p-6 max-w-md h-full overflow-hidden text-white transition transform hover:scale-105 hover:shadow-lg">
-        <img src={imageURL} alt={alt} className="w-full rounded-lg" />
+        <img src={imageURL} alt={alt} className="w-full h-48 object-cover rounded-t-lg" />
         {/* <div className="flex flex-wrap gap-2 mt-2">
           {tag.map((t, index) => (
             <span
@@ -59,16 +59,16 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
 
 export default function Blog() {
   return (
-    <section id="programs" className="flex flex-col items-center">
+    <section id="programs" className="flex flex-col items-center px-8">
       <h1 className="section-header-text">Programs</h1>
-      <div className="flex max-md:flex-col grow gap-8 justify-center px-12 md:px-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <IndividualBlog
-          imageURL="/events/microsoft.webp"
-          tag={["mentorship", "community development"]}
-          title="Mentorship Program"
-          summary="SoDA offers a comprehensive mentorship program designed to support those in need. Our program connects experienced mentors with mentees, providing guidance, and support to help them navigate their academic and professional journeys. "
-          link="/mentorship"
-          alt="Mentorship Program"
+          imageURL="/pizza.webp"
+          tag={["community", "learning", "networking"]}
+          title="Weekly General Body Meetings"
+          summary="Join SoDA every week for our General Body Meetings on Tuesdays! We host workshops, tech talks, networking events, and more. It's a great way to learn, connect with fellow students, and get involved in the largest engineering organization at ASU. Free pizza included ;)"
+          link="/"
+          alt="Weekly General Body Meetings"
         />
         <IndividualBlog
           imageURL="/winner-winner-chicken-dinner.webp"
@@ -77,6 +77,14 @@ export default function Blog() {
           summary="SoDA introduced points system designed to encourage active participation in our community. By attending meetings, events, and engaging in various activities, members can earn points that contribute to their standing within the organization."
           link="/distinguishedMembers"
           alt="Distinguished Members Program"
+        />
+       <IndividualBlog
+          imageURL="/events/microsoft.webp"
+          tag={["mentorship", "community development"]}
+          title="Mentorship Program"
+          summary="SoDA offers a comprehensive mentorship program designed to support those in need. Our program connects experienced mentors with mentees, providing guidance, and support to help them navigate their academic and professional journeys. "
+          link="/mentorship"
+          alt="Mentorship Program"
         />
       </div>
     </section>
