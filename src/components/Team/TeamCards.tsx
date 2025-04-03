@@ -48,7 +48,7 @@ function MemberCards() {
           <div className="flex flex-col my-12 text-center text-2xl md:text-4xl font-semibold">
             {team}
           </div>
-          <div className="flex flex-row flex-wrap px-[5vw] md:flex-row grow items-center md:items-start gap-8 md:gap-x-24 w-full justify-center mb-12">
+          <div className="flex flex-row flex-wrap px-[5vw] items-center gap-8 w-full justify-center mb-12 md:items-start md:gap-x-24 md:max-w-[70vw] mx-auto">
             {(teams[team]).map((member: TeamMember, j: number) => renderMemberCard(member, j))}
           </div>
         </React.Fragment>
