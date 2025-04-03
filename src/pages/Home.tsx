@@ -27,17 +27,16 @@ function Home() {
             campus, and is the largest engineering organization.
           </p>
       </section>
-      <section className="py-16">
+      <section className="section">
         <Mission />
       </section>
-      <section className="py-16">
+      <section className="section">
         <Blog />
       </section>
-
-      <section className="py-16">
+      <section className="section">
         <SponsorsMarquee />
       </section>
-      <section className="py-16">
+      <section className="section">
         <MemberCards />
       </section>
       <section id="history" className="section">

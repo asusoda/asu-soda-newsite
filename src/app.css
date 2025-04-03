@@ -339,7 +339,7 @@ body {
 }
 
 .section {
-  @apply py-16 flex flex-col justify-center items-center;
+  @apply py-8 md:py-16 flex flex-col justify-center items-center;
 }
 
 /* --------- STATS --------- */

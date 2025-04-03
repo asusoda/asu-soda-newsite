@@ -61,7 +61,7 @@ export default function Blog() {
   return (
     <section id="programs" className="flex flex-col items-center">
       <h1 className="section-header-text">Programs</h1>
-      <div className="flex max-md:flex-col grow gap-8 justify-center">
+      <div className="flex max-md:flex-col grow gap-8 justify-center px-12 md:px-0">
         <IndividualBlog
           imageURL="/events/microsoft.webp"
           tag={["mentorship", "community development"]}

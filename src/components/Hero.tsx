@@ -8,8 +8,8 @@ function Hero() {
     <main className="min-h-screen md:justify-center items-center flex flex-col relative">
       <Stars className="hidden md:block md:absolute top-0 right-0 w-full h-full h-1/3 z-0 pointer-events-none" />
       <section className="max-w-7xl sm:ml-16  flex-wrap flex  md:flex-row flex-col-reverse md:justify-center md:items-center relative z-10">
-        <summary className="md:w-1/2 flex flex-col items-start justify-between">
-          <h1 className="text-[12vw] md:text-7xl font-bold leading-tight px-6 max-md:py-4 md:mb-10">
+        <summary className="md:w-1/2 flex flex-col items-center md:items-start justify-between">
+          <h1 className="text-center md:text-left text-[12vw] md:text-7xl font-bold leading-tight px-6 max-md:py-4 md:mb-10">
             The <span className="text-soda-red">Software</span>{" "}
             <span className="text-soda-blue">Developers</span> Association
           </h1>

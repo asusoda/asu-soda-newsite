@@ -7,7 +7,7 @@ function MemberCards() {
   const teams: Teams = _teams;
   const renderMemberCard = (member: TeamMember, j: number) => (
     <div key={j} className="flex w-[40vw] md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-4 items-center justify-center">
-      <div className="w-[40vw] md:w-[12vw] aspect-square">
+      <div className="w-[35vw] md:w-48 aspect-square">
         <img
           className="w-full h-full object-cover rounded-full"
           src={member.image}
@@ -41,14 +41,14 @@ function MemberCards() {
   )
 
   return (
-    <div className="team flex flex-col items-center" id="team">
+    <div className="team flex flex-col items-center max-w-7xl mx-auto" id="team">
       <h1 className="section-header-text">Team</h1>
       {Object.keys(teams).map((team: string, i) => (
         <React.Fragment key={i}>
-          <div className="flex flex-col my-12 text-center text-2xl md:text-4xl font-semibold">
+          <div className="flex flex-col my-6 md:my-12 text-center text-2xl md:text-4xl font-semibold">
             {team}
           </div>
-          <div className="flex flex-row flex-wrap px-[5vw] items-center gap-8 w-full justify-center mb-12 md:items-start md:gap-x-24 md:max-w-[70vw] mx-auto">
+          <div className="flex flex-row flex-wrap px-6 items-center gap-4 w-full justify-center mb-8 md:items-start md:gap-x-12 md:gap-y-8 md:max-w-[70vw] mx-auto">
             {(teams[team]).map((member: TeamMember, j: number) => renderMemberCard(member, j))}
           </div>
         </React.Fragment>
