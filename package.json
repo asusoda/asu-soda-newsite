@@ -36,6 +36,7 @@
     "react-dom": "^19.1.0",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
+    "react-infinite-logo-slider": "^1.1.4",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.4.1",
     "remark-gfm": "^4.0.1",

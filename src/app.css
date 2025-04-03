@@ -408,11 +408,11 @@ body {
 }
 
 .right-arrow-btn {
-  @apply flex px-6 py-3  bg-soda-red rounded-3xl items-center hover:bg-[#c12654] justify-center;
+  @apply flex px-6 py-3  bg-soda-blue rounded-3xl items-center justify-center;
 }
 
 .regular-btn {
-  @apply px-3 py-1 bg-soda-red rounded-lg;
+  @apply px-3 py-1 bg-soda-blue rounded-lg;
 }
 .btn-text {
   @apply font-semibold text-soda-white text-[15px];
