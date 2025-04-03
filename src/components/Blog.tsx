@@ -59,9 +59,9 @@ const IndividualBlog: React.FC<IndividualBlogProps> = ({
 
 export default function Blog() {
   return (
-    <main className="flex flex-col items-center">
-      <h1 className="section-header-text mb-6">Programs</h1>
-      <section className="flex p-4 max-md:flex-col grow gap-8 justify-center">
+    <section id="programs" className="flex flex-col items-center">
+      <h1 className="section-header-text">Programs</h1>
+      <div className="flex max-md:flex-col grow gap-8 justify-center">
         <IndividualBlog
           imageURL="/events/microsoft.webp"
           tag={["mentorship", "community development"]}
@@ -78,7 +78,7 @@ export default function Blog() {
           link="/distinguishedMembers"
           alt="Distinguished Members Program"
         />
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }

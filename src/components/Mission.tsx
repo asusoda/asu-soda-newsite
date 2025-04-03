@@ -1,6 +1,3 @@
-import React from "react";
-import HorizontalLine from "./ui/HorizontalLine";
-
 const perks = [
   {
     header: "Professional Development",
@@ -25,24 +22,13 @@ const perks = [
   },
 ];
 
-export default function AboutUs() {
+export default function Mission() {
   return (
     <>
     <main
-      className="flex  flex-col min-h-screen justify-center items-center"
-      id="info"
+      className="flex flex-col justify-center items-center"
+      id="mission"
     >
-      <h1 className="section-header-text">About SoDA</h1>
-      <section className="text-center items-center">
-        <p className="hero-small-text px-24 max-w-[100ch] max-lg:px-6 mx-auto">
-          The Software Developers Association (SoDA) at Arizona State
-          University is a student-run, free organization dedicated to
-          serving ASU’s computer science students since 2008. SoDA is
-          one of the oldest and largest communities of students on
-          campus, and is the largest engineering organization.
-        </p>
-      </section>
-
       <h1 className="section-header-text">Mission</h1>
       <section className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {perks.map((perk) => (
@@ -57,7 +43,7 @@ export default function AboutUs() {
                 {perk.header}
               </h4>
               {/* <hr className="border-soda-gray opacity-75 my-2 w-[60%]" /> */}
-              <p className="text-[14px] max-md:text-sm">{perk.description}</p>
+              <p className="text-[14px] max-md:text-sm ">{perk.description}</p>
             </div>
           </div>
         ))}

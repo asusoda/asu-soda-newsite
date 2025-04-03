@@ -108,8 +108,8 @@
   color-scheme: dark;
   overflow-x: hidden;
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.145 0 0); /* Swapped */
+  --foreground: oklch(0.985 0 0); /* Swapped */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -335,7 +335,11 @@ body {
 }
 
 .section-header-text {
-  @apply text-white font-bold text-3xl md:text-5xl text-center mt-20 p-4 mb-0 w-max rounded-xl;
+  @apply text-white font-bold text-3xl md:text-5xl text-center p-4 mb-0 w-max rounded-xl mb-6;
+}
+
+.section {
+  @apply py-16 flex flex-col justify-center items-center;
 }
 
 /* --------- STATS --------- */
@@ -358,7 +362,7 @@ body {
 /* --------- SPONSORS --------- */
 
 .sponsor-container {
-  @apply flex flex-row mt-4 overflow-x-hidden bg-gray-300;
+  @apply flex flex-row overflow-x-hidden bg-gray-300; /* Removed mt-4 */
   width: 100vw; /* Full viewport width */
   margin-left: calc(-50vw + 50%); /* Extend beyond left edge */
   margin-right: calc(-50vw + 50%); /* Extend beyond right edge */
@@ -419,8 +423,8 @@ body {
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: oklch(1 0 0); /* Swapped */
+  --foreground: oklch(0.145 0 0); /* Swapped */
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);

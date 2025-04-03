@@ -14,9 +14,10 @@ function NavbarSection() {
   // Get current location
   const location = useLocation();
   const menuItems = [
-    { name: "Info", id_href: "/#info" },
+    { name: "About", id_href: "/#about" },
     { name: "Sponsors", id_href: "/#sponsors" },
     { name: "Team", id_href: "/#team" },
+    { name: "History", id_href: "/#history" },
     { name: "Leaderboard", id_href: "/leaderboard" },
   ];
 
