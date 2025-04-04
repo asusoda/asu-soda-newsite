@@ -8,19 +8,19 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import sponsors from "./sponsors.json";
-import amazon from "./logo/amazon.png";
-import statefarm from "./logo/statefarm.png";
-import drivetime from "./logo/drivetime.png";
-import deloitte from "./logo/deloitte.png";
-import goldmansachs from "./logo/goldmansachs.png";
-import garmin from "./logo/garmin.png";
-import starbucks from "./logo/starbucks.png";
-import paypal from "./logo/paypal.png";
-import godaddy from "./logo/godaddy.png";
-import axosoft from "./logo/axosoft.png";
-import workiva from "./logo/workiva.png";
-import generalmotors from "./logo/generalmotors.png";
-import americanexpress from "./logo/americanexpress.png";
+import amazon from "./logo/amazon.webp";
+import statefarm from "./logo/statefarm.webp";
+import drivetime from "./logo/drivetime.webp";
+import deloitte from "./logo/deloitte.webp";
+import goldmansachs from "./logo/goldmansachs.webp";
+import garmin from "./logo/garmin.webp";
+import starbucks from "./logo/starbucks.webp";
+import paypal from "./logo/paypal.webp";
+import godaddy from "./logo/godaddy.webp";
+import axosoft from "./logo/axosoft.webp";
+import workiva from "./logo/workiva.webp";
+import generalmotors from "./logo/generalmotors.webp";
+import americanexpress from "./logo/americanexpress.webp";
 
 type SponsorLogo =
   | "amazon"
