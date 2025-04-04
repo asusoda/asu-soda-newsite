@@ -71,7 +71,7 @@ function NavbarSection() {
             </DropdownMenu>
           </div>
           <Link to="/" className="flex gap-4 items-center" onClick={handleLogoClick}>
-            <img src="/logo/Soda_Logo_Dark_Mode.svg" className="w-28" alt="SoDA Logo" />
+            <img src="/logo/Soda_Logo_Dark_Mode.svg" width="314" height="132" className="w-28" alt="SoDA Logo" />
           </Link>
         </div>
         <div className="hidden sm:flex gap-4">
