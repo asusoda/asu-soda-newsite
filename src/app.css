@@ -502,3 +502,18 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Accordion Star Pseudo-element */
+.accordion-content-with-star::before {
+content: '';
+display: inline-block;
+width: 3rem; /* Corresponds to w-12 */
+height: 3rem; /* Corresponds to h-12 */
+margin-right: 1rem; /* Corresponds to gap-4 */
+flex-shrink: 0; /* Prevent shrinking */
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4 Q 11.5 12 12.2 19.8 M 6 8.5 Q 12 12 18 15.5 M 18 8.5 Q 12 12 6.5 16.2' /%3E%3C/svg%3E"); /* Changed stroke to white (#FFF) */
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+/* vertical-align: middle; Removed */
+}
