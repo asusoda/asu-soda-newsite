@@ -49,25 +49,23 @@ function NavbarSection() {
       <div className="flex items-center justify-between p-4 w-full">
         <div className="flex items-center gap-4">
           <div className="sm:hidden relative">
-            <DropdownMenu onOpenChange={setIsMenuOpen}>
+            <DropdownMenu open={isMenuOpen} onOpenChange={setIsMenuOpen} modal={false}>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="z-50">
                   {isMenuOpen ? "✕" : "☰"}
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent
-                className="dark bg-black w-56 min-w-[200px] z-50 absolute left-0 top-10 border border-gray-700"
+                <DropdownMenuContent
+                className="dark bg-black w-56 min-w-[200px] z-50 border border-gray-700"
                 align="start"
                 sideOffset={0}
-                forceMount={true}
-                avoidCollisions={false}
               >
                 {menuItems.map((item) => (
                   <DropdownMenuItem key={item.name} asChild>
                     {renderNavLink(item)}
                   </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
+                  ))}
+                </DropdownMenuContent>
             </DropdownMenu>
           </div>
           <Link to="/" className="flex gap-4 items-center" onClick={handleLogoClick}>

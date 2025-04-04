@@ -39,7 +39,7 @@ type SponsorLogo =
 
 function SponsorsMarquee() {
   const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   );
   const logoMap: Record<SponsorLogo, string> = {
     amazon,
