@@ -5,21 +5,87 @@ import SponsorsMarquee from "../components/Sponsors/Sponsors";
 import Mission from "../components/Mission";
 import Blog from "../components/Blog";
 import HistoryTimeline from "../components/HistoryTimeline"; // Import the new component
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { useEffect, useState } from "react";
+import { format, parseISO } from "date-fns";
+import {  Clock, MapPin, X } from "lucide-react";
 
+interface CalendarEvent {
+  id: string;
+  name: string;
+  location: string;
+  description: string | null;
+  start: string;
+  end: string;
+  url?: string;
+}
 
 function Home() {
+    const [selectedEvent, setSelectedEvent] = useState<CalendarEvent | null>(null);
+    (() => {
+      // Using IIFE to allow hooks inside JSX
+      useEffect(() => {
+        const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && selectedEvent) {
+        setSelectedEvent(null);
+      }
+        };
+        
+        window.addEventListener('keydown', handleEscape);
+        return () => window.removeEventListener('keydown', handleEscape);
+      }, [selectedEvent, setSelectedEvent]);
+      
+      return null;
+    })()
   return (
-    <main className="home fade-in area">
+    <>
       {/* SEO Metadata & Preloading */}
       <Helmet>
         <title>SoDA</title>
         <meta name="description" content="SoDA is one of the largest communities of students at Arizona State University." />
         <meta name="keywords" content="software developers association, soda, asu, arizona state university, computer science, recruiting, student organization" />
       </Helmet>
-      <Hero />
+      {selectedEvent !== null && (
+        <div className="fixed fade-in inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
+          <div className="relative w-full max-w-md p-6 rounded-lg bg-[#252525] border border-gray-700 shadow-lg">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-xl font-semibold text-gray-200">{selectedEvent?.name}</h2>
+          <button
+            onClick={() => setSelectedEvent(null)}
+            className="text-gray-400 hover:text-gray-200 focus:outline-none"
+            aria-label="Close"
+          >
+            <X size={18} />
+          </button>
+        </div>
+        
+        <div className="space-y-3 text-gray-300">
+          <div className="flex items-center gap-2">
+            <Clock size={16} className="text-gray-400" />
+            <span>
+          {format(parseISO(selectedEvent.start), 'MMM d, h:mm a')} - 
+          {format(parseISO(selectedEvent.end), 'h:mm a')}
+            </span>
+          </div>
+          
+          {selectedEvent.location && (
+            <div className="flex items-center gap-2">
+          <MapPin size={16} className="text-gray-400" />
+          <span>{selectedEvent.location}</span>
+            </div>
+          )}
+          
+          <p className="mt-3 text-sm text-gray-300">{selectedEvent.description}</p>
+        </div>
+          </div>
+        </div>
+      )}
+      {/* Add effect to handle escape key */}
+      
+      <Hero setSelectedEvent={setSelectedEvent} />
       <section id="about" className="section">
         <h1 className="section-header-text">About SoDA</h1>
-          <p className="hero-small-text px-24 max-w-[100ch] max-lg:px-6 mx-auto">
+          <p className="hero-small-text px-24 max-w-3xl md:max-w-[100ch] max-lg:px-6 mx-auto">
             The Software Developers Association (SoDA) at Arizona State
             University is a student-run, free organization dedicated to
             serving ASU’s computer science students since 2008. SoDA is
@@ -42,7 +108,7 @@ function Home() {
       <section id="history" className="section">
         <HistoryTimeline />
       </section>
-    </main>
+    </>
   );
 }
 

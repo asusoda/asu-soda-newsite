@@ -143,6 +143,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -209,7 +210,7 @@ body {
 */
 
 .fade-in {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 0.2s ease-in-out;
 }
 
 .area {
@@ -342,6 +343,13 @@ body {
   @apply py-8 md:py-16 flex flex-col justify-center items-center;
 }
 
+.cal-shadow {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5), 
+              0px 0px 20px 10px rgba(0, 0, 0, 0.4), 
+              0px 0px 30px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
 /* --------- STATS --------- */
 .statistics {
   @apply text-white flex  
@@ -393,10 +401,10 @@ body {
 /* --------- HOME --------- */
 
 .home {
-  @apply min-h-screen max-w-[2560px] mx-auto  justify-center items-center;
-  position: relative; /* Make sure the parent container is positioned */
-  padding-left: 0; /* Reset padding to avoid extra space on the left */
-  padding-right: 0; /* Reset padding to avoid extra space on the right */
+  @apply min-h-screen w-full mx-auto  justify-center items-center;
+  position: relative; 
+  padding-left: 0; 
+  padding-right: -10px; 
 }
 
 /* --------- FOOTER --------- */
