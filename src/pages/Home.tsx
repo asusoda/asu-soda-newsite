@@ -90,14 +90,25 @@ function Home() {
       
       <Hero setSelectedEvent={setSelectedEvent} />
       <section id="about" className="section">
-        <h1 className="section-header-text">About SoDA</h1>
-          <p className="hero-small-text px-24 max-w-3xl md:max-w-[100ch] max-lg:px-6 mx-auto">
-            The Software Developers Association (SoDA) at Arizona State
-            University is a student-run, free organization dedicated to
-            serving ASU’s computer science students since 2008. SoDA is
-            one of the oldest and largest communities of students on
-            campus, and is the largest engineering organization.
-          </p>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 px-6 md:px-12 lg:px-24">
+          {/* Image on the left */}
+          <img
+            src="/soda-can.webp"
+            alt="SoDA Can"
+            className="hidden md:block w-32 h-auto md:w-48 lg:w-64 object-contain flex-shrink-0" /* Hide on mobile, show on md+ */
+          />
+          {/* Text content on the right */}
+          <div className="max-w-3xl"> {/* Removed text alignment from parent */}
+            <h1 className="section-header-text mb-4 text-center md:text-left! w-full!">About SoDA</h1> {/* Added w-full */}
+            <p className="hero-small-text">
+              The Software Developers Association (SoDA) at Arizona State
+              University is a student-run, free organization dedicated to
+              serving ASU’s computer science students since 2008. SoDA is
+              one of the oldest and largest communities of students on
+              campus, and is the largest engineering organization.
+            </p>
+          </div>
+        </div>
       </section>
       <section className="section">
         <Mission />

@@ -48,7 +48,7 @@ export default function PointsSystem() {
         <meta name="keywords" content="Distinguished Members Program, ASU Soda, Points System, Active Participation, Member Rewards, Member Perks, Member Benefits, computer science, CS, software development" />
       </Helmet>
 
-      <div className="prose lg:prose-xl prose-invert custom-table">
+      <div className="prose lg:prose-xl prose-invert prose-th:border prose-td:border prose-th:border-neutral-300 prose-td:border-neutral-300 prose-th:p-2 prose-td:p-2">
         <ReactMarkdown
           children={markdownContent}
           remarkPlugins={[remarkGfm]}
