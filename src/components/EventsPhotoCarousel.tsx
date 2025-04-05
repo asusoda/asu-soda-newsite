@@ -158,7 +158,7 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
                   <div
                     key={index}
                     className={`w-full h-[70px] p-2 relative rounded-sm ${
-                      isCurrentDay(day) ? 'ring-2 ring-red-500 ring-offset-0' : ''
+                      isCurrentDay(day) ? '' : ''
                     } ${hasEvents ? 'bg-soda-blue hover:bg-blue-900 transition-all cursor-pointer' : ''}`}
                     onClick={() => hasEvents ? setSelectedEvent(dayEvents[0]) : null}
                   >
