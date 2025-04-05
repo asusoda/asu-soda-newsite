@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/.bashrc
+
 # Define variables
 REPO_DIR="/root/asu-soda-newsite"
 DIST_DIR="$REPO_DIR/dist"
