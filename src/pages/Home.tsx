@@ -46,16 +46,22 @@ function Home() {
         <meta name="keywords" content="software developers association, soda, asu, arizona state university, computer science, recruiting, student organization" />
       </Helmet>
       {selectedEvent !== null && (
-        <div className="fixed fade-in inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
-          <div className="relative w-full max-w-md p-6 rounded-lg bg-[#252525] border border-gray-700 shadow-lg">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-semibold text-gray-200">{selectedEvent?.name}</h2>
-          <button
-            onClick={() => setSelectedEvent(null)}
-            className="text-gray-400 hover:text-gray-200 focus:outline-none"
-            aria-label="Close"
-          >
-            <X size={18} />
+        <div 
+        className="fixed fade-in inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
+        onClick={() => setSelectedEvent(null)} // Close when clicking overlay
+      >
+        <div 
+      className="relative w-full max-w-md p-6 rounded-lg bg-[#252525] border border-gray-700 shadow-lg"
+      onClick={(e) => e.stopPropagation()} // Prevent close when clicking modal content
+        >
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-semibold text-gray-200 pr-4">{selectedEvent?.name}</h2>
+        <button
+          onClick={() => setSelectedEvent(null)}
+          className="p-2 rounded-full text-gray-400 hover:text-gray-200 hover:bg-gray-700/50 focus:outline-none"
+          aria-label="Close"
+        >
+          <X size={20} />
           </button>
         </div>
         
