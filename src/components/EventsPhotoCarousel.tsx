@@ -114,11 +114,10 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
   };
 
   return (
-    <div className="dark cal-shadow md:mt-0 mt-14 md:mx-auto bg-[#ffffff0f] shadow-xl text-gray-300 p-4 w-full rounded-lg">
+    <div className="dark cal-shadow md:mt-0 mt-14 md:mx-auto bg-[#ffffff0f] shadow-xl text-gray-300 p-4 w-full rounded-lg relative">
       <div className="flex justify-between items-center mb-8">
         <div className="flex items-center gap-4">
           <h1 className="text-xl font-medium">{currentMonthStr}</h1>
-         
         </div>
         <div className="flex items-center gap-4">
           <button onClick={handlePrevMonth} className="hover:bg-[#373737] p-1 rounded">
@@ -136,7 +135,7 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
       <div className="grid grid-cols-7 gap-px">
         {isLoading ? (
           <div className="col-span-7">
-        <Skeleton className="dark fade-in w-[100%] min-h-[463px] bg-gray-300 rounded" />
+            <Skeleton className="dark fade-in w-[100%] min-h-[463px] bg-gray-300 rounded" />
           </div>
         ) : (
           <>
@@ -158,9 +157,9 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
                   <div
                     key={index}
                     className={`w-full h-[70px] p-2 relative rounded-sm ${
-                      isCurrentDay(day) ? '' : ''
+                      isCurrentDay(day) ? 'ring-1 ring-red-500 ring-offset-0' : ''
                     } ${hasEvents ? 'bg-soda-blue hover:bg-blue-900 transition-all cursor-pointer' : ''}`}
-                    onClick={() => hasEvents ? setSelectedEvent(dayEvents[0]) : null}
+                    onClick={() => (hasEvents ? setSelectedEvent(dayEvents[0]) : null)}
                   >
                     {day && (
                       <>
@@ -186,7 +185,14 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
           </>
         )}
       </div>
-      
+
+      <button
+        className="absolute bottom-4 right-4 bg-[#ffffff0f] hover:bg-[#373737] text-sm text-white px-4 py-2 rounded-lg shadow-md flex items-center gap-2 transition-all"
+        onClick={() => window.open('https://calendar.google.com/calendar/u/r?cid=c_9d4bb8cc4eb0a947ef07bb5d2a2133404bbd2a186814274013f02d2709f213af@group.calendar.google.com', '_blank')}
+      >
+        <Calendar size={16} />
+        Add to Calendar
+      </button>
     </div>
   );
 }
