@@ -114,7 +114,7 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
   };
 
   return (
-    <div className="dark cal-shadow md:mt-0 mt-14 md:mx-auto bg-[#ffffff0f] shadow-xl text-gray-300 px-12 pt-8 w-full rounded-lg">
+    <div className="dark cal-shadow md:mt-0 mt-14 md:mx-auto bg-[#ffffff0f] shadow-xl text-gray-300 p-4 w-full rounded-lg">
       <div className="flex justify-between items-center mb-8">
         <div className="flex items-center gap-4">
           <h1 className="text-xl font-medium">{currentMonthStr}</h1>
