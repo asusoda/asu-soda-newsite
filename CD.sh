@@ -17,6 +17,20 @@ echo "Pulling the latest changes from the repository..."
 git fetch origin $BRANCH || { echo "Failed to fetch branch $BRANCH"; exit 1; }
 git reset --hard origin/$BRANCH || { echo "Failed to reset to origin/$BRANCH"; exit 1; }
 
+# Check if pnpm is installed, if not install it
+if ! command -v pnpm &> /dev/null; then
+    echo "pnpm is not installed. Installing pnpm..."
+    npm install -g pnpm || { echo "Failed to install pnpm. Checking if npm is available...";
+        if ! command -v npm &> /dev/null; then
+            echo "npm is not installed. Installing Node.js and npm..."
+            curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - || { echo "Failed to setup Node.js repository"; exit 1; }
+            sudo apt-get install -y nodejs || { echo "Failed to install Node.js"; exit 1; }
+        fi
+        npm install -g pnpm || { echo "Failed to install pnpm after npm check"; exit 1; }
+    }
+    echo "pnpm installed successfully."
+fi
+
 # Install dependencies
 echo "Installing dependencies..."
 pnpm install || { echo "Failed to install dependencies"; exit 1; }
