@@ -17,11 +17,11 @@ git reset --hard origin/$BRANCH || { echo "Failed to reset to origin/$BRANCH"; e
 
 # Install dependencies
 echo "Installing dependencies..."
-npm install || { echo "Failed to install dependencies"; exit 1; }
+pnpm install || { echo "Failed to install dependencies"; exit 1; }
 
 # Build the project
 echo "Building the project..."
-npm run build || { echo "Failed to build the project"; exit 1; }
+pnpm run build || { echo "Failed to build the project"; exit 1; }
 
 # Restart the React website service
 echo "Restarting the React website service..."
