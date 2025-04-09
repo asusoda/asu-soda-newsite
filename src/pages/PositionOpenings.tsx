@@ -174,38 +174,26 @@ export default function Positions() {
 
       <hr className="my-10 border-gray-600" />
 
-      {/* <h2>Administrative Roles</h2>
-      <h3>Treasurer (Executive)</h3>
-      <ul>
-      <li>Conduct fiscal operations based on planning established by VP of Finance</li>
-      <li>Oversee admin officers in carrying out budget/purchase requests</li>
-      <li>Manage funding sources and financial accounts</li>
-      </ul>
-      <div className="max-w-3xl flex justify-start mt-4 mb-6">
-      <RoundedButton name="Apply for Treasurer" url={applicationURL} />
-      </div>
-      <h3>Finance Specialist</h3>
-      <ul>
-      <li>Carry out budget and purchase requests as directed by the Treasurer</li>
-      <li>Assist in financial planning and fiscal operations</li>
-      <li>Manage funding sources and financial accounts</li>
-      </ul>
-      <div className="max-w-3xl flex justify-start mt-4 mb-6">
-      <RoundedButton name="Apply for Finance Specialist" url={applicationURL} />
-      </div>
-      <h3>Event Coordinator</h3>
-      <ul>
-      <li>Manage event logistics and operations</li>
-      <li>Coordinate with team directors to plan and operate events</li>
-      <li>Location scouting and venue reservation</li>
-      </ul>
-      <div className="max-w-3xl flex justify-start mt-4 mb-6">
-      <RoundedButton name="Apply for Event Coordinator" url={applicationURL} />
-      </div> */}
 
       <h2>Open Positions by Team</h2>
 
       <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value="admin">
+          <AccordionTrigger className="text-3xl font-semibold no-underline hover:no-underline py-4" showStar>
+            Finance
+          </AccordionTrigger>
+          <AccordionContent className="prose lg:prose-xl prose-invert">
+            <h3>Treasurer</h3>
+            <ul className="mb-0">
+              <li>Conduct fiscal operations based on planning established by VP of Finance</li>
+              <li>Oversee admin officers in carrying out budget/purchase requests</li>
+              <li>Manage funding sources and financial accounts</li>
+            </ul>
+            <div className="max-w-3xl flex justify-start mt-4">
+              <RoundedButton name="Details on Qruil" url={"https://qruil.com/job-detail/treasurer-1744186548095"} />
+            </div>
+          </AccordionContent>
+        </AccordionItem>
         <AccordionItem value="marketing">
           {/* Add showStar prop, remove HandDrawnStar component */}
           <AccordionTrigger className="text-3xl font-semibold no-underline hover:no-underline py-4" showStar>
