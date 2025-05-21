@@ -9,6 +9,7 @@ import PointsSystem from "./pages/PointsSystem";
 import Footer from "./components/Footer/Footer";
 import Leaderboard from "./pages/LeaderBoard";
 import Positions from "./pages/PositionOpenings";
+import SodaShop from "./pages/SodaShop";
 import NotFound from "./pages/NotFound"; // Import the NotFound component
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/distinguishedMembers" element={<PointsSystem />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/apply" element={<Positions />} />
+          <Route path="/shop" element={<SodaShop />} />
           <Route path="*" element={<NotFound />} /> {/* Add the catch-all route */}
         </Routes>
         <Footer />
