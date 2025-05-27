@@ -2,7 +2,7 @@ export default function SodaShopHome() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section">
+      <section className="mt-[10%] section">
         <div className="flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 py-12">
           <h1 className="section-header-text mb-4">Welcome to the SoDA Shop</h1>
           <p className="hero-small-text text-center max-w-3xl">Find all your favorite SoDA merchandise and more!</p>
