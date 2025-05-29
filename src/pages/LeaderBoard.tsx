@@ -14,6 +14,7 @@ interface LeaderboardEntry {
   name: string;
   points_details: PointsDetails[];
   total_points: number;
+  curr_sem_points: number;
 }
 
 const Modal: React.FC<{ isOpen: boolean; onClose: () => void; data: PointsDetails[]; name: string }> = ({ isOpen, onClose, data, name }) => {
@@ -70,7 +71,7 @@ const Leaderboard: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://api.thesoda.io/leaderboard');
+        const response = await fetch('http://127.0.0.1:8000/leaderboard');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -131,8 +132,9 @@ const Leaderboard: React.FC = () => {
         <table className="table-auto border-collapse border border-zinc-700 w-full text-center">
           <thead>
             <tr className="bg-zinc-800">
-              <th className="w-1/2 border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Name</th>
-              <th className="w-1/2 border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Points Earned</th>
+              <th className="w-1/3 border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Name</th>
+              <th className="w-1/3 border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">Points Earned this Semester</th>
+              <th className="w-1/3 border border-zinc-700 py-2 px-4 text-base sm:text-lg font-semibold text-center">All-time Points</th>
             </tr>
           </thead>
           <tbody>
@@ -143,6 +145,7 @@ const Leaderboard: React.FC = () => {
                 className="hover:bg-soda-blue/5 transition-colors cursor-pointer"
               >
                 <td className="border border-zinc-700 py-2 px-4 text-center">{entry.name}</td>
+                <td className="border border-zinc-700 py-2 px-4 text-center">{entry.curr_sem_points}</td>
                 <td className="border border-zinc-700 py-2 px-4 text-center">{entry.total_points}</td>
               </tr>
             ))}
