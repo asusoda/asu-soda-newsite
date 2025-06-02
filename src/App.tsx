@@ -14,6 +14,7 @@ import SodaShopHome from "./pages/SodaShop/SodaShopHome"
 import CategoryPage from "./pages/SodaShop/MerchCategory"
 import ProfilePage from "./pages/SodaShop/UserProfile"
 import InstructionsPage from "./pages/SodaShop/Instructions"
+import UserCartPage from "./pages/SodaShop/Cart"
 import NotFound from "./pages/NotFound"
 import ScrollToTop from "./components/ScrollToTop"
 
@@ -43,6 +44,7 @@ function App() {
             {/* Other shop pages */}
             <Route path="profile" element={<ProfilePage />} />
             <Route path="instructions" element={<InstructionsPage />} />
+            <Route path="cart" element={<UserCartPage />} />
           </Route>
 
           <Route path="*" element={<NotFound />} />

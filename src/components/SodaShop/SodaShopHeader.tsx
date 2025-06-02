@@ -200,12 +200,64 @@ export default function SodaShopHeader() {
 
         {/* Right Icons */}
         <div className="flex gap-6 text-white px-3 w-[20%] sm:w-[10%] md:w-[15%] items-right">
+          {/* Search Button */}
           <button className="ml-auto hover:text-gray-300">
             <Search />
           </button>
+          {/* Cart Button */}
+          <div className="relative group">
           <button className="hover:text-gray-300">
-            <ShoppingCart size={24} />
-          </button>
+            <div className="relative">
+                <NavLink
+                  to="/shop/cart" /* should i make this route specific to the user? */
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-white border-b-2 border-white pb-1 flex items-center"
+                      : "hover:text-white flex items-center"
+                  }
+                >
+                <ShoppingCart size={24} />
+                <ChevronDown size={16} className="ml-1 group-hover:rotate-180 transition-transform duration-200" />
+                </NavLink>
+
+                {/* this needs to be a component that returns user items from database */}
+                <div className="absolute left-1/2 -translate-x-1/2 mt-2 bg-white text-black rounded-md shadow-lg overflow-hidden w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <NavLink
+                    to="" /* link to item */
+                    className={({ isActive }) =>
+                      isActive ? "block px-4 py-2 bg-gray-100 hover:bg-gray-200" : "block px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Cart Item 1
+                  </NavLink>
+                  <NavLink
+                    to="" /* link to item */
+                    className={({ isActive }) =>
+                      isActive ? "block px-4 py-2 bg-gray-100 hover:bg-gray-200" : "block px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Cart Item 2
+                  </NavLink>
+                  <NavLink
+                    to="" /* link to item */
+                    className={({ isActive }) =>
+                      isActive ? "block px-4 py-2 bg-gray-100 hover:bg-gray-200" : "block px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Cart Item 3
+                  </NavLink>
+                </div>
+              </div>
+
+
+
+
+
+
+
+</button>
+          </div>
+
         </div>
       </div>
     </header>

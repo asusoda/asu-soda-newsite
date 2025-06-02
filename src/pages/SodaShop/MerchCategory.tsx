@@ -1,4 +1,4 @@
-"use client"
+import Stars from "../../components/Stars"
 
 import { useParams } from "react-router-dom"
 
@@ -11,22 +11,21 @@ export default function CategoryPage() {
   const displayCategory = subcategoryId || categoryId
   const breadcrumbCategory = categoryId
 
-  // You can use these parameters to fetch different products
-  // For example: fetchProducts(categoryId, subcategoryId)
+  // fetchProducts(categoryId, subcategoryId)
 
   return (
     <section className="section">
       {/* Fun Graphic perhaps here */}
-      <div className="bg-gray-600 h-40 w-full flex items-center justify-center">
-        <h1 className="text-white text-4xl font-bold">
-          {displayCategory?.charAt(0).toUpperCase() + displayCategory?.slice(1)} Collection
-        </h1>
+      <div className="bg-gray-600 h-45 w-full flex items-center justify-center">
       </div>
 
-      <div className="px-6 md:px-12 lg:px-24 py-12">
+      {/* Stars background*/}
+      <Stars className="fixed inset-0 z-0 pointer-events-none opacity-60" />
+
+      <div className="border px-6 md:px-12 lg:px-24 py-12 p-4">
         {/* Breadcrumb Navigation */}
         {isSubcategory && (
-          <nav className="mb-6 text-sm text-gray-400">
+          <nav className="border mb-6 text-sm text-gray-400">
             <span>Shop</span>
             <span className="mx-2">›</span>
             <span className="capitalize">{breadcrumbCategory}</span>
@@ -34,11 +33,11 @@ export default function CategoryPage() {
             <span className="capitalize text-white">{subcategoryId}</span>
           </nav>
         )}
-
-        <h1 className="section-header-text mb-4">
+        
+        <h1 className="border text-white font-bold text-3xl md:text-5xl text-center py-4 mb-0 w-max rounded-xl mb-6 ">
           {displayCategory?.charAt(0).toUpperCase() + displayCategory?.slice(1)}
           {isSubcategory && (
-            <span className="text-lg text-gray-400 ml-2">
+            <span className="border text-lg text-gray-400 ml-2">
               in {breadcrumbCategory?.charAt(0).toUpperCase() + breadcrumbCategory?.slice(1)}
             </span>
           )}
@@ -91,13 +90,13 @@ export default function CategoryPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Product cards */}
           {getProductsForCategory(categoryId, subcategoryId).map((item, index) => (
-            <div key={index} className="border border-gray-700 rounded-lg p-4">
+            <div key={index} className="border border-gray-700 rounded-lg p-4 relative group hover:w-[110%]">
               <div className="aspect-square bg-gray-800 rounded-md mb-4"></div>
               <h3 className="text-lg font-bold mb-2">{item.name}</h3>
               <p className="text-gray-400 mb-4">{item.description}</p>
               <div className="flex justify-between items-center">
                 <span className="font-bold">${item.price}</span>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                <button className="bg-blue-600 text-white px-4 py-2 rounded opacity-0 invisible hover:bg-blue-700 group-hover:visible transition-all duration-200 z-50">Add to Cart</button>
               </div>
             </div>
           ))}
@@ -218,6 +217,9 @@ function getProductsForCategory(categoryId: string | undefined, subcategoryId: s
         return baseProducts
           .filter((p) => p.name.includes("T-Shirt"))
           .concat([
+            { name: "Vintage SoDA Tee", description: "Retro-style SoDA shirt", price: "26.99" },
+            { name: "Vintage SoDA Tee", description: "Retro-style SoDA shirt", price: "26.99" },
+            { name: "Vintage SoDA Tee", description: "Retro-style SoDA shirt", price: "26.99" },
             { name: "Vintage SoDA Tee", description: "Retro-style SoDA shirt", price: "26.99" },
             { name: "Code Ninja T-Shirt", description: "For the stealthy programmer", price: "24.99" },
           ])
