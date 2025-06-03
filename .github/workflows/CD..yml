@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: CI/CD  # Specify the environment if using GitHub Environments
+    environment: CI/CD
 
     steps:
     - name: Execute remote deployment script
@@ -16,11 +16,27 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
+          # Create directory if it doesn't exist
+          mkdir -p /root/asu-soda-newsite
+          
+          # Check if repo exists, if not clone it
+          if [ ! -d "/root/asu-soda-newsite/.git" ]; then
+            git clone https://github.com/${{ github.repository }} /root/asu-soda-newsite
+          fi
+          
+          # Navigate to the directory
+          cd /root/asu-soda-newsite
+          
+          # Update the repository
+          git fetch --all
+          git reset --hard origin/main
+          
+          # Make scripts executable
           sudo chmod +x /root/asu-soda-newsite/CD.sh
           sudo chmod +x /root/asu-soda-newsite/deploy.sh
+          
+          # List directory contents and execute deployment
           ls -l /root/asu-soda-newsite/
           pwd
-          echo " Executing CD.sh"
+          echo "Executing CD.sh"
           sudo /root/asu-soda-newsite/CD.sh
-
-    
