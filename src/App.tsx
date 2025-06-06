@@ -44,7 +44,7 @@ function App() {
             {/* Other shop pages */}
             <Route path="profile" element={<ProfilePage />} />
             <Route path="instructions" element={<InstructionsPage />} />
-            <Route path="cart" element={<UserCartPage />} />
+            <Route path="cart" element={<UserCartPage />} />    {/* should i make subroute specific to user? */}
           </Route>
 
           <Route path="*" element={<NotFound />} />

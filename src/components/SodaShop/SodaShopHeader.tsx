@@ -1,12 +1,35 @@
 "use client"
 
 import { Link, NavLink } from "react-router-dom"
-import { Home, User, ShoppingCart, Search, ChevronDown } from 'lucide-react'
-import { useState, useEffect } from "react"
+import { Home, User, ShoppingCart, Search, ChevronDown } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
+import CartPopup from "./CartPopup"
 
 export default function SodaShopHeader() {
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [isCartOpen, setIsCartOpen] = useState(true)
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
+
+  const handleMouseEnter = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current)
+      closeTimeoutRef.current = null
+    }
+    setIsCartOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setIsCartOpen(false)
+    }, 300) // Reduced delay for better UX
+  }
+
+  // Mock cart items - replace with your actual cart data
+  const cartItems = [
+    { id: "1", name: "SoDA Logo T-Shirt", price: "24.99", quantity: 1, size: "M" },
+    { id: "2", name: "Code & Coffee Hoodie", price: "49.99", quantity: 2 },
+  ]
 
   useEffect(() => {
     const controlHeader = () => {
@@ -15,6 +38,10 @@ export default function SodaShopHeader() {
 
       // Show header when at top of page
       if (currentScrollY < 80) {
+        setIsVisible(true)
+      }
+      // Show header if cart is open
+      else if (isCartOpen === true) {
         setIsVisible(true)
       }
       // Scrolling down - move header up at same rate as scroll
@@ -37,7 +64,7 @@ export default function SodaShopHeader() {
     return () => {
       window.removeEventListener("scroll", controlHeader)
     }
-  }, [lastScrollY])
+  }, [lastScrollY, isCartOpen])
 
   return (
     <header
@@ -204,60 +231,33 @@ export default function SodaShopHeader() {
           <button className="ml-auto hover:text-gray-300">
             <Search />
           </button>
+
           {/* Cart Button */}
-          <div className="relative group">
-          <button className="hover:text-gray-300">
-            <div className="relative">
-                <NavLink
-                  to="/shop/cart" /* should i make this route specific to the user? */
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-white border-b-2 border-white pb-1 flex items-center"
-                      : "hover:text-white flex items-center"
-                  }
-                >
-                <ShoppingCart size={24} />
-                <ChevronDown size={16} className="ml-1 group-hover:rotate-180 transition-transform duration-200" />
-                </NavLink>
+          <div className="relative">
+            <button
+              className="hover:text-gray-300 flex items-center"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <ShoppingCart size={24} />
+              {cartItems.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                  {cartItems.length}
+                </span>
+              )}
+            </button>
 
-                {/* this needs to be a component that returns user items from database */}
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 bg-white text-black rounded-md shadow-lg overflow-hidden w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <NavLink
-                    to="" /* link to item */
-                    className={({ isActive }) =>
-                      isActive ? "block px-4 py-2 bg-gray-100 hover:bg-gray-200" : "block px-4 py-2 hover:bg-gray-100"
-                    }
-                  >
-                    Cart Item 1
-                  </NavLink>
-                  <NavLink
-                    to="" /* link to item */
-                    className={({ isActive }) =>
-                      isActive ? "block px-4 py-2 bg-gray-100 hover:bg-gray-200" : "block px-4 py-2 hover:bg-gray-100"
-                    }
-                  >
-                    Cart Item 2
-                  </NavLink>
-                  <NavLink
-                    to="" /* link to item */
-                    className={({ isActive }) =>
-                      isActive ? "block px-4 py-2 bg-gray-100 hover:bg-gray-200" : "block px-4 py-2 hover:bg-gray-100"
-                    }
-                  >
-                    Cart Item 3
-                  </NavLink>
-                </div>
-              </div>
-
-
-
-
-
-
-
-</button>
+            {/* Cart Popup */}
+            <div
+              className={`absolute right-0 top-full mt-2 z-50 ${
+                isCartOpen ? "pointer-events-auto" : "pointer-events-none"
+              }`}
+              onMouseEnter={isCartOpen ? handleMouseEnter : undefined}
+              onMouseLeave={isCartOpen ? handleMouseLeave : undefined}
+            >
+              <CartPopup isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} items={cartItems} />
+            </div>
           </div>
-
         </div>
       </div>
     </header>

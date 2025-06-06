@@ -77,13 +77,19 @@ export default function SodaShopHome() {
 
 
 /* to do list: 
-  hover functionality for the product boxes
-  cart popup
+  h̶o̶v̶e̶r̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶a̶l̶i̶t̶y̶ ̶f̶o̶r̶ ̶t̶h̶e̶ ̶p̶r̶o̶d̶u̶c̶t̶ ̶b̶o̶x̶e̶s̶
+  c̶a̶r̶t̶ ̶p̶o̶p̶u̶p̶,̶ make it pop up when wuick add to cart is pulled up
   insturction page
   individual item pages
   checkout/cart page
+  profile page
 
   mobile layout adjustments
 
+  fix hovering product boxed functionality when choosing the size
+  ssvg for coins? points? 
+  add pages? on merch category page
 
+  need to clean up code, making product cards into components
+  make pages fade into each other
 */
