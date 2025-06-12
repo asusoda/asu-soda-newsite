@@ -12,6 +12,7 @@ import Positions from "./pages/PositionOpenings"
 import SodaShopLayout from "./pages/SodaShop"
 import SodaShopHome from "./pages/SodaShop/SodaShopHome"
 import CategoryPage from "./pages/SodaShop/MerchCategory"
+import ItemPage from "./pages/SodaShop/ItemPage"
 import ProfilePage from "./pages/SodaShop/UserProfile"
 import InstructionsPage from "./pages/SodaShop/Instructions"
 import UserCartPage from "./pages/SodaShop/Cart"
@@ -40,6 +41,9 @@ function App() {
 
             {/* Subcategory routes */}
             <Route path="category/:categoryId/:subcategoryId" element={<CategoryPage />} />
+
+            {/* Item routes */}
+            <Route path="item/:itemId" element={<ItemPage />} />
 
             {/* Other shop pages */}
             <Route path="profile" element={<ProfilePage />} />

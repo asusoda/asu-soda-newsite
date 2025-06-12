@@ -91,7 +91,7 @@ export default function ProductCarousel({
         pauseOnHover={autoPlay}
       >
         {products.map((product, index) => (
-          <div key={index} className="px-2 py-4">
+          <div key={index} className="px-2 py-2 pb-10">
             <ProductCard product={product} index={index} isCarousel={true} disableHover={!enableHover} />
           </div>
         ))}

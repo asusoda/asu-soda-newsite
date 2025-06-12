@@ -1,8 +1,7 @@
 "use client"
 
-import { Dot } from "lucide-react"
 import ProductCarousel from "../../components/SodaShop/ProductCarousel"
-
+import ProfileSideBar from "@/components/SodaShop/UserProfile/SideBar"
 
 // Mock favorite products data
 const mockFavoriteProducts = [
@@ -14,6 +13,8 @@ const mockFavoriteProducts = [
   { name: "Algorithm Mug", description: "Coffee mug with algorithm jokes", price: "$18.99" },
 ]
 
+const user = [{ name: "Jubilee", classStanding: "Sophomore", balance: 500 }]
+
 // User profile page for the shop
 export default function ProfilePage() {
   return (
@@ -24,48 +25,13 @@ export default function ProfilePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Sidebar */}
           <div className="md:col-span-1">
-            <div className="border border-gray-700 rounded-lg p-6">
-              <div className="flex flex-col items-center mb-6">
-                <div className="w-24 h-24 bg-gray-800 rounded-full mb-4"></div>
-                <h2 className="text-xl font-bold">Jubilee Lin</h2>
-                <div className="flex gap-1 text-gray-400 justify-center w-full ">
-                  <p className="text-center">Sophomore</p>
-                  <Dot />
-                  <p className="text-center">500 pts</p>
-                </div>
-              </div>
-
-              <nav>
-                <ul className="space-y-2">
-                  <li>
-                    <a href="#" className="block p-2 hover:bg-gray-800 rounded">
-                      Favorites
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="block p-2 rounded text-white">
-                      Points Breakdown
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="block p-2 bg-gray-800 rounded text-white">
-                      Order History
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="block p-2 hover:bg-gray-800 rounded">
-                      Account Settings
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+            <ProfileSideBar user={user} />
           </div>
 
           {/* Main Content */}
           <div className="md:col-span-2">
             {/* Favorites Box */}
-            <div className="border border-gray-700 rounded-lg p-6 mb-[10%]">
+            <div id="shopfavorites" className="border border-gray-700 rounded-lg p-6 mb-[10%]">
               <h2 className="text-3xl font-bold mb-6">Favorites</h2>
 
               {/* Favorites Carousel with hover disabled */}
@@ -81,7 +47,7 @@ export default function ProfilePage() {
             </div>
 
             {/* Points Information Box */}
-            <div className="border border-gray-700 rounded-lg p-6 mb-[10%]">
+            <div id="shoppointsbreakdown" className="border border-gray-700 rounded-lg p-6 mb-[10%]">
               <h2 className="text-3xl font-bold mb-4">Points Breakdown</h2>
 
               {/* Points Info */}
@@ -102,7 +68,7 @@ export default function ProfilePage() {
             </div>
 
             {/* Order History Box */}
-            <div className="border border-gray-700 rounded-lg p-6 mb-[10%]">
+            <div id="orderhistory" className="border border-gray-700 rounded-lg p-6 mb-[10%]">
               <h2 className="text-3xl font-bold mb-4">Order History</h2>
 
               {/* Order list */}
@@ -123,6 +89,30 @@ export default function ProfilePage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Profile Settings Box */}
+            <div id="profilesettings" className="border border-gray-700 rounded-lg p-6 mb-[10%]">
+              <h2 className="text-3xl font-bold mb-4">Profile Settings</h2>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium mb-2">Display Name</label>
+                  <input
+                    type="text"
+                    className="w-full p-2 border border-gray-700 rounded bg-gray-800 text-white"
+                    defaultValue="Jubilee"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">Email</label>
+                  <input
+                    type="email"
+                    className="w-full p-2 border border-gray-700 rounded bg-gray-800 text-white"
+                    defaultValue="jubilee@example.com"
+                  />
+                </div>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Save Changes</button>
               </div>
             </div>
           </div>

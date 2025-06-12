@@ -2,6 +2,7 @@
 
 import { Heart } from 'lucide-react'
 import { useState, useEffect, useRef } from "react"
+import { useNavigate } from "react-router-dom";
 
 interface Product {
   name: string
@@ -20,6 +21,13 @@ export default function ProductCard({ product, index, isCarousel = false, disabl
   // Reference to measure the card's container width
   const cardRef = useRef<HTMLDivElement>(null)
   const [isCompact, setIsCompact] = useState(false)
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Replace spaces with dashes, encode special characters, etc.
+    const formattedName = encodeURIComponent(product.name.toLowerCase().replace(/\s+/g, "-"));
+    navigate(`/shop/item/${formattedName}`);
+  };
 
   // Check container width on mount and resize
   useEffect(() => {
@@ -47,6 +55,7 @@ export default function ProductCard({ product, index, isCarousel = false, disabl
         isCarousel ? "w-full" : "min-w-80"
       }`}
     >
+      <div onClick={handleClick} className="cursor-pointer">
       <div className="aspect-square bg-gray-800 rounded-md mb-4"></div>
 
       {/* Product info - adjust layout based on available space */}
@@ -122,6 +131,7 @@ export default function ProductCard({ product, index, isCarousel = false, disabl
           </div>
         </div>
       )}
+      </div>
     </div>
   )
 }

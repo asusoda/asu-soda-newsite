@@ -82,7 +82,7 @@ export default function SodaShopHome() {
   insturction page
   individual item pages
   checkout/cart page
-  profile page
+  p̶r̶o̶f̶i̶l̶e̶ ̶p̶a̶g̶e̶
 
   mobile layout adjustments
 
