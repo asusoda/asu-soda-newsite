@@ -3,6 +3,8 @@
 import { X } from "lucide-react"
 import { Trash2 } from 'lucide-react';
 
+import { Link, NavLink } from "react-router-dom"
+
 
 interface CartItem {
   id: string
@@ -83,7 +85,9 @@ export default function CartPopup({ isOpen, onClose, items = [] }: CartPopupProp
             </div>
           </div>
           <div className="py-4 border-t">
-            <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">View Cart</button>
+            <NavLink to="/shop/cart">
+              <button className="cursor-pointer w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">View Cart</button>
+            </NavLink>
           </div>
         </section>
       )}

@@ -40,11 +40,12 @@ function AccordionTrigger({
         data-slot="accordion-trigger"
         className={cn(
           // Add gap-4 here for spacing between content span and chevron
-          "focus-visible:border-ring focus-visible:ring-ring/50 flex items-center justify-between w-full gap-4 rounded-md py-4 pr-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180", // Changed items-start back to items-center
+          "focus-visible:border-ring focus-visible:ring-ring/50 flex items-center justify-between w-full gap-3 rounded-md py-2 pr-4 text-left text-large transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 cursor-pointer", // Changed items-start back to items-center
           className
         )}
         {...props}
       >
+        <ChevronDownIcon className="cursor-pointer size-5 shrink-0 transition-transform duration-200" />
         {/* Add conditional class here, remove gap-4 */}
         <span className={cn(
           "flex flex-1 items-center", // Changed items-start back to items-center
@@ -52,7 +53,7 @@ function AccordionTrigger({
         )}>
           {children}
         </span>
-        <ChevronDownIcon className="text-muted-foreground pointer-events-none size-4 shrink-0 transition-transform duration-200" />
+
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )
@@ -65,7 +66,7 @@ function AccordionContent({
 }: React.ComponentProps<typeof AccordionPrimitive.Content>) {
   return (
     <AccordionPrimitive.Content
-      data-slot="accordion-content"
+      data-slot="accordion-contentadad"
       className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
       {...props}
     >

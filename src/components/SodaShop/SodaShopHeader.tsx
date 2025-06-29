@@ -1,9 +1,9 @@
 "use client"
 
-import { Link, NavLink } from "react-router-dom"
 import { Home, User, ShoppingCart, Search, ChevronDown } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import CartPopup from "./CartPopup"
+import { Link, NavLink } from "react-router-dom"
 
 export default function SodaShopHeader() {
   const [isVisible, setIsVisible] = useState(true)
@@ -234,18 +234,20 @@ export default function SodaShopHeader() {
 
           {/* Cart Button */}
           <div className="relative">
-            <button
-              className="hover:text-gray-300 flex items-center"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <ShoppingCart size={24} />
-              {cartItems.length > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                  {cartItems.length}
-                </span>
-              )}
-            </button>
+            <NavLink to="/shop/cart" className="">
+              <button
+                className="hover:text-gray-300 flex items-center cursor-pointer"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <ShoppingCart size={24} />
+                {cartItems.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                    {cartItems.length}
+                  </span>
+                )}
+              </button>
+            </NavLink>
 
             {/* Cart Popup */}
             <div

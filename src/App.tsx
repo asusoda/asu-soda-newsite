@@ -15,7 +15,7 @@ import CategoryPage from "./pages/SodaShop/MerchCategory"
 import ItemPage from "./pages/SodaShop/ItemPage"
 import ProfilePage from "./pages/SodaShop/UserProfile"
 import InstructionsPage from "./pages/SodaShop/Instructions"
-import UserCartPage from "./pages/SodaShop/Cart"
+import UserCartPage from "./pages/SodaShop/CartCheckout"
 import NotFound from "./pages/NotFound"
 import ScrollToTop from "./components/ScrollToTop"
 

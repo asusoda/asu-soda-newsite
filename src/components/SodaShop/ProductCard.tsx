@@ -87,7 +87,7 @@ export default function ProductCard({ product, index, isCarousel = false, disabl
       {/* Expanded overlay card - appears on hover (only if hover is enabled) */}
       {!disableHover && (
         <div
-          className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-blue-900 rounded-lg p-4 z-10 shadow-xl pointer-events-none group-hover:pointer-events-auto border border-gray-300 ${
+          className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-blue-900 rounded-lg p-4 z-10 shadow-xl pointer-events-none group-hover:pointer-events-auto ${
             isCarousel ? "group-hover:scale-105" : "h-[113%] group-hover:scale-110"
           }`}
           style={{ transformOrigin: "center" }}
@@ -108,7 +108,7 @@ export default function ProductCard({ product, index, isCarousel = false, disabl
             <span className="font-bold mb-2 text-white">{product.price}</span>
             <div className={`flex ${isCompact ? "flex-col gap-2" : "gap-3"}`}>
               <select
-                className={`bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white ${
+                className={`bg-gray-800 border-gray-700 rounded px-3 py-2 text-white ${
                   isCompact ? "w-full" : ""
                 }`}
               >
