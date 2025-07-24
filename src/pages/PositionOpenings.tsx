@@ -177,7 +177,7 @@ export default function Positions() {
 
       <h2>Open Positions by Team</h2>
 
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion type="single" collapsible defaultValue="admin" className="w-full">
         <AccordionItem value="admin">
           <AccordionTrigger className="text-3xl font-semibold no-underline hover:no-underline py-4" showStar>
             Finance
@@ -194,8 +194,9 @@ export default function Positions() {
             </div>
           </AccordionContent>
         </AccordionItem>
+        
         <AccordionItem value="marketing">
-          {/* Add showStar prop, remove HandDrawnStar component */}
+          {/* Add showStar prop, remove HandDrawnStar component
           <AccordionTrigger className="text-3xl font-semibold no-underline hover:no-underline py-4" showStar>
             Marketing
           </AccordionTrigger>
@@ -262,11 +263,11 @@ export default function Positions() {
                 url="https://qruil.com/job-detail/test-1742321001922"
               />
             </div>
-          </AccordionContent>
+          </AccordionContent> */}
         </AccordionItem>
 
         <AccordionItem value="industry-relations">
-          {/* Add showStar prop, remove HandDrawnStar component */}
+          {/* Add showStar prop, remove HandDrawnStar component
           <AccordionTrigger className="text-3xl font-semibold no-underline hover:no-underline py-4" showStar>
             Industry Relations
           </AccordionTrigger>
@@ -287,11 +288,11 @@ export default function Positions() {
                 url="https://qruil.com/job-detail/industry-relations-officer-1743643231829"
               />
             </div>
-          </AccordionContent>
+          </AccordionContent> */}
         </AccordionItem>
 
         <AccordionItem value="development-engagement">
-          {/* Add showStar prop, remove HandDrawnStar component */}
+          {/* Add showStar prop, remove HandDrawnStar component
           <AccordionTrigger className="text-3xl font-semibold no-underline hover:no-underline py-4" showStar>
             Development & Engagement
           </AccordionTrigger>
@@ -313,11 +314,11 @@ export default function Positions() {
                 url="https://qruil.com/job-detail/professional-development-and-community-engagement-specialist-(dande)-1742971838660"
               />
             </div>
-          </AccordionContent>
+          </AccordionContent> */}
         </AccordionItem>
 
         <AccordionItem value="technology">
-          {/* Add showStar prop, remove HandDrawnStar component */}
+          {/* Add showStar prop, remove HandDrawnStar component
           <AccordionTrigger className="text-3xl font-semibold no-underline hover:no-underline py-4" showStar>
             Technology
           </AccordionTrigger>
@@ -364,7 +365,7 @@ export default function Positions() {
                 url="https://qruil.com/job-detail/technology-specialist-1742972015408"
               />
             </div>
-          </AccordionContent>
+          </AccordionContent> */}
         </AccordionItem>
         <div />
       </Accordion>
