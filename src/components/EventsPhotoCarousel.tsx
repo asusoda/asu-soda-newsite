@@ -73,11 +73,9 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
         setEvents(formattedEvents);
       } else {
         console.log("No events found, using dummy data");
-        setEvents(generateDummyEvents(currentDate));
       }
     } catch (error) {
       console.error("Failed to fetch events:", error);
-      setEvents(generateDummyEvents(currentDate));
     } finally {
         setIsLoading(false);
       
