@@ -33,7 +33,7 @@ The server will refresh the page automatically when you make changes to the code
 
 Here's a brief high-level overview of the tech stack the `thesoda.io` uses:
 
-- This project uses the [React Lirary](https://react.dev/). React is a JavaScript library for building user interfaces, particularly single-page applications where you need a fast, interactive experience.
+- This project uses the [React Library](https://react.dev/). React is a JavaScript library for building user interfaces, particularly single-page applications where you need a fast, interactive experience.
 - For build tool, [Vite](https://vitejs.dev/guide/) provides a fast development experience for web projects. When you use Vite with React, you get a development setup that is both fast and modern. Vite is configured to handle React’s specific needs efficiently, allowing you to focus more on development and less on configuration.
 - [TypeScript](https://www.typescriptlang.org/) TypeScript is a superset of JavaScript that adds static typing to the language. It helps the project catch errors early in the development process and provides better tooling and code quality.
 - The app is styled using [TailwindCSS](https://tailwindcss.com/) Tailwind CSS is a utility-first CSS framework designed to make it easy to build custom, responsive designs without writing custom CSS.
