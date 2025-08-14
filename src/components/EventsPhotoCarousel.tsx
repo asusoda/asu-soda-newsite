@@ -57,7 +57,7 @@ function EventsPhotoCarousel({setSelectedEvent}: { setSelectedEvent: (event: Cal
   const fetchEvents = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("https://api.thesoda.io/calendar/events");
+      const response = await fetch("https://api.thesoda.io/api/calendar/events");
       const data = await response.json();
 
       if (data?.status === "success" && Array.isArray(data.events)) {
