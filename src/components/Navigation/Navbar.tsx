@@ -77,7 +77,7 @@ function NavbarSection() {
         </div>
         <div>
           <Button asChild className="text-white bg-soda-red">
-            <a href="https://asu.campuslabs.com/engage/organization/soda" target="_blank" rel="noopener noreferrer">
+            <a href="https://sundevilcentral.eoss.asu.edu/feeds?type=club&type_id=35661&tab=about" target="_blank" rel="noopener noreferrer">
               Become a Member
             </a>
           </Button>
