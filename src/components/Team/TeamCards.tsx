@@ -7,13 +7,11 @@ function MemberCards() {
   const teams: Teams = _teams;
   const renderMemberCard = (member: TeamMember, j: number) => (
     <div key={j} className="flex w-[40vw] md:w-56 md:py-4 text-center flex-col md:space-y-4 space-y-4 items-center justify-center">
-      <div className="w-[35vw] md:w-48 aspect-square">
-        <img
-          className="w-full h-full object-cover rounded-full"
-          src={member.image}
-          alt={`${member.name} image`}
-        />
-      </div>
+      <img
+        className="w-[35vw] md:w-48 aspect-square object-cover rounded-full"
+        src={member.image}
+        alt={`${member.name} image`}
+      />
 
       <div className="card-text min-h-34">
         <div className="card-header whitespace-pre-line font-semibold text-xl">
