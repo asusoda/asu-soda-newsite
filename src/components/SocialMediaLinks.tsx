@@ -14,7 +14,7 @@ const socialMediaLinks = [
   //   icon: <CgWebsite className="hover:text-soda-red" />,
   // },
   {
-    href: "https://asu.campuslabs.com/engage/organization/soda",
+    href: "https://sundevilcentral.eoss.asu.edu/feeds?type=club&type_id=35661&tab=about",
     icon: <IoLogoFreebsdDevil className="hover:text-gray-300" />,
   },
   {
