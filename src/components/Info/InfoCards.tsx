@@ -20,7 +20,19 @@ class InfoCards extends Component {
                   {content.map((element) => element)}
                 </div>
                 <br />
-                <button className="card-button">{button}</button>
+                {button === "Join our Sun Devil Central" ? (
+                  <a 
+                    href="https://sundevilcentral.eoss.asu.edu/feeds?type=club&type_id=35661&tab=about" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="card-button"
+                    style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
+                  >
+                    {button}
+                  </a>
+                ) : (
+                  <button className="card-button">{button}</button>
+                )}
               </div>
             </div>
           ))}

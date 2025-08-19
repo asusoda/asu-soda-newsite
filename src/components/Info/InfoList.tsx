@@ -17,7 +17,7 @@ const content = [
         our meetings is a SoDA member.
       </p>,
     ],
-    button: "Join our SunDevilSync",
+    button: "Join our Sun Devil Central",
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ const content = [
         our meetings is a SoDA member.
       </p>,
     ],
-    button: "Join our SunDevilSync",
+    button: "Join our Sun Devil Central",
   },
 ];
 
