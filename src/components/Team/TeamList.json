@@ -1,32 +1,24 @@
 {
   "Admin": [
     {
-      "name": "Ryan Woo",
+      "name": "Nishant Dhongadi",
       "role": "President",
-      "email": "rtwoo@asu.edu",
-      "image": "/headshots/ryan.webp"
-    }
-  ],
-  "Admin, Emerging Initiatives": [
-    {
-      "name": "Elizabeth Pardhe",
-      "role": "Vice President,\nEmerging Initiatives",
-      "email": "epardhe@asu.edu",
-      "image": "/headshots/elizabeth.webp"
-    },
-    {
-      "name": "Hao Chau",
-      "role": "Event Coordinator,\nEmerging Initiatives",
-      "email": "vchau3@asu.edu",
-      "image": "/headshots/johnny.webp"
+      "email": "ndhongad@asu.edu",
+      "image": "/headshots/nishant.webp"
     }
   ],
   "Admin, Operations": [
     {
       "name": "Harshit Kumar",
-      "role": "Vice President,\nOperations",
+      "role": "Vice President, \nOperations",
       "email": "hkumar43@asu.edu",
       "image": "/headshots/harshit.webp"
+    },
+    {
+      "name": "Rayan Syed",
+      "role": "Event Coordinator",
+      "email": "rasyed@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     },
     {
       "name": "Johnnessa Barroquillo",
@@ -35,16 +27,16 @@
       "image": "/headshots/johnnessa.webp"
     },
     {
-      "name": "Rayan Syed",
+      "name": "Johnny Chau",
       "role": "Event Coordinator,\nGeneral Body Meetings",
-      "email": "rasyed@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "email": "vchau3@asu.edu",
+      "image": "/headshots/johnny.webp"
     }
   ],
   "Admin, Finance": [
     {
       "name": "Arleen Kaur Teerthy",
-      "role": "Vice President,\nFinance",
+      "role": "Vice President, Finance",
       "email": "ateerthy@asu.edu",
       "image": "/headshots/arleen.webp"
     },
@@ -53,30 +45,20 @@
       "role": "Treasurer,\nCore",
       "email": "spate310@asu.edu",
       "image": "/headshots/shiv.webp"
-    },
+    }
+  ],
+  "Admin, Strategy": [
     {
-      "name": "Cherry Goyal",
-      "role": "Treasurer,\nGrowth",
-      "email": "cgoyal6@asu.edu",
-      "image": "/headshots/cherry.webp"
+      "name": "Elizabeth Pardhe",
+      "role": "Vice President,\nStrategy",
+      "email": "epardhe@asu.edu",
+      "image": "/headshots/elizabeth.webp"
     }
   ],
   "Industry Relations": [
     {
-      "name": "Nishant Dhongadi",
-      "role": "Director,\nIndustry Relations",
-      "email": "ndhongad@asu.edu",
-      "image": "/headshots/nishant.webp"
-    },
-    {
-      "name": "Biko Kubanych kyzy",
-      "role": "Industry Relations Specialist",
-      "email": "akubany1@asu.edu",
-      "image": "/headshots/biko.webp"
-    },
-    {
       "name": "Alex Ward Stratman",
-      "role": "Industry Relations Specialist",
+      "role": "Director",
       "email": "awardstr@asu.edu",
       "image": "/headshots/alex.webp"
     },
@@ -85,62 +67,86 @@
       "role": "Industry Relations Specialist",
       "email": "yalqurna@asu.edu",
       "image": "/headshots/yahia.webp"
+    },
+    {
+      "name": "Maia Oh",
+      "role": "Industry Relations Specialist",
+      "email": "maiaoh@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
+    },
+    {
+      "name": "Ekagra Gupta",
+      "role": "Industry Relations Specialist",
+      "email": "egupta@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     }
   ],
   "Technology": [
     {
-      "name": "Ben Juntilla",
-      "role": "Director,\nTechnology",
-      "email": "benjuntilla@asu.edu",
-      "image": "/headshots/ben.webp"
-    },
-    {
       "name": "Sri Ujjwal Reddy Beereddy",
-      "role": "Associate Director,\nTechnology",
+      "role": "Director,\nTechnology",
       "email": "sbeeredd@asu.edu",
       "image": "/headshots/sri.webp"
     },
     {
       "name": "Chelsea Lianne Gomez",
-      "role": "Workshop Content Developer",
+      "role": "Software Developer Lead",
       "email": "ctgomez@asu.edu",
       "image": "/headshots/chelsea.webp"
     },
     {
-      "name": "Sarthak Aggarwal",
-      "role": "Workshop Content Developer",
-      "email": "saggar34@asu.edu",
-      "image": "/headshots/sarthak.webp"
+      "name": "Ben Juntilla",
+      "role": "Events Developer Lead",
+      "email": "benjuntilla@asu.edu",
+      "image": "/headshots/ben.webp"
     },
     {
-      "name": "Tanay Upreti",
-      "role": "Internal Tools Developer Sr.",
-      "email": "tupreti@asu.edu",
-      "image": "/headshots/tanay.webp"
+      "name": "Justin Lee",
+      "role": "Software Developer",
+      "email": "jlee@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     },
     {
-      "name": "Victoria Fan",
-      "role": "Internal Tools Developer",
-      "email": "vmfan@asu.edu",
-      "image": "/headshots/victoria.webp"
+      "name": "Ash Srivastava",
+      "role": "Software Developer",
+      "email": "asriv132@asu.edu",
+      "image": "/headshots/ash.webp"
+    },
+    {
+      "name": "Jubilee Lin",
+      "role": "Software Developer",
+      "email": "jlin@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
+    },
+    {
+      "name": "Naing Lynn Kyaw",
+      "role": "Software Developer",
+      "email": "nkyaw@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
+    },
+    {
+      "name": "Pouya Shaeri",
+      "role": "Events Developer",
+      "email": "pshaeri@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
+    },
+    {
+      "name": "Bhavana Kannan",
+      "role": "Events Developer",
+      "email": "bkannan@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     },
     {
       "name": "Aryan Keluskar",
-      "role": "Special Events Organizer",
+      "role": "Events Developer",
       "email": "akeluska@asu.edu",
       "image": "/headshots/aryan.webp"
     },
     {
       "name": "Darsh Chaurasia",
-      "role": "Special Events Organizer",
+      "role": "Events Developer",
       "email": "dchauras@asu.edu",
       "image": "/headshots/darsh.webp"
-    },
-    {
-      "name": "Ash Srivastava",
-      "role": "Internal Tools Developer",
-      "email": "asriv132@asu.edu",
-      "image": "/headshots/ash.webp"
     }
   ],
   "Development & Engagement": [
@@ -151,42 +157,48 @@
       "image": "/headshots/shreya.webp"
     },
     {
-      "name": "Rachel Yonan",
-      "role": "Community Outreach",
-      "email": "riyonan@asu.edu",
-      "image": "/headshots/rachel.webp"
-    },
-    {
       "name": "Harini Mahendran",
-      "role": "Community Outreach",
+      "role": "Associate Director",
       "email": "hmahend4@asu.edu",
       "image": "/headshots/harini.webp"
+    },
+    {
+      "name": "Daniel Liao",
+      "role": "Community Officer",
+      "email": "dliao@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
+    },
+    {
+      "name": "Ishita Rajeev",
+      "role": "Community Officer",
+      "email": "irajeev@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
+    },
+    {
+      "name": "Yug Thapar",
+      "role": "Community Officer",
+      "email": "ythapar@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     }
   ],
   "Marketing": [
     {
-      "name": "Aditi Prasath",
+      "name": "Rachel Yonan",
       "role": "Director,\nMarketing",
-      "email": "aprasath@asu.edu",
-      "image": "/headshots/aditi.webp"
+      "email": "riyonan@asu.edu",
+      "image": "/headshots/rachel.webp"
     },
     {
-      "name": "Sara Schultz",
-      "role": "Associate Director,\nMarketing",
-      "email": "sschul19@asu.edu",
-      "image": "/headshots/sara.webp"
+      "name": "Lizet Esquivel",
+      "role": "Video Editor",
+      "email": "lesquive@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     },
     {
-      "name": "Leon Auster Dsouza",
-      "role": "Social Media Manager",
-      "email": "ldsouza2@asu.edu",
-      "image": "/headshots/leon.webp"
-    },
-    {
-      "name": "Marina Nasralla",
+      "name": "Ishanshika Arora",
       "role": "Graphic Designer",
-      "email": "mnasral2@asu.edu",
-      "image": "/headshots/marina.webp"
+      "email": "iarora@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     },
     {
       "name": "Sai Rithwik Kukunuri",
@@ -195,10 +207,10 @@
       "image": "/headshots/sai.webp"
     },
     {
-      "name": "Alex Babayev",
-      "role": "Video Editor",
-      "email": "rbabaye1@asu.edu",
-      "image": "/headshots/alex_b.webp"
+      "name": "Daniel Ortiz Figueroa",
+      "role": "Photographer",
+      "email": "dortizfi@asu.edu",
+      "image": "/logo/soda-logo-blue.webp"
     }
   ],
   "Advisors": [
@@ -207,6 +219,12 @@
       "role": "Faculty Advisor",
       "email": "ykobaya@asu.edu",
       "image": "/headshots/kobayashi.webp"
+    },
+    {
+      "name": "Ryan Woo",
+      "role": "Graduate Student Advisor",
+      "email": "rtwoo@asu.edu",
+      "image": "/headshots/ryan.webp"
     }
   ]
 }
