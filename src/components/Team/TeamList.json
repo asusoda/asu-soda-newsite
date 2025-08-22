@@ -18,7 +18,7 @@
       "name": "Rayan Syed",
       "role": "Event Coordinator",
       "email": "rasyed@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/Rayan.jpg"
     },
     {
       "name": "Johnnessa Barroquillo",
@@ -72,13 +72,13 @@
       "name": "Maia Oh",
       "role": "Industry Relations Specialist",
       "email": "maiaoh@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/maia.jpg"
     },
     {
       "name": "Ekagra Gupta",
       "role": "Industry Relations Specialist",
       "email": "egupta@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/ekagra.jpeg"
     }
   ],
   "Technology": [
@@ -104,7 +104,7 @@
       "name": "Justin Lee",
       "role": "Software Developer",
       "email": "jlee@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/justin.jpg"
     },
     {
       "name": "Ash Srivastava",
@@ -122,13 +122,13 @@
       "name": "Naing Lynn Kyaw",
       "role": "Software Developer",
       "email": "nkyaw@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/nainglynn.jpg"
     },
     {
       "name": "Pouya Shaeri",
       "role": "Events Developer",
       "email": "pshaeri@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/pouya.JPG"
     },
     {
       "name": "Bhavana Kannan",
@@ -166,19 +166,19 @@
       "name": "Daniel Liao",
       "role": "Community Officer",
       "email": "dliao@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/daniel.jpeg"
     },
     {
       "name": "Ishita Rajeev",
       "role": "Community Officer",
       "email": "irajeev@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/ishita.jpg"
     },
     {
       "name": "Yug Thapar",
       "role": "Community Officer",
       "email": "ythapar@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/yug.png"
     }
   ],
   "Marketing": [
@@ -192,13 +192,13 @@
       "name": "Lizet Esquivel",
       "role": "Video Editor",
       "email": "lesquive@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/lizet.png"
     },
     {
       "name": "Ishanshika Arora",
       "role": "Graphic Designer",
       "email": "iarora@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/ishanshika.jpeg"
     },
     {
       "name": "Sai Rithwik Kukunuri",
@@ -210,7 +210,7 @@
       "name": "Daniel Ortiz Figueroa",
       "role": "Photographer",
       "email": "dortizfi@asu.edu",
-      "image": "/logo/soda-logo-blue.webp"
+      "image": "/headshots/danielortiz.jpg"
     }
   ],
   "Advisors": [
