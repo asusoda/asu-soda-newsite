@@ -36,11 +36,6 @@ The Mentorship Program is designed to connect underclassmen with experienced upp
 1. **One-on-One Pairing:** Direct pairing of one mentor with one mentee.
 2. **Group Mentorship:** Groups of mentors assisting groups of mentees.
 
-### Communication
-
-- **Discord Channel:** Dedicated space for mentors and mentees to communicate.
-- **Mentorship/Office Hours:** Scheduled times for direct interaction and support.
-
 ### End-of-Program Project
 
 Mentees will work on projects with their mentors, including:
@@ -50,27 +45,63 @@ Mentees will work on projects with their mentors, including:
 3. **AI-Related Project:** Engage in a project related to artificial intelligence.
 4. **Free Choice:** Select a project of personal interest.
 
-## Participant Benefits
+## Responsibilities and Perks
 
 ### Mentors
 
-- **Volunteer Opportunity:** Contribute to the professional growth of students.
-- **Special Privileges:** Potential access to industry speakers and events.
+**Responsibilities**
+
+- Share professional insights and support.
+- Help their (2-3) mentees create a project from scratch over the course of 2 months
+- Stay active and communicative
+- 1-2 hr Time commitment per week
+
+**Perks:** 
+
+- **Volunteer:** Contribute to the professional growth of students.
+- **Special Opportunities:** Access to industry speakers and exclusive events and priority consideration for SoDA Officer recruitment and perks.
 - **Certificate of Mentorship:** Enhance your resume with formal recognition.
-- **Potential Rewards:** Gift cards or other incentives.
+- **Networking:** Meet industry professionals at our Alumni Banquet.
 
 ### Mentees
 
+**Responsibilities**
+
+- Stay active and communicative
+- Work on a project
+
+**Perks**
+
 - **Personalized Help:** Receive tailored advice and support.
-- **Skill Expansion:** Gain new skills from workshops and practical experience.
-- **Support System:** Benefit from a structured support system, particularly useful during the freshman year.
-- **Resume Review:** Get feedback and improvement tips for your resume.
+- **Skill Expansion:** Gain new skills from exclusive workshops and practical experience.
+- **Support System:** Benefit from a structured support system, particularly useful during freshman/sophomore years.
+- **Resume Aid:** Build a project to enhance your coding skills and level up your resume.
+- **Networking:** Get the opportunity to network and present to industry professionals at our Alumni Banquet.
+
+### Communication
+
+- **Discord Channel:** Dedicated space for mentors and mentees to receive updates and reminders.
+- **Lounge Hours:** Strongly encouraged to attend.
 
 ## Application Process
 
 1. **Submit Resume and Application Form:** Provide necessary documentation and information.
 2. **Short Interview:** Participate in an interview with 2-3 mentors.
 3. **Evaluation Criteria:** Assessment based on involvement in SoDA, skills demonstrated through the resume and workshops, and potential gain from the program.
+
+## FAQ
+
+If I've applied previously and didn't get in, should I apply again?
+
+Absolutely! Due to the high volume of mentees and limited mentors, we aren't able to accept everyone, so we encourage students to apply again.
+
+If I've been a mentee previously can I apply again?
+
+If you successfully completed the program, you can re-apply, but because we want to provide opportunities to other students, you might not be accepted again.
+
+What if I'm unable to complete the program?
+
+Let us know! Please check our requirements and make sure you're able to commit to the program beforehand, but we understand that life happens. Just contact your mentor and the program directors and let them know you won't be able to complete it asap.
 
 ## Notes for Future Consideration
 
