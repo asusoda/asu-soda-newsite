@@ -8,41 +8,48 @@ import {
 } from "@/components/ui/dropdown-menu";
 // Import useLocation hook
 import { Link, useLocation } from "react-router-dom";
+import { FiExternalLink } from "react-icons/fi";
+
+type NavItem = { name: string; id_href: string; icon?: "external" };
 
 function NavbarSection() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   // Get current location
   const location = useLocation();
-  const menuItems = [
+  const menuItems: NavItem[] = [
     { name: "About", id_href: "/#about" },
     { name: "Sponsors", id_href: "/#sponsors" },
     { name: "Team", id_href: "/#team" },
     { name: "History", id_href: "/#history" },
     { name: "Leaderboard", id_href: "/leaderboard" },
-    { name: "ASU CS Wiki", id_href: "https://wiki.thesoda.io", icon: "↗" },
+    { name: "ASU CS Wiki", id_href: "https://wiki.thesoda.io", icon: "external" },
   ];
 
   const handleLogoClick = () => {
     window.scrollTo(0, 0);
   };
 
-  const renderNavLink = (item: { name: string; id_href: string; icon?: string }) => {
+  const renderNavLink = (item: NavItem) => {
     const handleClick = () => {
       setIsMenuOpen(false);
     };
     if (item.id_href.startsWith('/') && !item.id_href.includes('#')) {
       return (
-        <Link key={item.name} to={item.id_href} className="text-white w-full flex items-center gap-1" onClick={handleClick}>
-          {item.name}
-          {item.icon && <span className="text-sm">{item.icon}</span>}
+        <Link key={item.name} to={item.id_href} className="text-white w-full flex items-center gap-1 whitespace-nowrap" onClick={handleClick}>
+          <span>{item.name}</span>
+          {item.icon === "external" && (
+            <FiExternalLink size={12} className="shrink-0" />
+          )}
         </Link>
       );
     }
     const isExternal = item.id_href.startsWith('http');
     return (
-      <a key={item.name} href={item.id_href} className="text-white w-full flex items-center gap-1" onClick={handleClick} {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
-        {item.name}
-        {item.icon && <span className="text-sm">{item.icon}</span>}
+      <a key={item.name} href={item.id_href} className="text-white w-full flex items-center gap-1 whitespace-nowrap" onClick={handleClick} {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+        <span>{item.name}</span>
+        {item.icon === "external" && (
+          <FiExternalLink size={12} className="shrink-0" />
+        )}
       </a>
     );
   };
@@ -75,7 +82,7 @@ function NavbarSection() {
             <img src="/logo/Soda_Logo_Dark_Mode.svg" width="314" height="132" className="w-28" alt="SoDA Logo" />
           </Link>
         </div>
-        <div className="hidden sm:flex gap-4">
+        <div className="hidden sm:flex items-center gap-6">
           {menuItems.map(renderNavLink)}
         </div>
         <div>
