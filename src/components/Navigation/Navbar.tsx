@@ -19,27 +19,30 @@ function NavbarSection() {
     { name: "Team", id_href: "/#team" },
     { name: "History", id_href: "/#history" },
     { name: "Leaderboard", id_href: "/leaderboard" },
+    { name: "ASU CS Wiki", id_href: "https://wiki.thesoda.io", icon: "↗" },
   ];
 
   const handleLogoClick = () => {
     window.scrollTo(0, 0);
   };
 
-  const renderNavLink = (item: { name: string; id_href: string }) => {
+  const renderNavLink = (item: { name: string; id_href: string; icon?: string }) => {
     const handleClick = () => {
       setIsMenuOpen(false);
     };
     if (item.id_href.startsWith('/') && !item.id_href.includes('#')) {
       return (
-        <Link key={item.name} to={item.id_href} className="text-white w-full" onClick={handleClick}>
+        <Link key={item.name} to={item.id_href} className="text-white w-full flex items-center gap-1" onClick={handleClick}>
           {item.name}
+          {item.icon && <span className="text-sm">{item.icon}</span>}
         </Link>
       );
     }
     const isExternal = item.id_href.startsWith('http');
     return (
-      <a key={item.name} href={item.id_href} className="text-white w-full" onClick={handleClick} {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+      <a key={item.name} href={item.id_href} className="text-white w-full flex items-center gap-1" onClick={handleClick} {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
         {item.name}
+        {item.icon && <span className="text-sm">{item.icon}</span>}
       </a>
     );
   };
