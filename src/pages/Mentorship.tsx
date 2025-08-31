@@ -6,49 +6,15 @@ import remarkGfm from "remark-gfm";
 const markdownContent = `
 # Mentorship Program
 
-## Overview
+The Mentorship Program is designed to connect underclassmen with experienced upperclassmen to foster professional growth and development. This SoDA initiative aims to provide valuable guidance and support to students through a structured mentoring process.
 
-The Mentorship Program is designed to connect underclassmen with experienced upperclassmen to foster professional growth and development. This initiative, in collaboration with the Software Developers Association (SoDA), aims to provide valuable guidance and support to students through a structured mentoring process.
+Sign up to be a mentor [here](https://forms.gle/zZpeEjPVgSVsdZx76).
 
-- **Program Idea:** Pair underclassmen with upperclassmen for mentorship.
-- **Collaboration:** Partnered with SoDA.
-- **Team Size:** 3-5 individuals to manage applications and mentor/mentee pairings.
-- **Estimated Duration:** 3-4 weeks for the entire process.
-
-## Timeline
-
-1. **Late July/Early August:** Poll officers to find 10-15 mentors, including backups.
-2. **Create Application Forms:** Develop forms for both mentors and mentees.
-3. **Distribute Forms:** Send out application forms after the first or second General Body Meeting (GBM).
-4. **Assign Mentors:** Match mentors with mentees.
-5. **Announce Program:** Reveal the program details at the first meeting.
-
-## Mentor Responsibilities
-
-- Provide mentees with resume reviews.
-- Offer tips for securing internships.
-- Share professional insights and support.
-
-## Program Structure
-
-### Mentorship Options
-
-1. **One-on-One Pairing:** Direct pairing of one mentor with one mentee.
-2. **Group Mentorship:** Groups of mentors assisting groups of mentees.
-
-### End-of-Program Project
-
-Mentees will work on projects with their mentors, including:
-
-1. **Build an App:** Contribute to a SoDA or CodeDevils project.
-2. **Create a Portfolio Website:** Develop a personal or SoDA-related website.
-3. **AI-Related Project:** Engage in a project related to artificial intelligence.
-4. **Free Choice:** Select a project of personal interest.
+Sign up to be a mentee [here](https://forms.gle/3jbEaHMyMinDhbr36).
 
 ## Responsibilities and Perks
 
 ### Mentors
-
 **Responsibilities**
 
 - Share professional insights and support.
@@ -64,11 +30,11 @@ Mentees will work on projects with their mentors, including:
 - **Networking:** Meet industry professionals at our Alumni Banquet.
 
 ### Mentees
-
 **Responsibilities**
 
 - Stay active and communicative
 - Work on a project
+- 2-3 hr Time commitment per week (variable)
 
 **Perks**
 
@@ -83,32 +49,20 @@ Mentees will work on projects with their mentors, including:
 - **Discord Channel:** Dedicated space for mentors and mentees to receive updates and reminders.
 - **Lounge Hours:** Strongly encouraged to attend.
 
-## Application Process
-
-1. **Submit Resume and Application Form:** Provide necessary documentation and information.
-2. **Short Interview:** Participate in an interview with 2-3 mentors.
-3. **Evaluation Criteria:** Assessment based on involvement in SoDA, skills demonstrated through the resume and workshops, and potential gain from the program.
 
 ## FAQ
 
-If I've applied previously and didn't get in, should I apply again?
+#### If I've applied previously and didn't get in, should I apply again?
 
 Absolutely! Due to the high volume of mentees and limited mentors, we aren't able to accept everyone, so we encourage students to apply again.
 
-If I've been a mentee previously can I apply again?
+#### If I've been a mentee previously can I apply again?
 
 If you successfully completed the program, you can re-apply, but because we want to provide opportunities to other students, you might not be accepted again.
 
-What if I'm unable to complete the program?
+#### What if I'm unable to complete the program?
 
 Let us know! Please check our requirements and make sure you're able to commit to the program beforehand, but we understand that life happens. Just contact your mentor and the program directors and let them know you won't be able to complete it asap.
-
-## Notes for Future Consideration
-
-- **Intern/Mid-Season Hiring:** Explore the possibility of hiring successful mentees.
-- **Incentives for Mentors:** Develop better incentives to attract and retain mentors.
-- **Mentor/Mentee-Specific Events:** Consider organizing exclusive events for mentors and mentees.
-- **Stipends for Mentors:** Investigate the possibility of providing stipends for mentors.
 `;
 
 export default function Mentorship() {

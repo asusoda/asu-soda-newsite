@@ -2,9 +2,10 @@ import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-const markdownContent = `# Distinguished Members Program
+const markdownContent = `# SoDA pop Program 
+### (fka Distinguished Members Program)
 
-The **Distinguished Members Program** is designed to incentivize active involvement through a structured framework of rewards and recognitions. This program aims to enhance the overall club experience while offering tangible benefits to our members.
+The **SoDA PoP Program** is designed to incentivize active involvement through a structured framework of rewards and recognitions. This program aims to enhance the overall club experience while offering tangible benefits to our members.
 
 # Objectives
 
@@ -43,7 +44,7 @@ export default function PointsSystem() {
     <div className="max-w-5xl mx-auto p-6 my-28 shadow-md rounded-lg">
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Distinguished Members Program</title>
+        <title>SoDA PoP</title>
         <meta name="description" content="Explore ASU Soda's Distinguished Members Program, designed to reward active members with perks, career growth, and exclusive opportunities." />
         <meta name="keywords" content="Distinguished Members Program, ASU Soda, Points System, Active Participation, Member Rewards, Member Perks, Member Benefits, computer science, CS, software development" />
       </Helmet>

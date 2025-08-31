@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mentorship" element={<Mentorship />} />
-          <Route path="/distinguishedMembers" element={<PointsSystem />} />
+          <Route path="/sodapop" element={<PointsSystem />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/apply" element={<Positions />} />
           <Route path="*" element={<NotFound />} /> {/* Add the catch-all route */}
